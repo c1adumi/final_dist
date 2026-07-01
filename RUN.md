@@ -1,5 +1,24 @@
 # Running Dadumi (Agent Guide)
 
+## Installing the app (distributed version)
+
+download the app from https://dadumi.site/ via curl
+
+- mac
+
+```bash 
+curl -fsSL https://raw.githubusercontent.com/c1adumi/dadumi/main/scripts/install.sh | bash
+```
+
+- windows
+
+``` bash
+irm https://raw.githubusercontent.com/c1adumi/dadumi/main/scripts/install.ps1 | iex
+```
+
+
+## Running for Development Reasons 
+
 ## Prerequisites
 
 - Node.js + npm
