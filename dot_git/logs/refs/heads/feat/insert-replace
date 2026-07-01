@@ -1,0 +1,8 @@
+0000000000000000000000000000000000000000 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782266707 +0900	branch: Created from HEAD
+0c355281e9ae4622d6c23c507b1792e550a44d1b 7b306cff5477223651c33312c8983daf25608483 gayeon337 <gayeon337.lee@lge.com> 1782266825 +0900	commit: fix: insert-replace button now deactivates app before pasting
+7b306cff5477223651c33312c8983daf25608483 214c8d1927c53aeeb07a4332ae3b2943d8b725d2 gayeon337 <gayeon337.lee@lge.com> 1782267034 +0900	rebase (finish): refs/heads/feat/insert-replace onto 016d13e7ec290dd63075bebf2a90dfa82ce4b9ac
+214c8d1927c53aeeb07a4332ae3b2943d8b725d2 6cc4f186204d73f2632e9e8813f38939dd997c75 gayeon337 <gayeon337.lee@lge.com> 1782267694 +0900	rebase (finish): refs/heads/feat/insert-replace onto ca442d7758efa161db17669ece03fe56a4d1a3d1
+6cc4f186204d73f2632e9e8813f38939dd997c75 2d8ee2a9c3452f66c9b5b11c39f24b2c2580a09c gayeon337 <gayeon337.lee@lge.com> 1782268494 +0900	commit: fix: auto-resolve Cargo.lock conflicts on pull/rebase
+2d8ee2a9c3452f66c9b5b11c39f24b2c2580a09c 6cc4f186204d73f2632e9e8813f38939dd997c75 gayeon337 <gayeon337.lee@lge.com> 1782268597 +0900	reset: moving to HEAD~1
+6cc4f186204d73f2632e9e8813f38939dd997c75 6625126eae851ee87cd150dca2b45f7ea575c363 gayeon337 <gayeon337.lee@lge.com> 1782278875 +0900	rebase (finish): refs/heads/feat/insert-replace onto 661b3afbb7d7a4b78862eb02b561dce1701f5b40
+6625126eae851ee87cd150dca2b45f7ea575c363 49c285d1effe1cb34b000198f2ed54fe2ab6b526 gayeon337 <gayeon337.lee@lge.com> 1782279104 +0900	commit (amend): fix: insert-replace button activates source app by PID before pasting

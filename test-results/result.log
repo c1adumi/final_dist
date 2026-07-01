@@ -1,0 +1,1314 @@
+2026-07-01T06:23:37.4696278Z Current runner version: '2.335.1'
+2026-07-01T06:23:37.4729605Z ##[group]Runner Image Provisioner
+2026-07-01T06:23:37.4730486Z Hosted Compute Agent
+2026-07-01T06:23:37.4731085Z Version: 20260611.554
+2026-07-01T06:23:37.4731828Z Commit: 5e0782fdc9014723d3be820dd114dd31555c2bd1
+2026-07-01T06:23:37.4732596Z Build Date: 2026-06-11T21:40:46Z
+2026-07-01T06:23:37.4733370Z Worker ID: {8d585e02-c6d5-450e-abab-b199983b5fc3}
+2026-07-01T06:23:37.4734130Z Azure Region: northcentralus
+2026-07-01T06:23:37.4734866Z ##[endgroup]
+2026-07-01T06:23:37.4737324Z ##[group]Operating System
+2026-07-01T06:23:37.4738297Z Ubuntu
+2026-07-01T06:23:37.4739278Z 24.04.4
+2026-07-01T06:23:37.4740215Z LTS
+2026-07-01T06:23:37.4741156Z ##[endgroup]
+2026-07-01T06:23:37.4742183Z ##[group]Runner Image
+2026-07-01T06:23:37.4743155Z Image: ubuntu-24.04
+2026-07-01T06:23:37.4744072Z Version: 20260622.220.1
+2026-07-01T06:23:37.4746279Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260622.220/images/ubuntu/Ubuntu2404-Readme.md
+2026-07-01T06:23:37.4748687Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260622.220
+2026-07-01T06:23:37.4750492Z ##[endgroup]
+2026-07-01T06:23:37.4752168Z ##[group]GITHUB_TOKEN Permissions
+2026-07-01T06:23:37.4754625Z Contents: write
+2026-07-01T06:23:37.4755475Z Metadata: read
+2026-07-01T06:23:37.4756401Z ##[endgroup]
+2026-07-01T06:23:37.4759415Z Secret source: Actions
+2026-07-01T06:23:37.4760534Z Prepare workflow directory
+2026-07-01T06:23:37.5214774Z Prepare all required actions
+2026-07-01T06:23:37.5267976Z Getting action download info
+2026-07-01T06:23:37.7311678Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-07-01T06:23:37.8102072Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-07-01T06:23:38.0025976Z Complete job name: test
+2026-07-01T06:23:38.0753673Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-01T06:23:38.0762418Z ##[group]Run actions/checkout@v4
+2026-07-01T06:23:38.0763122Z with:
+2026-07-01T06:23:38.0763573Z   repository: c1adumi/dadumi
+2026-07-01T06:23:38.0767936Z   token: ***
+2026-07-01T06:23:38.0768369Z   ssh-strict: true
+2026-07-01T06:23:38.0768810Z   ssh-user: git
+2026-07-01T06:23:38.0769473Z   persist-credentials: true
+2026-07-01T06:23:38.0769965Z   clean: true
+2026-07-01T06:23:38.0770406Z   sparse-checkout-cone-mode: true
+2026-07-01T06:23:38.0770919Z   fetch-depth: 1
+2026-07-01T06:23:38.0771348Z   fetch-tags: false
+2026-07-01T06:23:38.0771791Z   show-progress: true
+2026-07-01T06:23:38.0772244Z   lfs: false
+2026-07-01T06:23:38.0772718Z   submodules: false
+2026-07-01T06:23:38.0773172Z   set-safe-directory: true
+2026-07-01T06:23:38.0773881Z ##[endgroup]
+2026-07-01T06:23:38.1806718Z Syncing repository: c1adumi/dadumi
+2026-07-01T06:23:38.1808490Z ##[group]Getting Git version info
+2026-07-01T06:23:38.1809446Z Working directory is '/home/runner/work/dadumi/dadumi'
+2026-07-01T06:23:38.1810423Z [command]/usr/bin/git version
+2026-07-01T06:23:38.1840667Z git version 2.54.0
+2026-07-01T06:23:38.1859138Z ##[endgroup]
+2026-07-01T06:23:38.1873134Z Temporarily overriding HOME='/home/runner/work/_temp/0f1a7dc2-3e71-4736-a19d-5edb37134873' before making global git config changes
+2026-07-01T06:23:38.1875242Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-01T06:23:38.1878357Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/dadumi/dadumi
+2026-07-01T06:23:38.1920620Z Deleting the contents of '/home/runner/work/dadumi/dadumi'
+2026-07-01T06:23:38.1924776Z ##[group]Initializing the repository
+2026-07-01T06:23:38.1928754Z [command]/usr/bin/git init /home/runner/work/dadumi/dadumi
+2026-07-01T06:23:38.1999128Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-07-01T06:23:38.2000699Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-07-01T06:23:38.2002066Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-07-01T06:23:38.2003011Z hint: call:
+2026-07-01T06:23:38.2003653Z hint:
+2026-07-01T06:23:38.2004450Z hint: 	git config --global init.defaultBranch <name>
+2026-07-01T06:23:38.2005433Z hint:
+2026-07-01T06:23:38.2006350Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-07-01T06:23:38.2007848Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-07-01T06:23:38.2009316Z hint:
+2026-07-01T06:23:38.2009980Z hint: 	git branch -m <name>
+2026-07-01T06:23:38.2010722Z hint:
+2026-07-01T06:23:38.2011801Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-07-01T06:23:38.2013417Z Initialized empty Git repository in /home/runner/work/dadumi/dadumi/.git/
+2026-07-01T06:23:38.2015915Z [command]/usr/bin/git remote add origin https://github.com/c1adumi/dadumi
+2026-07-01T06:23:38.2053412Z ##[endgroup]
+2026-07-01T06:23:38.2054616Z ##[group]Disabling automatic garbage collection
+2026-07-01T06:23:38.2057830Z [command]/usr/bin/git config --local gc.auto 0
+2026-07-01T06:23:38.2087635Z ##[endgroup]
+2026-07-01T06:23:38.2088386Z ##[group]Setting up auth
+2026-07-01T06:23:38.2094204Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-01T06:23:38.2127509Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-01T06:23:38.2435509Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-01T06:23:38.2468454Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-01T06:23:38.2701011Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-01T06:23:38.2733393Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-07-01T06:23:38.2969359Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-07-01T06:23:38.3005087Z ##[endgroup]
+2026-07-01T06:23:38.3005882Z ##[group]Fetching the repository
+2026-07-01T06:23:38.3016000Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +990762811be4746f4a7386535fc19a589db390ba:refs/tags/v1.10.4
+2026-07-01T06:23:38.7229591Z From https://github.com/c1adumi/dadumi
+2026-07-01T06:23:38.7231340Z  * [new ref]         990762811be4746f4a7386535fc19a589db390ba -> v1.10.4
+2026-07-01T06:23:38.7262471Z ##[endgroup]
+2026-07-01T06:23:38.7264284Z ##[group]Determining the checkout info
+2026-07-01T06:23:38.7266175Z ##[endgroup]
+2026-07-01T06:23:38.7271642Z [command]/usr/bin/git sparse-checkout disable
+2026-07-01T06:23:38.7317031Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-07-01T06:23:38.7346296Z ##[group]Checking out the ref
+2026-07-01T06:23:38.7351202Z [command]/usr/bin/git checkout --progress --force refs/tags/v1.10.4
+2026-07-01T06:23:38.7485344Z Note: switching to 'refs/tags/v1.10.4'.
+2026-07-01T06:23:38.7486107Z 
+2026-07-01T06:23:38.7486587Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-07-01T06:23:38.7487616Z changes and commit them, and you can discard any commits you make in this
+2026-07-01T06:23:38.7488760Z state without impacting any branches by switching back to a branch.
+2026-07-01T06:23:38.7489910Z 
+2026-07-01T06:23:38.7490681Z If you want to create a new branch to retain commits you create, you may
+2026-07-01T06:23:38.7492215Z do so (now or later) by using -c with the switch command. Example:
+2026-07-01T06:23:38.7493465Z 
+2026-07-01T06:23:38.7493856Z   git switch -c <new-branch-name>
+2026-07-01T06:23:38.7494501Z 
+2026-07-01T06:23:38.7494882Z Or undo this operation with:
+2026-07-01T06:23:38.7495452Z 
+2026-07-01T06:23:38.7495797Z   git switch -
+2026-07-01T06:23:38.7496413Z 
+2026-07-01T06:23:38.7497129Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-07-01T06:23:38.7498157Z 
+2026-07-01T06:23:38.7498577Z HEAD is now at 9907628 mode model thinking
+2026-07-01T06:23:38.7501523Z ##[endgroup]
+2026-07-01T06:23:38.7537045Z [command]/usr/bin/git log -1 --format=%H
+2026-07-01T06:23:38.7569543Z 990762811be4746f4a7386535fc19a589db390ba
+2026-07-01T06:23:38.7856177Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-01T06:23:38.7859280Z ##[group]Run actions/setup-node@v4
+2026-07-01T06:23:38.7859850Z with:
+2026-07-01T06:23:38.7860290Z   node-version: lts/*
+2026-07-01T06:23:38.7860773Z   cache: npm
+2026-07-01T06:23:38.7861270Z   cache-dependency-path: package-lock.json
+2026-07-01T06:23:38.7861874Z   always-auth: false
+2026-07-01T06:23:38.7862377Z   check-latest: false
+2026-07-01T06:23:38.7866974Z   token: ***
+2026-07-01T06:23:38.7867429Z ##[endgroup]
+2026-07-01T06:23:38.9230536Z Attempt to resolve LTS alias from manifest...
+2026-07-01T06:23:38.9340359Z (node:2271) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-07-01T06:23:38.9342831Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-07-01T06:23:39.4031504Z Found in cache @ /opt/hostedtoolcache/node/24.17.0/x64
+2026-07-01T06:23:39.4035362Z ##[group]Environment details
+2026-07-01T06:23:39.7211661Z node: v24.17.0
+2026-07-01T06:23:39.7212245Z npm: 11.13.0
+2026-07-01T06:23:39.7212729Z yarn: 1.22.22
+2026-07-01T06:23:39.7213674Z ##[endgroup]
+2026-07-01T06:23:39.7228457Z [command]/opt/hostedtoolcache/node/24.17.0/x64/bin/npm config get cache
+2026-07-01T06:23:39.8366402Z /home/runner/.npm
+2026-07-01T06:23:39.9371458Z npm cache is not found
+2026-07-01T06:23:39.9560646Z ##[group]Run npm ci
+2026-07-01T06:23:39.9561050Z [36;1mnpm ci[0m
+2026-07-01T06:23:39.9692293Z shell: /usr/bin/bash -e {0}
+2026-07-01T06:23:39.9692683Z ##[endgroup]
+2026-07-01T06:23:41.2675338Z npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+2026-07-01T06:23:42.6279317Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+2026-07-01T06:23:43.5630222Z 
+2026-07-01T06:23:43.5631127Z added 224 packages, and audited 225 packages in 4s
+2026-07-01T06:23:43.5631841Z 
+2026-07-01T06:23:43.5632238Z 45 packages are looking for funding
+2026-07-01T06:23:43.5632873Z   run `npm fund` for details
+2026-07-01T06:23:43.5681984Z 
+2026-07-01T06:23:43.5682738Z 1 low severity vulnerability
+2026-07-01T06:23:43.5683161Z 
+2026-07-01T06:23:43.5683401Z To address all issues, run:
+2026-07-01T06:23:43.5683830Z   npm audit fix
+2026-07-01T06:23:43.5684053Z 
+2026-07-01T06:23:43.5684280Z Run `npm audit` for details.
+2026-07-01T06:23:43.6347805Z ##[group]Run npm run test:run
+2026-07-01T06:23:43.6348128Z [36;1mnpm run test:run[0m
+2026-07-01T06:23:43.6383633Z shell: /usr/bin/bash -e {0}
+2026-07-01T06:23:43.6383917Z ##[endgroup]
+2026-07-01T06:23:43.7405015Z 
+2026-07-01T06:23:43.7405687Z > dadumi@0.1.0 test:run
+2026-07-01T06:23:43.7406126Z > vitest run
+2026-07-01T06:23:43.7406272Z 
+2026-07-01T06:23:44.0234183Z 
+2026-07-01T06:23:44.0236337Z [1m[46m RUN [49m[22m [36mv3.2.6 [39m[90m/home/runner/work/dadumi/dadumi[39m
+2026-07-01T06:23:44.0236898Z 
+2026-07-01T06:23:45.1489446Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mbrowser simulator mode[2m > [22m[2mshows simulator bar when not in Tauri
+2026-07-01T06:23:45.1511769Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.1529615Z 
+2026-07-01T06:23:45.1530490Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.1531795Z 
+2026-07-01T06:23:45.1544585Z act(() => {
+2026-07-01T06:23:45.1545414Z   /* fire events that update state */
+2026-07-01T06:23:45.1546189Z });
+2026-07-01T06:23:45.1567136Z /* assert on the output */
+2026-07-01T06:23:45.1567688Z 
+2026-07-01T06:23:45.1569135Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.1570783Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.1571509Z 
+2026-07-01T06:23:45.1572381Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.1573360Z 
+2026-07-01T06:23:45.1578366Z act(() => {
+2026-07-01T06:23:45.1579364Z   /* fire events that update state */
+2026-07-01T06:23:45.1580204Z });
+2026-07-01T06:23:45.1609721Z /* assert on the output */
+2026-07-01T06:23:45.1639178Z 
+2026-07-01T06:23:45.1640582Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.1669401Z 
+2026-07-01T06:23:45.1701273Z [90mstderr[2m | src/components/__tests__/FloatingMenu.test.tsx[2m > [22m[2mFloatingMenu[2m > [22m[2mpreset buttons[2m > [22m[2mrenders all 5 preset buttons
+2026-07-01T06:23:45.1703269Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.1729402Z 
+2026-07-01T06:23:45.1760120Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.1784904Z 
+2026-07-01T06:23:45.1809595Z act(() => {
+2026-07-01T06:23:45.1832848Z   /* fire events that update state */
+2026-07-01T06:23:45.1852234Z });
+2026-07-01T06:23:45.1852901Z /* assert on the output */
+2026-07-01T06:23:45.1853375Z 
+2026-07-01T06:23:45.1854503Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.1856052Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.1856784Z 
+2026-07-01T06:23:45.1857533Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.1858282Z 
+2026-07-01T06:23:45.1858593Z act(() => {
+2026-07-01T06:23:45.1859349Z   /* fire events that update state */
+2026-07-01T06:23:45.1859943Z });
+2026-07-01T06:23:45.1860454Z /* assert on the output */
+2026-07-01T06:23:45.1860889Z 
+2026-07-01T06:23:45.1862060Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.1863158Z 
+2026-07-01T06:23:45.1869835Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2mheader[2m > [22m[2mrenders Settings title
+2026-07-01T06:23:45.1871734Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.1872497Z 
+2026-07-01T06:23:45.1873797Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.1874573Z 
+2026-07-01T06:23:45.1874900Z act(() => {
+2026-07-01T06:23:45.1875636Z   /* fire events that update state */
+2026-07-01T06:23:45.1884427Z });
+2026-07-01T06:23:45.1885054Z /* assert on the output */
+2026-07-01T06:23:45.1885556Z 
+2026-07-01T06:23:45.1886734Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.1888312Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.1889721Z 
+2026-07-01T06:23:45.1890504Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.1891310Z 
+2026-07-01T06:23:45.1891682Z act(() => {
+2026-07-01T06:23:45.1892324Z   /* fire events that update state */
+2026-07-01T06:23:45.1892998Z });
+2026-07-01T06:23:45.1893596Z /* assert on the output */
+2026-07-01T06:23:45.1894068Z 
+2026-07-01T06:23:45.1895313Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.1896489Z 
+2026-07-01T06:23:45.2055330Z [90mstderr[2m | src/components/__tests__/FloatingMenu.test.tsx[2m > [22m[2mFloatingMenu[2m > [22m[2mpreset buttons[2m > [22m[2mpreset buttons are disabled when no selection text
+2026-07-01T06:23:45.2057531Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2058350Z 
+2026-07-01T06:23:45.2059328Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2060193Z 
+2026-07-01T06:23:45.2060682Z act(() => {
+2026-07-01T06:23:45.2061487Z   /* fire events that update state */
+2026-07-01T06:23:45.2089713Z });
+2026-07-01T06:23:45.2105476Z /* assert on the output */
+2026-07-01T06:23:45.2108675Z 
+2026-07-01T06:23:45.2110055Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2111599Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2112247Z 
+2026-07-01T06:23:45.2112930Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2113658Z 
+2026-07-01T06:23:45.2113963Z act(() => {
+2026-07-01T06:23:45.2114520Z   /* fire events that update state */
+2026-07-01T06:23:45.2115098Z });
+2026-07-01T06:23:45.2115548Z /* assert on the output */
+2026-07-01T06:23:45.2115975Z 
+2026-07-01T06:23:45.2117067Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2118098Z 
+2026-07-01T06:23:45.2167767Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mbrowser simulator mode[2m > [22m[2mshows app selector dropdown
+2026-07-01T06:23:45.2169658Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2170416Z 
+2026-07-01T06:23:45.2171094Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2171794Z 
+2026-07-01T06:23:45.2172089Z act(() => {
+2026-07-01T06:23:45.2172641Z   /* fire events that update state */
+2026-07-01T06:23:45.2173218Z });
+2026-07-01T06:23:45.2173718Z /* assert on the output */
+2026-07-01T06:23:45.2174122Z 
+2026-07-01T06:23:45.2175171Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2176619Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2177292Z 
+2026-07-01T06:23:45.2177960Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2178635Z 
+2026-07-01T06:23:45.2179119Z act(() => {
+2026-07-01T06:23:45.2179653Z   /* fire events that update state */
+2026-07-01T06:23:45.2182839Z });
+2026-07-01T06:23:45.2183410Z /* assert on the output */
+2026-07-01T06:23:45.2183829Z 
+2026-07-01T06:23:45.2185387Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2186421Z 
+2026-07-01T06:23:45.2188087Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2mlanguage selection[2m > [22m[2mrenders language toggle buttons
+2026-07-01T06:23:45.2191036Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2191795Z 
+2026-07-01T06:23:45.2192770Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2193491Z 
+2026-07-01T06:23:45.2193782Z act(() => {
+2026-07-01T06:23:45.2194299Z   /* fire events that update state */
+2026-07-01T06:23:45.2194867Z });
+2026-07-01T06:23:45.2195355Z /* assert on the output */
+2026-07-01T06:23:45.2195743Z 
+2026-07-01T06:23:45.2196813Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2198212Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2199871Z 
+2026-07-01T06:23:45.2200608Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2201321Z 
+2026-07-01T06:23:45.2201610Z act(() => {
+2026-07-01T06:23:45.2202150Z   /* fire events that update state */
+2026-07-01T06:23:45.2202735Z });
+2026-07-01T06:23:45.2203234Z /* assert on the output */
+2026-07-01T06:23:45.2203645Z 
+2026-07-01T06:23:45.2204756Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2205739Z 
+2026-07-01T06:23:45.2273766Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mbrowser simulator mode[2m > [22m[2mshows mock selection input
+2026-07-01T06:23:45.2276104Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2276920Z 
+2026-07-01T06:23:45.2277650Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2278374Z 
+2026-07-01T06:23:45.2278674Z act(() => {
+2026-07-01T06:23:45.2279471Z   /* fire events that update state */
+2026-07-01T06:23:45.2280049Z });
+2026-07-01T06:23:45.2280520Z /* assert on the output */
+2026-07-01T06:23:45.2280921Z 
+2026-07-01T06:23:45.2282026Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2283473Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2284117Z 
+2026-07-01T06:23:45.2284800Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2285488Z 
+2026-07-01T06:23:45.2285787Z act(() => {
+2026-07-01T06:23:45.2286316Z   /* fire events that update state */
+2026-07-01T06:23:45.2286880Z });
+2026-07-01T06:23:45.2287392Z /* assert on the output */
+2026-07-01T06:23:45.2287808Z 
+2026-07-01T06:23:45.2289072Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2290168Z 
+2026-07-01T06:23:45.2501440Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mbrowser simulator mode[2m > [22m[2mshows Trigger Hotkey button
+2026-07-01T06:23:45.2524341Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2525249Z 
+2026-07-01T06:23:45.2526059Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2526911Z 
+2026-07-01T06:23:45.2527240Z act(() => {
+2026-07-01T06:23:45.2527832Z   /* fire events that update state */
+2026-07-01T06:23:45.2528508Z });
+2026-07-01T06:23:45.2529448Z /* assert on the output */
+2026-07-01T06:23:45.2556549Z 
+2026-07-01T06:23:45.2558211Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2560084Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2560715Z 
+2026-07-01T06:23:45.2561358Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2562004Z 
+2026-07-01T06:23:45.2562247Z act(() => {
+2026-07-01T06:23:45.2562875Z   /* fire events that update state */
+2026-07-01T06:23:45.2563419Z });
+2026-07-01T06:23:45.2563864Z /* assert on the output */
+2026-07-01T06:23:45.2564221Z 
+2026-07-01T06:23:45.2565554Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2566530Z 
+2026-07-01T06:23:45.2568212Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2mlanguage selection[2m > [22m[2mEnglish is selected by default
+2026-07-01T06:23:45.2570303Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2570984Z 
+2026-07-01T06:23:45.2571626Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2572281Z 
+2026-07-01T06:23:45.2572531Z act(() => {
+2026-07-01T06:23:45.2573034Z   /* fire events that update state */
+2026-07-01T06:23:45.2573606Z });
+2026-07-01T06:23:45.2574047Z /* assert on the output */
+2026-07-01T06:23:45.2574397Z 
+2026-07-01T06:23:45.2575423Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2576802Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2577386Z 
+2026-07-01T06:23:45.2577986Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2578606Z 
+2026-07-01T06:23:45.2579020Z act(() => {
+2026-07-01T06:23:45.2579507Z   /* fire events that update state */
+2026-07-01T06:23:45.2580025Z });
+2026-07-01T06:23:45.2580457Z /* assert on the output */
+2026-07-01T06:23:45.2580808Z 
+2026-07-01T06:23:45.2581818Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2582755Z 
+2026-07-01T06:23:45.2658814Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mbrowser simulator mode[2m > [22m[2mshows Alt + Space hint
+2026-07-01T06:23:45.2660920Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2661680Z 
+2026-07-01T06:23:45.2699500Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2718694Z 
+2026-07-01T06:23:45.2719403Z act(() => {
+2026-07-01T06:23:45.2719976Z   /* fire events that update state */
+2026-07-01T06:23:45.2720568Z });
+2026-07-01T06:23:45.2721032Z /* assert on the output */
+2026-07-01T06:23:45.2721463Z 
+2026-07-01T06:23:45.2722502Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2723919Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2724588Z 
+2026-07-01T06:23:45.2725232Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2725870Z 
+2026-07-01T06:23:45.2726166Z act(() => {
+2026-07-01T06:23:45.2726665Z   /* fire events that update state */
+2026-07-01T06:23:45.2727234Z });
+2026-07-01T06:23:45.2727677Z /* assert on the output */
+2026-07-01T06:23:45.2728103Z 
+2026-07-01T06:23:45.2729357Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2730378Z 
+2026-07-01T06:23:45.2773701Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mbrowser simulator mode[2m > [22m[2mshows instructions when overlay is closed
+2026-07-01T06:23:45.2775830Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2776655Z 
+2026-07-01T06:23:45.2777357Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2778065Z 
+2026-07-01T06:23:45.2778360Z act(() => {
+2026-07-01T06:23:45.2779120Z   /* fire events that update state */
+2026-07-01T06:23:45.2779721Z });
+2026-07-01T06:23:45.2780204Z /* assert on the output */
+2026-07-01T06:23:45.2780597Z 
+2026-07-01T06:23:45.2781673Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2783423Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.2784092Z 
+2026-07-01T06:23:45.2784783Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.2785467Z 
+2026-07-01T06:23:45.2785756Z act(() => {
+2026-07-01T06:23:45.2794238Z   /* fire events that update state */
+2026-07-01T06:23:45.2795078Z });
+2026-07-01T06:23:45.2795591Z /* assert on the output */
+2026-07-01T06:23:45.2796006Z 
+2026-07-01T06:23:45.2797031Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.2798835Z 
+2026-07-01T06:23:45.3731595Z [90mstderr[2m | src/components/__tests__/FloatingMenu.test.tsx[2m > [22m[2mFloatingMenu[2m > [22m[2mpreset buttons[2m > [22m[2mshows focused state on initial preset
+2026-07-01T06:23:45.3763575Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.3789404Z 
+2026-07-01T06:23:45.3820010Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.3820747Z 
+2026-07-01T06:23:45.3849701Z act(() => {
+2026-07-01T06:23:45.3879138Z   /* fire events that update state */
+2026-07-01T06:23:45.3881126Z });
+2026-07-01T06:23:45.3910389Z /* assert on the output */
+2026-07-01T06:23:45.3918235Z 
+2026-07-01T06:23:45.3919617Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.3921137Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.3921827Z 
+2026-07-01T06:23:45.3922535Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.3923246Z 
+2026-07-01T06:23:45.3923549Z act(() => {
+2026-07-01T06:23:45.3924095Z   /* fire events that update state */
+2026-07-01T06:23:45.3924688Z });
+2026-07-01T06:23:45.3925179Z /* assert on the output */
+2026-07-01T06:23:45.3925582Z 
+2026-07-01T06:23:45.3926285Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.3927006Z 
+2026-07-01T06:23:45.3928226Z [90mstderr[2m | src/components/__tests__/FloatingMenu.test.tsx[2m > [22m[2mFloatingMenu[2m > [22m[2mcustom prompt input[2m > [22m[2mrenders custom input field
+2026-07-01T06:23:45.3930524Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.3931016Z 
+2026-07-01T06:23:45.3931468Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.3932099Z 
+2026-07-01T06:23:45.3932392Z act(() => {
+2026-07-01T06:23:45.3932925Z   /* fire events that update state */
+2026-07-01T06:23:45.3933424Z });
+2026-07-01T06:23:45.3933799Z /* assert on the output */
+2026-07-01T06:23:45.3934085Z 
+2026-07-01T06:23:45.3934760Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.3935636Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.3936060Z 
+2026-07-01T06:23:45.3936479Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.3936918Z 
+2026-07-01T06:23:45.3937473Z act(() => {
+2026-07-01T06:23:45.3937842Z   /* fire events that update state */
+2026-07-01T06:23:45.3938220Z });
+2026-07-01T06:23:45.3938561Z /* assert on the output */
+2026-07-01T06:23:45.3939039Z 
+2026-07-01T06:23:45.3940113Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.3940921Z 
+2026-07-01T06:23:45.3941503Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mapp selector[2m > [22m[2mhas all expected app options
+2026-07-01T06:23:45.3942484Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.3942794Z 
+2026-07-01T06:23:45.3943107Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.3943413Z 
+2026-07-01T06:23:45.3943501Z act(() => {
+2026-07-01T06:23:45.3943734Z   /* fire events that update state */
+2026-07-01T06:23:45.3943988Z });
+2026-07-01T06:23:45.3944214Z /* assert on the output */
+2026-07-01T06:23:45.3944367Z 
+2026-07-01T06:23:45.3944893Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.3945621Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.3945912Z 
+2026-07-01T06:23:45.3946212Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.3946529Z 
+2026-07-01T06:23:45.3946613Z act(() => {
+2026-07-01T06:23:45.3946848Z   /* fire events that update state */
+2026-07-01T06:23:45.3947117Z });
+2026-07-01T06:23:45.3947321Z /* assert on the output */
+2026-07-01T06:23:45.3947463Z 
+2026-07-01T06:23:45.3947979Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.3948448Z 
+2026-07-01T06:23:45.4065154Z [90mstderr[2m | src/components/__tests__/FloatingMenu.test.tsx[2m > [22m[2mFloatingMenu[2m > [22m[2mcustom prompt input[2m > [22m[2mcustom input is disabled when no selection text
+2026-07-01T06:23:45.4081012Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.4096453Z 
+2026-07-01T06:23:45.4099186Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.4099952Z 
+2026-07-01T06:23:45.4101455Z act(() => {
+2026-07-01T06:23:45.4102020Z   /* fire events that update state */
+2026-07-01T06:23:45.4102579Z });
+2026-07-01T06:23:45.4103040Z /* assert on the output */
+2026-07-01T06:23:45.4103460Z 
+2026-07-01T06:23:45.4104534Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.4106837Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.4107471Z 
+2026-07-01T06:23:45.4110240Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.4110945Z 
+2026-07-01T06:23:45.4111188Z act(() => {
+2026-07-01T06:23:45.4111705Z   /* fire events that update state */
+2026-07-01T06:23:45.4112237Z });
+2026-07-01T06:23:45.4112675Z /* assert on the output */
+2026-07-01T06:23:45.4113038Z 
+2026-07-01T06:23:45.4114065Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.4114999Z 
+2026-07-01T06:23:45.4128116Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2mtheme selection[2m > [22m[2mrenders Dark and Light theme options
+2026-07-01T06:23:45.4131266Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.4131947Z 
+2026-07-01T06:23:45.4132628Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.4133273Z 
+2026-07-01T06:23:45.4133497Z act(() => {
+2026-07-01T06:23:45.4134494Z   /* fire events that update state */
+2026-07-01T06:23:45.4135100Z });
+2026-07-01T06:23:45.4135544Z /* assert on the output */
+2026-07-01T06:23:45.4135907Z 
+2026-07-01T06:23:45.4136909Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.4138260Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.4148302Z 
+2026-07-01T06:23:45.4149341Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.4150377Z 
+2026-07-01T06:23:45.4150634Z act(() => {
+2026-07-01T06:23:45.4151128Z   /* fire events that update state */
+2026-07-01T06:23:45.4151672Z });
+2026-07-01T06:23:45.4152172Z /* assert on the output */
+2026-07-01T06:23:45.4154454Z 
+2026-07-01T06:23:45.4155532Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.4156776Z 
+2026-07-01T06:23:45.4346410Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2mtheme selection[2m > [22m[2mDark is selected by default
+2026-07-01T06:23:45.4347536Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.4347883Z 
+2026-07-01T06:23:45.4348229Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.4348569Z 
+2026-07-01T06:23:45.4348661Z act(() => {
+2026-07-01T06:23:45.4349132Z   /* fire events that update state */
+2026-07-01T06:23:45.4349420Z });
+2026-07-01T06:23:45.4349642Z /* assert on the output */
+2026-07-01T06:23:45.4349813Z 
+2026-07-01T06:23:45.4350382Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.4351173Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.4351476Z 
+2026-07-01T06:23:45.4351803Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.4352124Z 
+2026-07-01T06:23:45.4352212Z act(() => {
+2026-07-01T06:23:45.4352456Z   /* fire events that update state */
+2026-07-01T06:23:45.4352722Z });
+2026-07-01T06:23:45.4352934Z /* assert on the output */
+2026-07-01T06:23:45.4353082Z 
+2026-07-01T06:23:45.4353617Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.4354081Z 
+2026-07-01T06:23:45.4999606Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2minsert shortcut[2m > [22m[2mrenders shortcut input with default Enter
+2026-07-01T06:23:45.5006673Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.5007387Z 
+2026-07-01T06:23:45.5008028Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.5008740Z 
+2026-07-01T06:23:45.5009180Z act(() => {
+2026-07-01T06:23:45.5009663Z   /* fire events that update state */
+2026-07-01T06:23:45.5010192Z });
+2026-07-01T06:23:45.5010739Z /* assert on the output */
+2026-07-01T06:23:45.5010978Z 
+2026-07-01T06:23:45.5011567Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.5012577Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.5013042Z 
+2026-07-01T06:23:45.5013581Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.5014103Z 
+2026-07-01T06:23:45.5014232Z act(() => {
+2026-07-01T06:23:45.5014622Z   /* fire events that update state */
+2026-07-01T06:23:45.5015012Z });
+2026-07-01T06:23:45.5015335Z /* assert on the output */
+2026-07-01T06:23:45.5015585Z 
+2026-07-01T06:23:45.5016944Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.5017956Z 
+2026-07-01T06:23:45.5124013Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mmock selection input[2m > [22m[2mhas default text
+2026-07-01T06:23:45.5125401Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.5129527Z 
+2026-07-01T06:23:45.5130342Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.5131094Z 
+2026-07-01T06:23:45.5131955Z act(() => {
+2026-07-01T06:23:45.5132519Z   /* fire events that update state */
+2026-07-01T06:23:45.5133116Z });
+2026-07-01T06:23:45.5145622Z /* assert on the output */
+2026-07-01T06:23:45.5146052Z 
+2026-07-01T06:23:45.5147107Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.5148489Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.5149358Z 
+2026-07-01T06:23:45.5150026Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.5150669Z 
+2026-07-01T06:23:45.5150924Z act(() => {
+2026-07-01T06:23:45.5151411Z   /* fire events that update state */
+2026-07-01T06:23:45.5151917Z });
+2026-07-01T06:23:45.5152359Z /* assert on the output */
+2026-07-01T06:23:45.5152727Z 
+2026-07-01T06:23:45.5153743Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.5156077Z 
+2026-07-01T06:23:45.5165133Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2minsert shortcut[2m > [22m[2mshows modifier label based on platform
+2026-07-01T06:23:45.5167024Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.5167775Z 
+2026-07-01T06:23:45.5168478Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.5169371Z 
+2026-07-01T06:23:45.5169674Z act(() => {
+2026-07-01T06:23:45.5170219Z   /* fire events that update state */
+2026-07-01T06:23:45.5170802Z });
+2026-07-01T06:23:45.5173328Z /* assert on the output */
+2026-07-01T06:23:45.5173794Z 
+2026-07-01T06:23:45.5174818Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.5176287Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.5176946Z 
+2026-07-01T06:23:45.5177630Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.5178341Z 
+2026-07-01T06:23:45.5178615Z act(() => {
+2026-07-01T06:23:45.5179330Z   /* fire events that update state */
+2026-07-01T06:23:45.5179917Z });
+2026-07-01T06:23:45.5180413Z /* assert on the output */
+2026-07-01T06:23:45.5180816Z 
+2026-07-01T06:23:45.5181896Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.5182912Z 
+2026-07-01T06:23:45.5502201Z [90mstderr[2m | src/components/__tests__/FloatingMenu.test.tsx[2m > [22m[2mFloatingMenu[2m > [22m[2mcustom prompt input[2m > [22m[2msend button is disabled when custom prompt is empty
+2026-07-01T06:23:45.5504044Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.5504593Z 
+2026-07-01T06:23:45.5505146Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.5505728Z 
+2026-07-01T06:23:45.5505868Z act(() => {
+2026-07-01T06:23:45.5506253Z   /* fire events that update state */
+2026-07-01T06:23:45.5506671Z });
+2026-07-01T06:23:45.5507006Z /* assert on the output */
+2026-07-01T06:23:45.5507260Z 
+2026-07-01T06:23:45.5508779Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.5510269Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.5510744Z 
+2026-07-01T06:23:45.5511274Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.5511798Z 
+2026-07-01T06:23:45.5511939Z act(() => {
+2026-07-01T06:23:45.5512315Z   /* fire events that update state */
+2026-07-01T06:23:45.5512727Z });
+2026-07-01T06:23:45.5513043Z /* assert on the output */
+2026-07-01T06:23:45.5513286Z 
+2026-07-01T06:23:45.5514151Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.5515227Z 
+2026-07-01T06:23:45.6765323Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2mtrigger mode[2m > [22m[2mrenders Manual and Auto options
+2026-07-01T06:23:45.6781135Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.6781988Z 
+2026-07-01T06:23:45.6782722Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.6783452Z 
+2026-07-01T06:23:45.6783768Z act(() => {
+2026-07-01T06:23:45.6784329Z   /* fire events that update state */
+2026-07-01T06:23:45.6784925Z });
+2026-07-01T06:23:45.6785420Z /* assert on the output */
+2026-07-01T06:23:45.6785826Z 
+2026-07-01T06:23:45.6786905Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.6788611Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.6789491Z 
+2026-07-01T06:23:45.6790160Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.6790818Z 
+2026-07-01T06:23:45.6791104Z act(() => {
+2026-07-01T06:23:45.6791618Z   /* fire events that update state */
+2026-07-01T06:23:45.6792168Z });
+2026-07-01T06:23:45.6792663Z /* assert on the output */
+2026-07-01T06:23:45.6793066Z 
+2026-07-01T06:23:45.6794111Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.6795118Z 
+2026-07-01T06:23:45.6864723Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2mtrigger mode[2m > [22m[2mManual is selected by default
+2026-07-01T06:23:45.6866802Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.6867591Z 
+2026-07-01T06:23:45.6868316Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.6869274Z 
+2026-07-01T06:23:45.6869574Z act(() => {
+2026-07-01T06:23:45.6870121Z   /* fire events that update state */
+2026-07-01T06:23:45.6870716Z });
+2026-07-01T06:23:45.6871202Z /* assert on the output */
+2026-07-01T06:23:45.6871605Z 
+2026-07-01T06:23:45.6872683Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.6874186Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.6874825Z 
+2026-07-01T06:23:45.6875487Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.6876206Z 
+2026-07-01T06:23:45.6876504Z act(() => {
+2026-07-01T06:23:45.6877064Z   /* fire events that update state */
+2026-07-01T06:23:45.6877640Z });
+2026-07-01T06:23:45.6878133Z /* assert on the output */
+2026-07-01T06:23:45.6878568Z 
+2026-07-01T06:23:45.6879867Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.6880980Z 
+2026-07-01T06:23:45.7642392Z [90mstderr[2m | src/components/__tests__/FloatingMenu.test.tsx[2m > [22m[2mFloatingMenu[2m > [22m[2mfooter actions[2m > [22m[2mrenders settings button
+2026-07-01T06:23:45.7657291Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.7662581Z 
+2026-07-01T06:23:45.7663377Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.7664109Z 
+2026-07-01T06:23:45.7664411Z act(() => {
+2026-07-01T06:23:45.7664961Z   /* fire events that update state */
+2026-07-01T06:23:45.7665556Z });
+2026-07-01T06:23:45.7666059Z /* assert on the output */
+2026-07-01T06:23:45.7666462Z 
+2026-07-01T06:23:45.7667519Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.7669627Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.7670298Z 
+2026-07-01T06:23:45.7670980Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.7671835Z 
+2026-07-01T06:23:45.7672154Z act(() => {
+2026-07-01T06:23:45.7676791Z   /* fire events that update state */
+2026-07-01T06:23:45.7677465Z });
+2026-07-01T06:23:45.7677985Z /* assert on the output */
+2026-07-01T06:23:45.7678431Z 
+2026-07-01T06:23:45.7679717Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.7680781Z 
+2026-07-01T06:23:45.7743810Z [90mstderr[2m | src/components/__tests__/FloatingMenu.test.tsx[2m > [22m[2mFloatingMenu[2m > [22m[2mfooter actions[2m > [22m[2mCopy button is disabled when no streamed text
+2026-07-01T06:23:45.7750435Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.7751169Z 
+2026-07-01T06:23:45.7751825Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.7752459Z 
+2026-07-01T06:23:45.7752705Z act(() => {
+2026-07-01T06:23:45.7753187Z   /* fire events that update state */
+2026-07-01T06:23:45.7753728Z });
+2026-07-01T06:23:45.7754173Z /* assert on the output */
+2026-07-01T06:23:45.7754778Z 
+2026-07-01T06:23:45.7755852Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.7757269Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.7757874Z 
+2026-07-01T06:23:45.7758510Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.7759352Z 
+2026-07-01T06:23:45.7759577Z act(() => {
+2026-07-01T06:23:45.7760068Z   /* fire events that update state */
+2026-07-01T06:23:45.7760726Z });
+2026-07-01T06:23:45.7762031Z /* assert on the output */
+2026-07-01T06:23:45.7803219Z 
+2026-07-01T06:23:45.7804456Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.7805557Z 
+2026-07-01T06:23:45.7909157Z [90mstderr[2m | src/components/__tests__/FloatingMenu.test.tsx[2m > [22m[2mFloatingMenu[2m > [22m[2mfooter actions[2m > [22m[2mInsert button is enabled when there is selection text
+2026-07-01T06:23:45.7911672Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.7912370Z 
+2026-07-01T06:23:45.7913051Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.7917025Z 
+2026-07-01T06:23:45.7917340Z act(() => {
+2026-07-01T06:23:45.7917899Z   /* fire events that update state */
+2026-07-01T06:23:45.7918468Z });
+2026-07-01T06:23:45.7919108Z /* assert on the output */
+2026-07-01T06:23:45.7919503Z 
+2026-07-01T06:23:45.7920583Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.7923045Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.7923667Z 
+2026-07-01T06:23:45.7924300Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.7925446Z 
+2026-07-01T06:23:45.7925729Z act(() => {
+2026-07-01T06:23:45.7926212Z   /* fire events that update state */
+2026-07-01T06:23:45.7926716Z });
+2026-07-01T06:23:45.7927145Z /* assert on the output */
+2026-07-01T06:23:45.7927490Z 
+2026-07-01T06:23:45.7928449Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.7929551Z 
+2026-07-01T06:23:45.8585994Z [90mstderr[2m | src/components/__tests__/FloatingMenu.test.tsx[2m > [22m[2mFloatingMenu[2m > [22m[2mdrag handle[2m > [22m[2mrenders drag handle element
+2026-07-01T06:23:45.8593134Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.8619779Z 
+2026-07-01T06:23:45.8620712Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.8621459Z 
+2026-07-01T06:23:45.8621751Z act(() => {
+2026-07-01T06:23:45.8622306Z   /* fire events that update state */
+2026-07-01T06:23:45.8622921Z });
+2026-07-01T06:23:45.8623402Z /* assert on the output */
+2026-07-01T06:23:45.8623792Z 
+2026-07-01T06:23:45.8624826Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.8626278Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.8626920Z 
+2026-07-01T06:23:45.8627627Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.8628322Z 
+2026-07-01T06:23:45.8628602Z act(() => {
+2026-07-01T06:23:45.8633226Z   /* fire events that update state */
+2026-07-01T06:23:45.8649997Z });
+2026-07-01T06:23:45.8650552Z /* assert on the output */
+2026-07-01T06:23:45.8650977Z 
+2026-07-01T06:23:45.8652070Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.8653077Z 
+2026-07-01T06:23:45.8890924Z [90mstderr[2m | src/components/__tests__/FloatingMenu.test.tsx[2m > [22m[2mFloatingMenu[2m > [22m[2mprocessing state styling[2m > [22m[2mshows GEN badge while generating
+2026-07-01T06:23:45.8910771Z [22m[39mAn update to FloatingMenu inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.8911708Z 
+2026-07-01T06:23:45.8912472Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.8913235Z 
+2026-07-01T06:23:45.8913552Z act(() => {
+2026-07-01T06:23:45.8914129Z   /* fire events that update state */
+2026-07-01T06:23:45.8914771Z });
+2026-07-01T06:23:45.8915292Z /* assert on the output */
+2026-07-01T06:23:45.8915725Z 
+2026-07-01T06:23:45.8916832Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.8918301Z An update to FloatingMenu inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.8919151Z 
+2026-07-01T06:23:45.8919868Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.8920529Z 
+2026-07-01T06:23:45.8920805Z act(() => {
+2026-07-01T06:23:45.8921336Z   /* fire events that update state */
+2026-07-01T06:23:45.8921929Z });
+2026-07-01T06:23:45.8922409Z /* assert on the output */
+2026-07-01T06:23:45.8922802Z 
+2026-07-01T06:23:45.8923849Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.8924949Z 
+2026-07-01T06:23:45.8926271Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mTauri event listener[2m > [22m[2msets up selection-captured listener on mount
+2026-07-01T06:23:45.8928013Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.8928741Z 
+2026-07-01T06:23:45.8929635Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.8930380Z 
+2026-07-01T06:23:45.8930687Z act(() => {
+2026-07-01T06:23:45.8931776Z   /* fire events that update state */
+2026-07-01T06:23:45.8932454Z });
+2026-07-01T06:23:45.8932959Z /* assert on the output */
+2026-07-01T06:23:45.8933378Z 
+2026-07-01T06:23:45.8934452Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.8935904Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.8936568Z 
+2026-07-01T06:23:45.8937236Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.8938259Z 
+2026-07-01T06:23:45.8938558Z act(() => {
+2026-07-01T06:23:45.8939289Z   /* fire events that update state */
+2026-07-01T06:23:45.8939876Z });
+2026-07-01T06:23:45.8940357Z /* assert on the output */
+2026-07-01T06:23:45.8940763Z 
+2026-07-01T06:23:45.8941800Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.8942824Z 
+2026-07-01T06:23:45.8951490Z  [32m✓[39m src/components/__tests__/FloatingMenu.test.tsx [2m([22m[2m20 tests[22m[2m)[22m[33m 807[2mms[22m[39m
+2026-07-01T06:23:45.8968034Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2mprovider selection[2m > [22m[2mrenders all provider tabs
+2026-07-01T06:23:45.8970999Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.8971979Z 
+2026-07-01T06:23:45.8972716Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.8973447Z 
+2026-07-01T06:23:45.8973756Z act(() => {
+2026-07-01T06:23:45.8974299Z   /* fire events that update state */
+2026-07-01T06:23:45.8974882Z });
+2026-07-01T06:23:45.8975381Z /* assert on the output */
+2026-07-01T06:23:45.8975815Z 
+2026-07-01T06:23:45.8976922Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.8978447Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.8979319Z 
+2026-07-01T06:23:45.8979992Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.8980709Z 
+2026-07-01T06:23:45.8981012Z act(() => {
+2026-07-01T06:23:45.8981569Z   /* fire events that update state */
+2026-07-01T06:23:45.8982154Z });
+2026-07-01T06:23:45.8982650Z /* assert on the output */
+2026-07-01T06:23:45.8983061Z 
+2026-07-01T06:23:45.8984126Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.8985154Z 
+2026-07-01T06:23:45.8986366Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mTauri mode[2m > [22m[2mhides simulator bar in Tauri mode
+2026-07-01T06:23:45.8987995Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9005312Z 
+2026-07-01T06:23:45.9006143Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9006904Z 
+2026-07-01T06:23:45.9009447Z act(() => {
+2026-07-01T06:23:45.9010064Z   /* fire events that update state */
+2026-07-01T06:23:45.9010676Z });
+2026-07-01T06:23:45.9011178Z /* assert on the output */
+2026-07-01T06:23:45.9011588Z 
+2026-07-01T06:23:45.9012711Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9014179Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9015185Z 
+2026-07-01T06:23:45.9015917Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9016651Z 
+2026-07-01T06:23:45.9016951Z act(() => {
+2026-07-01T06:23:45.9017517Z   /* fire events that update state */
+2026-07-01T06:23:45.9018104Z });
+2026-07-01T06:23:45.9018604Z /* assert on the output */
+2026-07-01T06:23:45.9019617Z 
+2026-07-01T06:23:45.9020770Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9021815Z 
+2026-07-01T06:23:45.9023018Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mTauri mode[2m > [22m[2madds in-tauri class in Tauri mode
+2026-07-01T06:23:45.9024621Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9025376Z 
+2026-07-01T06:23:45.9026080Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9027132Z 
+2026-07-01T06:23:45.9027443Z act(() => {
+2026-07-01T06:23:45.9028007Z   /* fire events that update state */
+2026-07-01T06:23:45.9035322Z });
+2026-07-01T06:23:45.9036006Z /* assert on the output */
+2026-07-01T06:23:45.9036454Z 
+2026-07-01T06:23:45.9037547Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9039268Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9039909Z 
+2026-07-01T06:23:45.9040600Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9041300Z 
+2026-07-01T06:23:45.9041588Z act(() => {
+2026-07-01T06:23:45.9042129Z   /* fire events that update state */
+2026-07-01T06:23:45.9042722Z });
+2026-07-01T06:23:45.9043212Z /* assert on the output */
+2026-07-01T06:23:45.9043608Z 
+2026-07-01T06:23:45.9044687Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9045775Z 
+2026-07-01T06:23:45.9048398Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mTauri mode[2m > [22m[2madds browser-env class in browser mode
+2026-07-01T06:23:45.9050149Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9050882Z 
+2026-07-01T06:23:45.9051571Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9052281Z 
+2026-07-01T06:23:45.9052583Z act(() => {
+2026-07-01T06:23:45.9053115Z   /* fire events that update state */
+2026-07-01T06:23:45.9053689Z });
+2026-07-01T06:23:45.9054181Z /* assert on the output */
+2026-07-01T06:23:45.9054577Z 
+2026-07-01T06:23:45.9055693Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9057233Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9057878Z 
+2026-07-01T06:23:45.9058577Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9059530Z 
+2026-07-01T06:23:45.9059838Z act(() => {
+2026-07-01T06:23:45.9090958Z   /* fire events that update state */
+2026-07-01T06:23:45.9091613Z });
+2026-07-01T06:23:45.9092132Z /* assert on the output */
+2026-07-01T06:23:45.9092584Z 
+2026-07-01T06:23:45.9093659Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9094966Z 
+2026-07-01T06:23:45.9183254Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mselection-captured event handling[2m > [22m[2mopens overlay when event has text
+2026-07-01T06:23:45.9185330Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9186210Z 
+2026-07-01T06:23:45.9186977Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9187665Z 
+2026-07-01T06:23:45.9187949Z act(() => {
+2026-07-01T06:23:45.9188490Z   /* fire events that update state */
+2026-07-01T06:23:45.9189233Z });
+2026-07-01T06:23:45.9189686Z /* assert on the output */
+2026-07-01T06:23:45.9190091Z 
+2026-07-01T06:23:45.9191574Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9195500Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9196191Z 
+2026-07-01T06:23:45.9196850Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9197519Z 
+2026-07-01T06:23:45.9197825Z act(() => {
+2026-07-01T06:23:45.9198380Z   /* fire events that update state */
+2026-07-01T06:23:45.9199136Z });
+2026-07-01T06:23:45.9199649Z /* assert on the output */
+2026-07-01T06:23:45.9200384Z 
+2026-07-01T06:23:45.9201422Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9202488Z 
+2026-07-01T06:23:45.9281354Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mselection-captured event handling[2m > [22m[2mdoes not open overlay for hotkey with empty text
+2026-07-01T06:23:45.9283522Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9284294Z 
+2026-07-01T06:23:45.9285028Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9285755Z 
+2026-07-01T06:23:45.9286059Z act(() => {
+2026-07-01T06:23:45.9286620Z   /* fire events that update state */
+2026-07-01T06:23:45.9287206Z });
+2026-07-01T06:23:45.9287712Z /* assert on the output */
+2026-07-01T06:23:45.9288134Z 
+2026-07-01T06:23:45.9289431Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9290930Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9296169Z 
+2026-07-01T06:23:45.9297033Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9297805Z 
+2026-07-01T06:23:45.9298110Z act(() => {
+2026-07-01T06:23:45.9298770Z   /* fire events that update state */
+2026-07-01T06:23:45.9299604Z });
+2026-07-01T06:23:45.9300132Z /* assert on the output */
+2026-07-01T06:23:45.9300566Z 
+2026-07-01T06:23:45.9301666Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9305617Z 
+2026-07-01T06:23:45.9335333Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2mprovider selection[2m > [22m[2mAWS Bedrock is selected by default
+2026-07-01T06:23:45.9338040Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9338819Z 
+2026-07-01T06:23:45.9339701Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9340428Z 
+2026-07-01T06:23:45.9340715Z act(() => {
+2026-07-01T06:23:45.9341270Z   /* fire events that update state */
+2026-07-01T06:23:45.9341837Z });
+2026-07-01T06:23:45.9342309Z /* assert on the output */
+2026-07-01T06:23:45.9342712Z 
+2026-07-01T06:23:45.9343772Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9345305Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9345984Z 
+2026-07-01T06:23:45.9346659Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9348494Z 
+2026-07-01T06:23:45.9349103Z act(() => {
+2026-07-01T06:23:45.9349687Z   /* fire events that update state */
+2026-07-01T06:23:45.9350298Z });
+2026-07-01T06:23:45.9350801Z /* assert on the output */
+2026-07-01T06:23:45.9351231Z 
+2026-07-01T06:23:45.9352288Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9353365Z 
+2026-07-01T06:23:45.9355342Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mselection-captured event handling[2m > [22m[2mopens overlay for non-hotkey source even with empty text
+2026-07-01T06:23:45.9362327Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9363089Z 
+2026-07-01T06:23:45.9363795Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9364511Z 
+2026-07-01T06:23:45.9364810Z act(() => {
+2026-07-01T06:23:45.9365354Z   /* fire events that update state */
+2026-07-01T06:23:45.9365956Z });
+2026-07-01T06:23:45.9366456Z /* assert on the output */
+2026-07-01T06:23:45.9366871Z 
+2026-07-01T06:23:45.9368307Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9369980Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9370636Z 
+2026-07-01T06:23:45.9371341Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9372044Z 
+2026-07-01T06:23:45.9372337Z act(() => {
+2026-07-01T06:23:45.9372894Z   /* fire events that update state */
+2026-07-01T06:23:45.9373471Z });
+2026-07-01T06:23:45.9373964Z /* assert on the output */
+2026-07-01T06:23:45.9374391Z 
+2026-07-01T06:23:45.9375437Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9376447Z 
+2026-07-01T06:23:45.9411913Z [90mstderr[2m | src/App.test.tsx[2m > [22m[2mApp[2m > [22m[2mhide_window command[2m > [22m[2mhandleHide calls invokeCmd with hide_window
+2026-07-01T06:23:45.9414342Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9415088Z 
+2026-07-01T06:23:45.9415774Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9416481Z 
+2026-07-01T06:23:45.9416777Z act(() => {
+2026-07-01T06:23:45.9417323Z   /* fire events that update state */
+2026-07-01T06:23:45.9417922Z });
+2026-07-01T06:23:45.9418439Z /* assert on the output */
+2026-07-01T06:23:45.9419132Z 
+2026-07-01T06:23:45.9420226Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9421665Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:45.9422310Z 
+2026-07-01T06:23:45.9422969Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:45.9424846Z 
+2026-07-01T06:23:45.9425197Z act(() => {
+2026-07-01T06:23:45.9429666Z   /* fire events that update state */
+2026-07-01T06:23:45.9430252Z });
+2026-07-01T06:23:45.9430704Z /* assert on the output */
+2026-07-01T06:23:45.9431055Z 
+2026-07-01T06:23:45.9432078Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:45.9433050Z 
+2026-07-01T06:23:45.9441448Z  [32m✓[39m src/App.test.tsx [2m([22m[2m26 tests[22m[2m)[22m[33m 860[2mms[22m[39m
+2026-07-01T06:23:46.0898548Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2mmodel selection[2m > [22m[2mrenders model dropdown
+2026-07-01T06:23:46.0900764Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.0901472Z 
+2026-07-01T06:23:46.0902137Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.0902812Z 
+2026-07-01T06:23:46.0903069Z act(() => {
+2026-07-01T06:23:46.0903619Z   /* fire events that update state */
+2026-07-01T06:23:46.0904144Z });
+2026-07-01T06:23:46.0904591Z /* assert on the output */
+2026-07-01T06:23:46.0904939Z 
+2026-07-01T06:23:46.0905969Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.0907398Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.0908007Z 
+2026-07-01T06:23:46.0909324Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.0910116Z 
+2026-07-01T06:23:46.0910357Z act(() => {
+2026-07-01T06:23:46.0910863Z   /* fire events that update state */
+2026-07-01T06:23:46.0911394Z });
+2026-07-01T06:23:46.0911844Z /* assert on the output */
+2026-07-01T06:23:46.0912208Z 
+2026-07-01T06:23:46.0913211Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.0915863Z 
+2026-07-01T06:23:46.1869453Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2mmodel selection[2m > [22m[2mrenders refresh button for providers with fetchModels
+2026-07-01T06:23:46.1871359Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.1871895Z 
+2026-07-01T06:23:46.1872489Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.1873036Z 
+2026-07-01T06:23:46.1873171Z act(() => {
+2026-07-01T06:23:46.1873555Z   /* fire events that update state */
+2026-07-01T06:23:46.1873992Z });
+2026-07-01T06:23:46.1874326Z /* assert on the output */
+2026-07-01T06:23:46.1874557Z 
+2026-07-01T06:23:46.1875419Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.1876639Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.1877146Z 
+2026-07-01T06:23:46.1877666Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.1878196Z 
+2026-07-01T06:23:46.1878338Z act(() => {
+2026-07-01T06:23:46.1878712Z   /* fire events that update state */
+2026-07-01T06:23:46.1879323Z });
+2026-07-01T06:23:46.1879655Z /* assert on the output */
+2026-07-01T06:23:46.1879899Z 
+2026-07-01T06:23:46.1880814Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.1881616Z 
+2026-07-01T06:23:46.5296952Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2msystem prompt[2m > [22m[2mrenders system prompt textarea
+2026-07-01T06:23:46.5300391Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.5301162Z 
+2026-07-01T06:23:46.5301834Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.5302627Z 
+2026-07-01T06:23:46.5302933Z act(() => {
+2026-07-01T06:23:46.5303501Z   /* fire events that update state */
+2026-07-01T06:23:46.5304092Z });
+2026-07-01T06:23:46.5304598Z /* assert on the output */
+2026-07-01T06:23:46.5305017Z 
+2026-07-01T06:23:46.5306108Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.5307624Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.5308293Z 
+2026-07-01T06:23:46.5309185Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.5309904Z 
+2026-07-01T06:23:46.5310198Z act(() => {
+2026-07-01T06:23:46.5310746Z   /* fire events that update state */
+2026-07-01T06:23:46.5311324Z });
+2026-07-01T06:23:46.5311824Z /* assert on the output */
+2026-07-01T06:23:46.5312241Z 
+2026-07-01T06:23:46.5313259Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.5314352Z 
+2026-07-01T06:23:46.5423041Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2msystem prompt[2m > [22m[2mshows language indicator
+2026-07-01T06:23:46.5425819Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.5426588Z 
+2026-07-01T06:23:46.5428018Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.5429034Z 
+2026-07-01T06:23:46.5429364Z act(() => {
+2026-07-01T06:23:46.5429940Z   /* fire events that update state */
+2026-07-01T06:23:46.5430542Z });
+2026-07-01T06:23:46.5431059Z /* assert on the output */
+2026-07-01T06:23:46.5431463Z 
+2026-07-01T06:23:46.5432534Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.5434023Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.5435018Z 
+2026-07-01T06:23:46.5435701Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.5436405Z 
+2026-07-01T06:23:46.5436720Z act(() => {
+2026-07-01T06:23:46.5437253Z   /* fire events that update state */
+2026-07-01T06:23:46.5437824Z });
+2026-07-01T06:23:46.5438309Z /* assert on the output */
+2026-07-01T06:23:46.5438741Z 
+2026-07-01T06:23:46.5440033Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.5442164Z 
+2026-07-01T06:23:46.6144761Z [90mstderr[2m | src/components/__tests__/SettingsWindow.test.tsx[2m > [22m[2mSettingsWindow[2m > [22m[2mconfirm button[2m > [22m[2mrenders Confirm button
+2026-07-01T06:23:46.6146722Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.6151367Z 
+2026-07-01T06:23:46.6152263Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.6152982Z 
+2026-07-01T06:23:46.6153271Z act(() => {
+2026-07-01T06:23:46.6153809Z   /* fire events that update state */
+2026-07-01T06:23:46.6154389Z });
+2026-07-01T06:23:46.6154879Z /* assert on the output */
+2026-07-01T06:23:46.6155276Z 
+2026-07-01T06:23:46.6156338Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.6157726Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.6158361Z 
+2026-07-01T06:23:46.6159213Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.6159905Z 
+2026-07-01T06:23:46.6160197Z act(() => {
+2026-07-01T06:23:46.6160724Z   /* fire events that update state */
+2026-07-01T06:23:46.6161268Z });
+2026-07-01T06:23:46.6161735Z /* assert on the output */
+2026-07-01T06:23:46.6162132Z 
+2026-07-01T06:23:46.6163171Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.6164096Z 
+2026-07-01T06:23:46.7914077Z  [32m✓[39m src/utils/__tests__/providers.test.ts [2m([22m[2m22 tests[22m[2m)[22m[32m 20[2mms[22m[39m
+2026-07-01T06:23:46.9442442Z [90mstderr[2m | src/context/__tests__/SettingsContext.test.tsx[2m > [22m[2mSettingsContext[2m > [22m[2mSettingsProvider[2m > [22m[2mprovides default settings
+2026-07-01T06:23:46.9444571Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.9446199Z 
+2026-07-01T06:23:46.9447330Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.9448083Z 
+2026-07-01T06:23:46.9448420Z act(() => {
+2026-07-01T06:23:46.9449204Z   /* fire events that update state */
+2026-07-01T06:23:46.9449839Z });
+2026-07-01T06:23:46.9451886Z /* assert on the output */
+2026-07-01T06:23:46.9452469Z 
+2026-07-01T06:23:46.9453627Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.9455171Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.9455846Z 
+2026-07-01T06:23:46.9456543Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.9457286Z 
+2026-07-01T06:23:46.9458104Z act(() => {
+2026-07-01T06:23:46.9458727Z   /* fire events that update state */
+2026-07-01T06:23:46.9459580Z });
+2026-07-01T06:23:46.9460120Z /* assert on the output */
+2026-07-01T06:23:46.9460587Z 
+2026-07-01T06:23:46.9481962Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.9482827Z 
+2026-07-01T06:23:46.9504503Z  [32m✓[39m src/components/__tests__/SettingsWindow.test.tsx [2m([22m[2m34 tests[22m[2m)[22m[33m 1864[2mms[22m[39m
+2026-07-01T06:23:46.9522474Z [90mstderr[2m | src/context/__tests__/SettingsContext.test.tsx[2m > [22m[2mSettingsContext[2m > [22m[2mSettingsProvider[2m > [22m[2mprovides activeProviderDef matching activeProvider
+2026-07-01T06:23:46.9530285Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.9552859Z 
+2026-07-01T06:23:46.9597398Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.9621718Z 
+2026-07-01T06:23:46.9649624Z act(() => {
+2026-07-01T06:23:46.9679558Z   /* fire events that update state */
+2026-07-01T06:23:46.9680321Z });
+2026-07-01T06:23:46.9680697Z /* assert on the output */
+2026-07-01T06:23:46.9680973Z 
+2026-07-01T06:23:46.9681970Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.9683290Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.9683819Z 
+2026-07-01T06:23:46.9684352Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.9684886Z 
+2026-07-01T06:23:46.9685020Z act(() => {
+2026-07-01T06:23:46.9685387Z   /* fire events that update state */
+2026-07-01T06:23:46.9685797Z });
+2026-07-01T06:23:46.9686134Z /* assert on the output */
+2026-07-01T06:23:46.9686375Z 
+2026-07-01T06:23:46.9687349Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.9688160Z 
+2026-07-01T06:23:46.9689991Z [90mstderr[2m | src/context/__tests__/SettingsContext.test.tsx[2m > [22m[2mSettingsContext[2m > [22m[2mSettingsProvider[2m > [22m[2mprovides translations for current language
+2026-07-01T06:23:46.9691700Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.9692222Z 
+2026-07-01T06:23:46.9692771Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.9693311Z 
+2026-07-01T06:23:46.9693452Z act(() => {
+2026-07-01T06:23:46.9693819Z   /* fire events that update state */
+2026-07-01T06:23:46.9694228Z });
+2026-07-01T06:23:46.9694569Z /* assert on the output */
+2026-07-01T06:23:46.9694829Z 
+2026-07-01T06:23:46.9695735Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.9697022Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:46.9697496Z 
+2026-07-01T06:23:46.9698027Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:46.9698588Z 
+2026-07-01T06:23:46.9698716Z act(() => {
+2026-07-01T06:23:46.9699308Z   /* fire events that update state */
+2026-07-01T06:23:46.9699724Z });
+2026-07-01T06:23:46.9700077Z /* assert on the output */
+2026-07-01T06:23:46.9700320Z 
+2026-07-01T06:23:46.9701243Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:46.9702107Z 
+2026-07-01T06:23:47.2469142Z [90mstderr[2m | src/context/__tests__/SettingsContext.test.tsx[2m > [22m[2mSettingsContext[2m > [22m[2mcross-window sync[2m > [22m[2mupdates state when storage event fires
+2026-07-01T06:23:47.2500503Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:47.2519753Z 
+2026-07-01T06:23:47.2544162Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:47.2569475Z 
+2026-07-01T06:23:47.2570619Z  [32m✓[39m src/context/__tests__/SettingsContext.test.tsx [2m([22m[2m15 tests[22m[2m)[22m[33m 378[2mms[22m[39m
+2026-07-01T06:23:47.2571692Z act(() => {
+2026-07-01T06:23:47.2599590Z   /* fire events that update state */
+2026-07-01T06:23:47.2611305Z });
+2026-07-01T06:23:47.2611770Z /* assert on the output */
+2026-07-01T06:23:47.2612125Z 
+2026-07-01T06:23:47.2613570Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:47.2614973Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:47.2615565Z 
+2026-07-01T06:23:47.2640069Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:47.2640659Z 
+2026-07-01T06:23:47.2640833Z act(() => {
+2026-07-01T06:23:47.2641237Z   /* fire events that update state */
+2026-07-01T06:23:47.2641658Z });
+2026-07-01T06:23:47.2641995Z /* assert on the output */
+2026-07-01T06:23:47.2642252Z 
+2026-07-01T06:23:47.2643165Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:47.2643965Z 
+2026-07-01T06:23:47.2645443Z [90mstderr[2m | src/context/__tests__/SettingsContext.test.tsx[2m > [22m[2mSettingsContext[2m > [22m[2mcross-window sync[2m > [22m[2mignores storage events for other keys
+2026-07-01T06:23:47.2647021Z [22m[39mAn update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:47.2647527Z 
+2026-07-01T06:23:47.2648105Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:47.2648649Z 
+2026-07-01T06:23:47.2648794Z act(() => {
+2026-07-01T06:23:47.2649430Z   /* fire events that update state */
+2026-07-01T06:23:47.2649868Z });
+2026-07-01T06:23:47.2650206Z /* assert on the output */
+2026-07-01T06:23:47.2650466Z 
+2026-07-01T06:23:47.2651371Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:47.2652603Z An update to SettingsProvider inside a test was not wrapped in act(...).
+2026-07-01T06:23:47.2653050Z 
+2026-07-01T06:23:47.2653565Z When testing, code that causes React state updates should be wrapped into act(...):
+2026-07-01T06:23:47.2654082Z 
+2026-07-01T06:23:47.2654229Z act(() => {
+2026-07-01T06:23:47.2654602Z   /* fire events that update state */
+2026-07-01T06:23:47.2655017Z });
+2026-07-01T06:23:47.2655352Z /* assert on the output */
+2026-07-01T06:23:47.2655594Z 
+2026-07-01T06:23:47.2656499Z This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+2026-07-01T06:23:47.2657297Z 
+2026-07-01T06:23:47.6087969Z  [32m✓[39m src/utils/__tests__/settings.test.ts [2m([22m[2m14 tests[22m[2m)[22m[32m 9[2mms[22m[39m
+2026-07-01T06:23:47.8106503Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2minvokeCmd() in browser mode[2m > [22m[2mreturns mock caret position for get_caret_position
+2026-07-01T06:23:47.8108540Z [22m[39m[Tauri Mock] Invoke command: "get_caret_position" [90mundefined[39m
+2026-07-01T06:23:47.8109332Z 
+2026-07-01T06:23:47.8118035Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2minvokeCmd() in browser mode[2m > [22m[2mreturns true and shows alert for paste_text
+2026-07-01T06:23:47.8120322Z [22m[39m[Tauri Mock] Invoke command: "paste_text" { text: [32m'test paste'[39m }
+2026-07-01T06:23:47.8121322Z [Pasted Back]: "test paste"
+2026-07-01T06:23:47.8121772Z 
+2026-07-01T06:23:47.8140750Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2minvokeCmd() in browser mode[2m > [22m[2mreturns true for hide_window
+2026-07-01T06:23:47.8142745Z [22m[39m[Tauri Mock] Invoke command: "hide_window" [90mundefined[39m
+2026-07-01T06:23:47.8146075Z [Tauri Mock] Window hidden
+2026-07-01T06:23:47.8146516Z 
+2026-07-01T06:23:47.8151191Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2minvokeCmd() in browser mode[2m > [22m[2mreturns null for unknown commands
+2026-07-01T06:23:47.8153169Z [22m[39m[Tauri Mock] Invoke command: "unknown_command" [90mundefined[39m
+2026-07-01T06:23:47.8154875Z 
+2026-07-01T06:23:47.8160956Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2mlistenEvent() in browser mode[2m > [22m[2mregisters listener and returns unsubscribe function
+2026-07-01T06:23:47.8162966Z [22m[39m[Tauri Mock] Registered listener for event: "test-event"
+2026-07-01T06:23:47.8163673Z 
+2026-07-01T06:23:47.8168165Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2mlistenEvent() in browser mode[2m > [22m[2mcalls handler when triggerMockEvent is called
+2026-07-01T06:23:47.8170274Z [22m[39m[Tauri Mock] Registered listener for event: "my-event"
+2026-07-01T06:23:47.8170980Z 
+2026-07-01T06:23:47.8176544Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2mlistenEvent() in browser mode[2m > [22m[2mcalls handler when triggerMockEvent is called
+2026-07-01T06:23:47.8178775Z [22m[39m[Tauri Mock] Triggering event "my-event" with payload: { data: [32m'test'[39m }
+2026-07-01T06:23:47.8181013Z 
+2026-07-01T06:23:47.8182720Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2mlistenEvent() in browser mode[2m > [22m[2munsubscribe stops receiving events
+2026-07-01T06:23:47.8184324Z [22m[39m[Tauri Mock] Registered listener for event: "my-event"
+2026-07-01T06:23:47.8184760Z 
+2026-07-01T06:23:47.8186183Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2mlistenEvent() in browser mode[2m > [22m[2munsubscribe stops receiving events
+2026-07-01T06:23:47.8187689Z [22m[39m[Tauri Mock] Unsubscribed listener from event: "my-event"
+2026-07-01T06:23:47.8188775Z [Tauri Mock] Triggering event "my-event" with payload: { data: [32m'test'[39m }
+2026-07-01T06:23:47.8189483Z 
+2026-07-01T06:23:47.8192074Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2mlistenEvent() in browser mode[2m > [22m[2mmultiple listeners receive same event
+2026-07-01T06:23:47.8194058Z [22m[39m[Tauri Mock] Registered listener for event: "shared-event"
+2026-07-01T06:23:47.8195707Z 
+2026-07-01T06:23:47.8197465Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2mlistenEvent() in browser mode[2m > [22m[2mmultiple listeners receive same event
+2026-07-01T06:23:47.8200138Z [22m[39m[Tauri Mock] Registered listener for event: "shared-event"
+2026-07-01T06:23:47.8200913Z 
+2026-07-01T06:23:47.8202540Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2mlistenEvent() in browser mode[2m > [22m[2mmultiple listeners receive same event
+2026-07-01T06:23:47.8204580Z [22m[39m[Tauri Mock] Triggering event "shared-event" with payload: { value: [33m42[39m }
+2026-07-01T06:23:47.8205372Z 
+2026-07-01T06:23:47.8209819Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2mtriggerMockEvent()[2m > [22m[2mtriggers event only for matching event name
+2026-07-01T06:23:47.8211606Z [22m[39m[Tauri Mock] Registered listener for event: "event-a"
+2026-07-01T06:23:47.8212286Z 
+2026-07-01T06:23:47.8213827Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2mtriggerMockEvent()[2m > [22m[2mtriggers event only for matching event name
+2026-07-01T06:23:47.8216689Z [22m[39m[Tauri Mock] Registered listener for event: "event-b"
+2026-07-01T06:23:47.8217633Z 
+2026-07-01T06:23:47.8219474Z [90mstdout[2m | src/utils/__tests__/tauriBridge.test.ts[2m > [22m[2mtauriBridge[2m > [22m[2mtriggerMockEvent()[2m > [22m[2mtriggers event only for matching event name
+2026-07-01T06:23:47.8221434Z [22m[39m[Tauri Mock] Triggering event "event-a" with payload: { x: [33m1[39m }
+2026-07-01T06:23:47.8227091Z 
+2026-07-01T06:23:47.8247571Z  [32m✓[39m src/utils/__tests__/tauriBridge.test.ts [2m([22m[2m14 tests[22m[2m)[22m[32m 17[2mms[22m[39m
+2026-07-01T06:23:48.0108573Z  [32m✓[39m src/utils/__tests__/i18n.test.ts [2m([22m[2m10 tests[22m[2m)[22m[32m 7[2mms[22m[39m
+2026-07-01T06:23:48.0280032Z 
+2026-07-01T06:23:48.0286462Z [2m Test Files [22m [1m[32m8 passed[39m[22m[90m (8)[39m
+2026-07-01T06:23:48.0287424Z [2m      Tests [22m [1m[32m155 passed[39m[22m[90m (155)[39m
+2026-07-01T06:23:48.0288103Z [2m   Start at [22m 06:23:44
+2026-07-01T06:23:48.0290069Z [2m   Duration [22m 4.00s[2m (transform 343ms, setup 994ms, collect 818ms, tests 3.96s, environment 3.53s, prepare 699ms)[22m
+2026-07-01T06:23:48.0290810Z 
+2026-07-01T06:23:48.1612384Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-01T06:23:48.1613557Z Post job cleanup.
+2026-07-01T06:23:48.2846414Z (node:2608) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-07-01T06:23:48.2847266Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-07-01T06:23:48.3069781Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/dadumi/dadumi --files-from manifest.txt --use-compress-program zstdmt
+2026-07-01T06:23:48.5412304Z (node:2608) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-07-01T06:23:49.3658429Z Sent 39445775 of 39445775 (100.0%), 45.1 MBs/sec
+2026-07-01T06:23:49.4994868Z Cache saved with the key: node-cache-Linux-x64-npm-80c11dc91f76123336f0f580eeaee2379315ec47191dddb84aeb1bd3c87e3ef8
+2026-07-01T06:23:49.5163087Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+2026-07-01T06:23:49.5164291Z Post job cleanup.
+2026-07-01T06:23:49.5988666Z [command]/usr/bin/git version
+2026-07-01T06:23:49.6024960Z git version 2.54.0
+2026-07-01T06:23:49.6092565Z Temporarily overriding HOME='/home/runner/work/_temp/7f78721a-e2c2-4ce2-9fde-90f2906af5a0' before making global git config changes
+2026-07-01T06:23:49.6094031Z Adding repository directory to the temporary git global config as a safe directory
+2026-07-01T06:23:49.6098309Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/dadumi/dadumi
+2026-07-01T06:23:49.6134818Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-07-01T06:23:49.6169779Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-07-01T06:23:49.6406348Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-07-01T06:23:49.6433111Z http.https://github.com/.extraheader
+2026-07-01T06:23:49.6443953Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-07-01T06:23:49.6476935Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-07-01T06:23:49.6715760Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-07-01T06:23:49.6749035Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-07-01T06:23:49.7118413Z Cleaning up orphan processes
+2026-07-01T06:23:49.7436057Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

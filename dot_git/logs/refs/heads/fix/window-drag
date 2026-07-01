@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 ea46b4ba4df7e817f0a964dfe96ff3d66f346fe3 gayeon337 <gayeon337.lee@lge.com> 1782720317 +0900	branch: Created from develop
+ea46b4ba4df7e817f0a964dfe96ff3d66f346fe3 44c4801ac6e2ed7fc01ce6adeb924aa391ec08e9 gayeon337 <gayeon337.lee@lge.com> 1782720364 +0900	commit: fix: draggable app for windows
+44c4801ac6e2ed7fc01ce6adeb924aa391ec08e9 b87d26eafcf395985d556527d71c99e93ede6735 gayeon337 <gayeon337.lee@lge.com> 1782781800 +0900	commit: Add test cases
+b87d26eafcf395985d556527d71c99e93ede6735 44c4801ac6e2ed7fc01ce6adeb924aa391ec08e9 gayeon337 <gayeon337.lee@lge.com> 1782781815 +0900	reset: moving to HEAD~1

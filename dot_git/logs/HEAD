@@ -1,0 +1,269 @@
+0000000000000000000000000000000000000000 1cb862ec7e839a763060013e94e4327dcd2d81e4 its-gayeon <gayeonl0007@gmail.com> 1782108528 +0900	commit (initial): :tada: initial commit
+1cb862ec7e839a763060013e94e4327dcd2d81e4 0000000000000000000000000000000000000000 its-gayeon <gayeonl0007@gmail.com> 1782108534 +0900	Branch: renamed refs/heads/main to refs/heads/main
+1cb862ec7e839a763060013e94e4327dcd2d81e4 1cb862ec7e839a763060013e94e4327dcd2d81e4 its-gayeon <gayeonl0007@gmail.com> 1782108534 +0900	Branch: renamed refs/heads/main to refs/heads/main
+1cb862ec7e839a763060013e94e4327dcd2d81e4 0000000000000000000000000000000000000000 its-gayeon <gayeonl0007@gmail.com> 1782110251 +0900	Branch: renamed refs/heads/main to refs/heads/main
+1cb862ec7e839a763060013e94e4327dcd2d81e4 1cb862ec7e839a763060013e94e4327dcd2d81e4 its-gayeon <gayeonl0007@gmail.com> 1782110251 +0900	Branch: renamed refs/heads/main to refs/heads/main
+1cb862ec7e839a763060013e94e4327dcd2d81e4 f7f2372568bc98291721785ce143102afbf9adba gayeon337 <gayeon337.lee@lge.com> 1782176366 +0900	commit: Fix inconsistent shadow on transparent native window
+f7f2372568bc98291721785ce143102afbf9adba 3270504d44a2e8f49d9ba52cd671e562cb0efaa9 gayeon337 <gayeon337.lee@lge.com> 1782176377 +0900	commit: Add window drag support and fix cursor-relative positioning
+3270504d44a2e8f49d9ba52cd671e562cb0efaa9 c0f1ff061c0e7fd39e5f5d44409538f6216fc2d7 gayeon337 <gayeon337.lee@lge.com> 1782176618 +0900	checkout: moving from main to fix/overlay-shadow-and-drag
+c0f1ff061c0e7fd39e5f5d44409538f6216fc2d7 8aff47129b27202805909edc1176553df854b9cc gayeon337 <gayeon337.lee@lge.com> 1782176622 +0900	cherry-pick: Fix inconsistent shadow on transparent native window
+8aff47129b27202805909edc1176553df854b9cc 10597752e55068b2d56a7b94483efdb42292717b gayeon337 <gayeon337.lee@lge.com> 1782176622 +0900	cherry-pick: Add window drag support and fix cursor-relative positioning
+10597752e55068b2d56a7b94483efdb42292717b 3270504d44a2e8f49d9ba52cd671e562cb0efaa9 gayeon337 <gayeon337.lee@lge.com> 1782176624 +0900	checkout: moving from fix/overlay-shadow-and-drag to main
+3270504d44a2e8f49d9ba52cd671e562cb0efaa9 c0f1ff061c0e7fd39e5f5d44409538f6216fc2d7 gayeon337 <gayeon337.lee@lge.com> 1782176624 +0900	reset: moving to origin/main
+c0f1ff061c0e7fd39e5f5d44409538f6216fc2d7 10597752e55068b2d56a7b94483efdb42292717b gayeon337 <gayeon337.lee@lge.com> 1782178497 +0900	checkout: moving from main to fix/overlay-shadow-and-drag
+10597752e55068b2d56a7b94483efdb42292717b 6f7e550f86bfcf8677163e314fb13ecf778b6636 gayeon337 <gayeon337.lee@lge.com> 1782179384 +0900	checkout: moving from fix/overlay-shadow-and-drag to develop
+6f7e550f86bfcf8677163e314fb13ecf778b6636 10597752e55068b2d56a7b94483efdb42292717b gayeon337 <gayeon337.lee@lge.com> 1782179555 +0900	checkout: moving from develop to fix/overlay-shadow-and-drag
+10597752e55068b2d56a7b94483efdb42292717b 10597752e55068b2d56a7b94483efdb42292717b gayeon337 <gayeon337.lee@lge.com> 1782179555 +0900	rebase (start): checkout c0f1ff061c0e7fd39e5f5d44409538f6216fc2d7
+10597752e55068b2d56a7b94483efdb42292717b 10597752e55068b2d56a7b94483efdb42292717b gayeon337 <gayeon337.lee@lge.com> 1782179555 +0900	rebase (finish): returning to refs/heads/fix/overlay-shadow-and-drag
+10597752e55068b2d56a7b94483efdb42292717b d0011aa8696d33e974990969f07da74489515657 gayeon337 <gayeon337.lee@lge.com> 1782176622 +0900	filter-branch: rewrite
+d0011aa8696d33e974990969f07da74489515657 6f7e550f86bfcf8677163e314fb13ecf778b6636 gayeon337 <gayeon337.lee@lge.com> 1782190406 +0900	checkout: moving from fix/overlay-shadow-and-drag to develop
+6f7e550f86bfcf8677163e314fb13ecf778b6636 b75c8ac4419af3350d781de9f2ae705af6eca2fb gayeon337 <gayeon337.lee@lge.com> 1782190411 +0900	pull: Fast-forward
+b75c8ac4419af3350d781de9f2ae705af6eca2fb d0011aa8696d33e974990969f07da74489515657 gayeon337 <gayeon337.lee@lge.com> 1782194719 +0900	checkout: moving from develop to fix/overlay-shadow-and-drag
+d0011aa8696d33e974990969f07da74489515657 b75c8ac4419af3350d781de9f2ae705af6eca2fb gayeon337 <gayeon337.lee@lge.com> 1782194734 +0900	checkout: moving from fix/overlay-shadow-and-drag to develop
+b75c8ac4419af3350d781de9f2ae705af6eca2fb b75c8ac4419af3350d781de9f2ae705af6eca2fb gayeon337 <gayeon337.lee@lge.com> 1782194734 +0900	checkout: moving from develop to fix/windows-multimonitor-position
+b75c8ac4419af3350d781de9f2ae705af6eca2fb d9f0bf586634b2cef779bf98dfc3def7432903d7 gayeon337 <gayeon337.lee@lge.com> 1782194771 +0900	commit: Fix window appearing between monitors on Windows multi-screen setup
+d9f0bf586634b2cef779bf98dfc3def7432903d7 d9f0bf586634b2cef779bf98dfc3def7432903d7 gayeon337 <gayeon337.lee@lge.com> 1782197370 +0900	checkout: moving from fix/windows-multimonitor-position to feature/amazon-bedrock
+d9f0bf586634b2cef779bf98dfc3def7432903d7 be8617a455598e245185845f3b7770b69f287cfc gayeon337 <gayeon337.lee@lge.com> 1782197523 +0900	commit: feat: replace Gemini with Amazon Bedrock API
+be8617a455598e245185845f3b7770b69f287cfc b75c8ac4419af3350d781de9f2ae705af6eca2fb gayeon337 <gayeon337.lee@lge.com> 1782198212 +0900	rebase (start): checkout develop
+b75c8ac4419af3350d781de9f2ae705af6eca2fb 8b2b956e744cbb57e243bef672495b466adc2318 gayeon337 <gayeon337.lee@lge.com> 1782198212 +0900	rebase (pick): feat: replace Gemini with Amazon Bedrock API
+8b2b956e744cbb57e243bef672495b466adc2318 8b2b956e744cbb57e243bef672495b466adc2318 gayeon337 <gayeon337.lee@lge.com> 1782198212 +0900	rebase (finish): returning to refs/heads/feature/amazon-bedrock
+8b2b956e744cbb57e243bef672495b466adc2318 b75c8ac4419af3350d781de9f2ae705af6eca2fb gayeon337 <gayeon337.lee@lge.com> 1782198328 +0900	checkout: moving from feature/amazon-bedrock to develop
+b75c8ac4419af3350d781de9f2ae705af6eca2fb 05899749a1225d174543ad962819a30008bc382c gayeon337 <gayeon337.lee@lge.com> 1782198328 +0900	merge origin/develop: Fast-forward
+05899749a1225d174543ad962819a30008bc382c 8b2b956e744cbb57e243bef672495b466adc2318 gayeon337 <gayeon337.lee@lge.com> 1782198332 +0900	checkout: moving from develop to feature/amazon-bedrock
+8b2b956e744cbb57e243bef672495b466adc2318 05899749a1225d174543ad962819a30008bc382c gayeon337 <gayeon337.lee@lge.com> 1782198332 +0900	rebase (start): checkout develop
+05899749a1225d174543ad962819a30008bc382c 496f781158b1abdfa247b9bba4f2efa2485d25b0 gayeon337 <gayeon337.lee@lge.com> 1782198332 +0900	rebase (pick): feat: replace Gemini with Amazon Bedrock API
+496f781158b1abdfa247b9bba4f2efa2485d25b0 496f781158b1abdfa247b9bba4f2efa2485d25b0 gayeon337 <gayeon337.lee@lge.com> 1782198332 +0900	rebase (finish): returning to refs/heads/feature/amazon-bedrock
+496f781158b1abdfa247b9bba4f2efa2485d25b0 87a5f863bf3f5532d68aad2ebda291e793ffa698 gayeon337 <gayeon337.lee@lge.com> 1782198841 +0900	commit: fix: simplify Bedrock auth to single Bearer token API key
+87a5f863bf3f5532d68aad2ebda291e793ffa698 c80156a2de9afbfcc62fd1da6edcd1eac580a050 gayeon337 <gayeon337.lee@lge.com> 1782199202 +0900	commit: fix: update Bedrock model IDs to Haiku 4.5, drop us.* prefix
+c80156a2de9afbfcc62fd1da6edcd1eac580a050 dae2abbac248afbda52512f432f70254cdc78251 gayeon337 <gayeon337.lee@lge.com> 1782199638 +0900	commit: fix: restore us.* inference profile IDs for Bedrock models
+dae2abbac248afbda52512f432f70254cdc78251 a259bd4d409b5749900334bd397d6013a18ac056 gayeon337 <gayeon337.lee@lge.com> 1782199764 +0900	commit: fix: migrate stale bare anthropic.* model IDs to us.* on mount
+a259bd4d409b5749900334bd397d6013a18ac056 7daff91f809a5cd53d42427c6d810e972b6f4b0f gayeon337 <gayeon337.lee@lge.com> 1782199809 +0900	revert: Revert "fix: migrate stale bare anthropic.* model IDs to us.* on mount"
+7daff91f809a5cd53d42427c6d810e972b6f4b0f 04dd329e5f8be23a8a8dcb10769195464f75d948 gayeon337 <gayeon337.lee@lge.com> 1782199832 +0900	commit: fix: default region to ap-southeast-2, use ap.* inference profile IDs
+04dd329e5f8be23a8a8dcb10769195464f75d948 109927fe63c177bc2e9bf36ad9490b7bd239830e gayeon337 <gayeon337.lee@lge.com> 1782200163 +0900	commit: fix: switch to bedrock-mantle endpoint with dateless model IDs
+109927fe63c177bc2e9bf36ad9490b7bd239830e 05899749a1225d174543ad962819a30008bc382c gayeon337 <gayeon337.lee@lge.com> 1782200387 +0900	reset: moving to 0589974
+05899749a1225d174543ad962819a30008bc382c 1bcaf0f208c3451c1493ccd0eb65d5abbc3c5c85 gayeon337 <gayeon337.lee@lge.com> 1782200511 +0900	commit: feat: replace Gemini with Amazon Bedrock Converse API
+1bcaf0f208c3451c1493ccd0eb65d5abbc3c5c85 1bcaf0f208c3451c1493ccd0eb65d5abbc3c5c85 gayeon337 <gayeon337.lee@lge.com> 1782258302 +0900	checkout: moving from feature/amazon-bedrock to ponytail/trim-overengineering
+1bcaf0f208c3451c1493ccd0eb65d5abbc3c5c85 8bb8af7ec2a4835c19faf591f8076cb56d5affac gayeon337 <gayeon337.lee@lge.com> 1782258569 +0900	commit: chore: remove dead code and over-engineering
+8bb8af7ec2a4835c19faf591f8076cb56d5affac 25ba6e03c4d4150b154e4aa468851925d43e00f6 gayeon337 <gayeon337.lee@lge.com> 1782258801 +0900	commit (amend): chore: remove dead code and over-engineering
+25ba6e03c4d4150b154e4aa468851925d43e00f6 ab8ab09320e16eaea7882ad79a7ecf09e5ab638c gayeon337 <gayeon337.lee@lge.com> 1782258846 +0900	commit: chore: ignore .opencode directory
+ab8ab09320e16eaea7882ad79a7ecf09e5ab638c 05899749a1225d174543ad962819a30008bc382c gayeon337 <gayeon337.lee@lge.com> 1782258849 +0900	rebase (start): checkout develop
+05899749a1225d174543ad962819a30008bc382c ab8ab09320e16eaea7882ad79a7ecf09e5ab638c gayeon337 <gayeon337.lee@lge.com> 1782259009 +0900	rebase (abort): returning to refs/heads/ponytail/trim-overengineering
+ab8ab09320e16eaea7882ad79a7ecf09e5ab638c 05899749a1225d174543ad962819a30008bc382c gayeon337 <gayeon337.lee@lge.com> 1782259017 +0900	rebase (start): checkout develop
+05899749a1225d174543ad962819a30008bc382c 4e366d18c477d2d4397e0e596155fa3f22e30b49 gayeon337 <gayeon337.lee@lge.com> 1782259021 +0900	rebase (continue): chore: remove dead code and over-engineering
+4e366d18c477d2d4397e0e596155fa3f22e30b49 e0b594acd6654cb6b86231ef78dea706f5996bc6 gayeon337 <gayeon337.lee@lge.com> 1782259021 +0900	rebase (pick): chore: ignore .opencode directory
+e0b594acd6654cb6b86231ef78dea706f5996bc6 e0b594acd6654cb6b86231ef78dea706f5996bc6 gayeon337 <gayeon337.lee@lge.com> 1782259021 +0900	rebase (finish): returning to refs/heads/ponytail/trim-overengineering
+e0b594acd6654cb6b86231ef78dea706f5996bc6 7b3186159c53b843080e11333ce875ee601a0542 gayeon337 <gayeon337.lee@lge.com> 1782259236 +0900	commit: fix: remove opener:default from capabilities
+7b3186159c53b843080e11333ce875ee601a0542 05899749a1225d174543ad962819a30008bc382c gayeon337 <gayeon337.lee@lge.com> 1782259985 +0900	checkout: moving from ponytail/trim-overengineering to develop
+05899749a1225d174543ad962819a30008bc382c 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782259994 +0900	pull: Fast-forward
+0c355281e9ae4622d6c23c507b1792e550a44d1b 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782261871 +0900	checkout: moving from develop to develop
+0c355281e9ae4622d6c23c507b1792e550a44d1b 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782262556 +0900	reset: moving to HEAD
+0c355281e9ae4622d6c23c507b1792e550a44d1b a60f8a34e944f5d04e9f2cd4f83c5e882bbcac7a gayeon337 <gayeon337.lee@lge.com> 1782262557 +0900	checkout: moving from develop to mars260624
+a60f8a34e944f5d04e9f2cd4f83c5e882bbcac7a 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782266707 +0900	checkout: moving from mars260624 to develop
+0c355281e9ae4622d6c23c507b1792e550a44d1b 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782266707 +0900	checkout: moving from develop to feat/insert-replace
+0c355281e9ae4622d6c23c507b1792e550a44d1b 7b306cff5477223651c33312c8983daf25608483 gayeon337 <gayeon337.lee@lge.com> 1782266825 +0900	commit: fix: insert-replace button now deactivates app before pasting
+7b306cff5477223651c33312c8983daf25608483 016d13e7ec290dd63075bebf2a90dfa82ce4b9ac gayeon337 <gayeon337.lee@lge.com> 1782266858 +0900	rebase (start): checkout origin/develop
+016d13e7ec290dd63075bebf2a90dfa82ce4b9ac 7b306cff5477223651c33312c8983daf25608483 gayeon337 <gayeon337.lee@lge.com> 1782267010 +0900	rebase (abort): returning to refs/heads/feat/insert-replace
+7b306cff5477223651c33312c8983daf25608483 016d13e7ec290dd63075bebf2a90dfa82ce4b9ac gayeon337 <gayeon337.lee@lge.com> 1782267020 +0900	rebase (start): checkout origin/develop
+016d13e7ec290dd63075bebf2a90dfa82ce4b9ac 214c8d1927c53aeeb07a4332ae3b2943d8b725d2 gayeon337 <gayeon337.lee@lge.com> 1782267034 +0900	rebase (continue): fix: insert-replace button now deactivates app before pasting
+214c8d1927c53aeeb07a4332ae3b2943d8b725d2 214c8d1927c53aeeb07a4332ae3b2943d8b725d2 gayeon337 <gayeon337.lee@lge.com> 1782267034 +0900	rebase (finish): returning to refs/heads/feat/insert-replace
+214c8d1927c53aeeb07a4332ae3b2943d8b725d2 ca442d7758efa161db17669ece03fe56a4d1a3d1 gayeon337 <gayeon337.lee@lge.com> 1782267694 +0900	rebase (start): checkout origin/develop
+ca442d7758efa161db17669ece03fe56a4d1a3d1 6cc4f186204d73f2632e9e8813f38939dd997c75 gayeon337 <gayeon337.lee@lge.com> 1782267694 +0900	rebase (pick): fix: insert-replace button now deactivates app before pasting
+6cc4f186204d73f2632e9e8813f38939dd997c75 6cc4f186204d73f2632e9e8813f38939dd997c75 gayeon337 <gayeon337.lee@lge.com> 1782267694 +0900	rebase (finish): returning to refs/heads/feat/insert-replace
+6cc4f186204d73f2632e9e8813f38939dd997c75 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782268106 +0900	checkout: moving from feat/insert-replace to develop
+0c355281e9ae4622d6c23c507b1792e550a44d1b 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782268317 +0900	reset: moving to HEAD
+0c355281e9ae4622d6c23c507b1792e550a44d1b 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782268326 +0900	reset: moving to HEAD
+0c355281e9ae4622d6c23c507b1792e550a44d1b 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782268338 +0900	checkout: moving from develop to develop
+0c355281e9ae4622d6c23c507b1792e550a44d1b 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782268348 +0900	reset: moving to HEAD
+0c355281e9ae4622d6c23c507b1792e550a44d1b 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782268376 +0900	reset: moving to HEAD
+0c355281e9ae4622d6c23c507b1792e550a44d1b c37e29db9fe05600f7af9a791540ade8bf302acd gayeon337 <gayeon337.lee@lge.com> 1782268473 +0900	commit: fix: auto-resolve Cargo.lock conflicts on pull/rebase
+c37e29db9fe05600f7af9a791540ade8bf302acd 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782268489 +0900	reset: moving to HEAD~1
+0c355281e9ae4622d6c23c507b1792e550a44d1b 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782268489 +0900	reset: moving to HEAD
+0c355281e9ae4622d6c23c507b1792e550a44d1b 6cc4f186204d73f2632e9e8813f38939dd997c75 gayeon337 <gayeon337.lee@lge.com> 1782268490 +0900	checkout: moving from develop to feat/insert-replace
+6cc4f186204d73f2632e9e8813f38939dd997c75 2d8ee2a9c3452f66c9b5b11c39f24b2c2580a09c gayeon337 <gayeon337.lee@lge.com> 1782268494 +0900	commit: fix: auto-resolve Cargo.lock conflicts on pull/rebase
+2d8ee2a9c3452f66c9b5b11c39f24b2c2580a09c 6cc4f186204d73f2632e9e8813f38939dd997c75 gayeon337 <gayeon337.lee@lge.com> 1782268597 +0900	reset: moving to HEAD~1
+6cc4f186204d73f2632e9e8813f38939dd997c75 ca442d7758efa161db17669ece03fe56a4d1a3d1 gayeon337 <gayeon337.lee@lge.com> 1782268597 +0900	checkout: moving from feat/insert-replace to fix/cargo-lock-merge
+ca442d7758efa161db17669ece03fe56a4d1a3d1 f1ad95294a1d5efcd786f4440a32fe6926541492 gayeon337 <gayeon337.lee@lge.com> 1782268601 +0900	commit: fix: auto-resolve Cargo.lock conflicts on pull/rebase
+f1ad95294a1d5efcd786f4440a32fe6926541492 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782275844 +0900	checkout: moving from fix/cargo-lock-merge to develop
+0c355281e9ae4622d6c23c507b1792e550a44d1b 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782275850 +0900	reset: moving to HEAD
+0c355281e9ae4622d6c23c507b1792e550a44d1b 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782275947 +0900	reset: moving to HEAD
+0c355281e9ae4622d6c23c507b1792e550a44d1b 6cc4f186204d73f2632e9e8813f38939dd997c75 gayeon337 <gayeon337.lee@lge.com> 1782275947 +0900	checkout: moving from develop to feat/insert-replace
+6cc4f186204d73f2632e9e8813f38939dd997c75 0c355281e9ae4622d6c23c507b1792e550a44d1b gayeon337 <gayeon337.lee@lge.com> 1782275958 +0900	checkout: moving from feat/insert-replace to develop
+0c355281e9ae4622d6c23c507b1792e550a44d1b 90919d665445ef3665da5ade17f98a873121faee gayeon337 <gayeon337.lee@lge.com> 1782275958 +0900	reset: moving to origin/develop
+90919d665445ef3665da5ade17f98a873121faee a60f8a34e944f5d04e9f2cd4f83c5e882bbcac7a gayeon337 <gayeon337.lee@lge.com> 1782276500 +0900	checkout: moving from develop to mars260624
+a60f8a34e944f5d04e9f2cd4f83c5e882bbcac7a 0c514e8fa02e8e8ef355abf35652532d18fa9ad0 gayeon337 <gayeon337.lee@lge.com> 1782276507 +0900	pull: Fast-forward
+0c514e8fa02e8e8ef355abf35652532d18fa9ad0 f3a7153b5132d0db0c2c2bf9e921d7405f060d34 gayeon337 <gayeon337.lee@lge.com> 1782277162 +0900	pull: Fast-forward
+f3a7153b5132d0db0c2c2bf9e921d7405f060d34 b603de6d4e85cbbff360d51bafd6dc6d813bd9ff gayeon337 <gayeon337.lee@lge.com> 1782277955 +0900	pull: Fast-forward
+b603de6d4e85cbbff360d51bafd6dc6d813bd9ff 90919d665445ef3665da5ade17f98a873121faee gayeon337 <gayeon337.lee@lge.com> 1782278857 +0900	checkout: moving from mars260624 to develop
+90919d665445ef3665da5ade17f98a873121faee 661b3afbb7d7a4b78862eb02b561dce1701f5b40 gayeon337 <gayeon337.lee@lge.com> 1782278861 +0900	pull: Fast-forward
+661b3afbb7d7a4b78862eb02b561dce1701f5b40 6cc4f186204d73f2632e9e8813f38939dd997c75 gayeon337 <gayeon337.lee@lge.com> 1782278869 +0900	checkout: moving from develop to feat/insert-replace
+6cc4f186204d73f2632e9e8813f38939dd997c75 661b3afbb7d7a4b78862eb02b561dce1701f5b40 gayeon337 <gayeon337.lee@lge.com> 1782278875 +0900	rebase (start): checkout develop
+661b3afbb7d7a4b78862eb02b561dce1701f5b40 6625126eae851ee87cd150dca2b45f7ea575c363 gayeon337 <gayeon337.lee@lge.com> 1782278875 +0900	rebase (pick): fix: insert-replace button now deactivates app before pasting
+6625126eae851ee87cd150dca2b45f7ea575c363 6625126eae851ee87cd150dca2b45f7ea575c363 gayeon337 <gayeon337.lee@lge.com> 1782278875 +0900	rebase (finish): returning to refs/heads/feat/insert-replace
+6625126eae851ee87cd150dca2b45f7ea575c363 6625126eae851ee87cd150dca2b45f7ea575c363 gayeon337 <gayeon337.lee@lge.com> 1782279041 +0900	checkout: moving from feat/insert-replace to feat/insert-replace
+6625126eae851ee87cd150dca2b45f7ea575c363 49c285d1effe1cb34b000198f2ed54fe2ab6b526 gayeon337 <gayeon337.lee@lge.com> 1782279104 +0900	commit (amend): fix: insert-replace button activates source app by PID before pasting
+49c285d1effe1cb34b000198f2ed54fe2ab6b526 661b3afbb7d7a4b78862eb02b561dce1701f5b40 gayeon337 <gayeon337.lee@lge.com> 1782279564 +0900	checkout: moving from feat/insert-replace to develop
+661b3afbb7d7a4b78862eb02b561dce1701f5b40 c075fd95832dc8d21427f7b09090921ab94e1ea3 gayeon337 <gayeon337.lee@lge.com> 1782279569 +0900	pull: Fast-forward
+c075fd95832dc8d21427f7b09090921ab94e1ea3 c0f1ff061c0e7fd39e5f5d44409538f6216fc2d7 gayeon337 <gayeon337.lee@lge.com> 1782281379 +0900	checkout: moving from develop to main
+c0f1ff061c0e7fd39e5f5d44409538f6216fc2d7 f7414ae9854ae623a52cc6825cd05c2c397edbd4 gayeon337 <gayeon337.lee@lge.com> 1782281384 +0900	pull: Fast-forward
+f7414ae9854ae623a52cc6825cd05c2c397edbd4 881490253e582fd8a2296837747b4ead79398ea1 gayeon337 <gayeon337.lee@lge.com> 1782345047 +0900	pull: Fast-forward
+881490253e582fd8a2296837747b4ead79398ea1 881490253e582fd8a2296837747b4ead79398ea1 gayeon337 <gayeon337.lee@lge.com> 1782346262 +0900	checkout: moving from main to feat/icon
+881490253e582fd8a2296837747b4ead79398ea1 fcf05444b1540515cabb06d96f44ebce0b963199 gayeon337 <gayeon337.lee@lge.com> 1782346310 +0900	commit: feat: add new icon
+fcf05444b1540515cabb06d96f44ebce0b963199 fcf05444b1540515cabb06d96f44ebce0b963199 gayeon337 <gayeon337.lee@lge.com> 1782347255 +0900	checkout: moving from feat/icon to feat/settings
+fcf05444b1540515cabb06d96f44ebce0b963199 fcf05444b1540515cabb06d96f44ebce0b963199 gayeon337 <gayeon337.lee@lge.com> 1782347260 +0900	reset: moving to HEAD
+fcf05444b1540515cabb06d96f44ebce0b963199 fcf05444b1540515cabb06d96f44ebce0b963199 gayeon337 <gayeon337.lee@lge.com> 1782347303 +0900	reset: moving to HEAD
+fcf05444b1540515cabb06d96f44ebce0b963199 c075fd95832dc8d21427f7b09090921ab94e1ea3 gayeon337 <gayeon337.lee@lge.com> 1782347312 +0900	rebase (start): checkout develop
+c075fd95832dc8d21427f7b09090921ab94e1ea3 d76accab28ae5a152bd4d091d2e5c06a8a46e7f3 gayeon337 <gayeon337.lee@lge.com> 1782347312 +0900	rebase (pick): mode ci/cd
+d76accab28ae5a152bd4d091d2e5c06a8a46e7f3 1520b46b91ccc393c5878d375c3cf47d38360773 gayeon337 <gayeon337.lee@lge.com> 1782347312 +0900	rebase (pick): mode ci/cd
+1520b46b91ccc393c5878d375c3cf47d38360773 74461228bda8594037d38c305e03caf72a5f06a4 gayeon337 <gayeon337.lee@lge.com> 1782347312 +0900	rebase (pick): mode
+74461228bda8594037d38c305e03caf72a5f06a4 f3a1909d05b291b321f6f8e9cf7bb6fa0c6e7f16 gayeon337 <gayeon337.lee@lge.com> 1782347312 +0900	rebase (pick): mode install
+f3a1909d05b291b321f6f8e9cf7bb6fa0c6e7f16 c22d4b72a9c0afacc49f75d1451a6474aff0a0f1 gayeon337 <gayeon337.lee@lge.com> 1782347312 +0900	rebase (pick): mode install
+c22d4b72a9c0afacc49f75d1451a6474aff0a0f1 98c9ae7641ad95c735eaea140e6490ff61432c01 gayeon337 <gayeon337.lee@lge.com> 1782347312 +0900	rebase (pick): mode install
+98c9ae7641ad95c735eaea140e6490ff61432c01 bac4da62d7a7e4d0bc56a979cf5bdd65c3f87282 gayeon337 <gayeon337.lee@lge.com> 1782347312 +0900	rebase (pick): add language change
+bac4da62d7a7e4d0bc56a979cf5bdd65c3f87282 48143522b76ceccd1be649057e03c4a0b705651c gayeon337 <gayeon337.lee@lge.com> 1782347312 +0900	rebase (pick): add language change
+48143522b76ceccd1be649057e03c4a0b705651c 25ab4354b3a0a29d65aba310abfa989cd7b0265d gayeon337 <gayeon337.lee@lge.com> 1782347312 +0900	rebase (pick): add language change
+25ab4354b3a0a29d65aba310abfa989cd7b0265d a1e9d131792550472283a24145b69cbcaded17ad gayeon337 <gayeon337.lee@lge.com> 1782347312 +0900	rebase (pick): feat: add new icon
+a1e9d131792550472283a24145b69cbcaded17ad a1e9d131792550472283a24145b69cbcaded17ad gayeon337 <gayeon337.lee@lge.com> 1782347312 +0900	rebase (finish): returning to refs/heads/feat/settings
+a1e9d131792550472283a24145b69cbcaded17ad c075fd95832dc8d21427f7b09090921ab94e1ea3 gayeon337 <gayeon337.lee@lge.com> 1782347321 +0900	checkout: moving from feat/settings to develop
+c075fd95832dc8d21427f7b09090921ab94e1ea3 881490253e582fd8a2296837747b4ead79398ea1 gayeon337 <gayeon337.lee@lge.com> 1782347326 +0900	merge main: Fast-forward
+881490253e582fd8a2296837747b4ead79398ea1 d240580476d8c713e06b11646f9581bf169327f5 gayeon337 <gayeon337.lee@lge.com> 1782347438 +0900	reset: moving to HEAD~1
+d240580476d8c713e06b11646f9581bf169327f5 881490253e582fd8a2296837747b4ead79398ea1 gayeon337 <gayeon337.lee@lge.com> 1782347442 +0900	rebase (start): checkout main
+881490253e582fd8a2296837747b4ead79398ea1 881490253e582fd8a2296837747b4ead79398ea1 gayeon337 <gayeon337.lee@lge.com> 1782347442 +0900	rebase (finish): returning to refs/heads/develop
+881490253e582fd8a2296837747b4ead79398ea1 881490253e582fd8a2296837747b4ead79398ea1 gayeon337 <gayeon337.lee@lge.com> 1782347516 +0900	checkout: moving from develop to main
+881490253e582fd8a2296837747b4ead79398ea1 2f433cccdb7697807b91bd77cfe552f6324aaec9 gayeon337 <gayeon337.lee@lge.com> 1782347520 +0900	pull: Fast-forward
+2f433cccdb7697807b91bd77cfe552f6324aaec9 881490253e582fd8a2296837747b4ead79398ea1 gayeon337 <gayeon337.lee@lge.com> 1782347524 +0900	checkout: moving from main to develop
+881490253e582fd8a2296837747b4ead79398ea1 2f433cccdb7697807b91bd77cfe552f6324aaec9 gayeon337 <gayeon337.lee@lge.com> 1782347529 +0900	rebase (start): checkout main
+2f433cccdb7697807b91bd77cfe552f6324aaec9 2f433cccdb7697807b91bd77cfe552f6324aaec9 gayeon337 <gayeon337.lee@lge.com> 1782347529 +0900	rebase (finish): returning to refs/heads/develop
+2f433cccdb7697807b91bd77cfe552f6324aaec9 a1e9d131792550472283a24145b69cbcaded17ad gayeon337 <gayeon337.lee@lge.com> 1782347539 +0900	checkout: moving from develop to feat/settings
+a1e9d131792550472283a24145b69cbcaded17ad 2f433cccdb7697807b91bd77cfe552f6324aaec9 gayeon337 <gayeon337.lee@lge.com> 1782347543 +0900	rebase (start): checkout develop
+2f433cccdb7697807b91bd77cfe552f6324aaec9 2f433cccdb7697807b91bd77cfe552f6324aaec9 gayeon337 <gayeon337.lee@lge.com> 1782347543 +0900	rebase (finish): returning to refs/heads/feat/settings
+2f433cccdb7697807b91bd77cfe552f6324aaec9 e92ea248909f6f9c9fa71f867b49fc277425433c gayeon337 <gayeon337.lee@lge.com> 1782349920 +0900	commit: feat: add theme support to settings model
+e92ea248909f6f9c9fa71f867b49fc277425433c 90a54127fe459b10ea2ba67b0cb47a99ea00b44b gayeon337 <gayeon337.lee@lge.com> 1782349924 +0900	commit: feat: add light theme and settings window styles
+90a54127fe459b10ea2ba67b0cb47a99ea00b44b 2d2b0bb2a4a2abde07f65b12571d797dba423682 gayeon337 <gayeon337.lee@lge.com> 1782349930 +0900	commit: feat: add settings window backend commands and permissions
+2d2b0bb2a4a2abde07f65b12571d797dba423682 1416245f095da0e59cddb4d18bbb57f6c20f4b59 gayeon337 <gayeon337.lee@lge.com> 1782349941 +0900	commit: feat: add settings window frontend with routing
+1416245f095da0e59cddb4d18bbb57f6c20f4b59 6e295dd95c60f85669844b4a59fce17d60cf5266 gayeon337 <gayeon337.lee@lge.com> 1782349952 +0900	commit: refactor: remove settings panel from floating menu
+6e295dd95c60f85669844b4a59fce17d60cf5266 65a9ecd9e5dc0bc0cdb05c59f374265f766c670b gayeon337 <gayeon337.lee@lge.com> 1782350172 +0900	commit: fix: light theme active chip style consistency
+65a9ecd9e5dc0bc0cdb05c59f374265f766c670b 65a9ecd9e5dc0bc0cdb05c59f374265f766c670b gayeon337 <gayeon337.lee@lge.com> 1782350837 +0900	rebase (abort): returning to refs/heads/feat/settings
+65a9ecd9e5dc0bc0cdb05c59f374265f766c670b 65a9ecd9e5dc0bc0cdb05c59f374265f766c670b gayeon337 <gayeon337.lee@lge.com> 1782350837 +0900	rebase (abort): returning to refs/heads/feat/settings
+65a9ecd9e5dc0bc0cdb05c59f374265f766c670b e92ea248909f6f9c9fa71f867b49fc277425433c gayeon337 <gayeon337.lee@lge.com> 1782350843 +0900	rebase (start): checkout 2f433cccdb7697807b91bd77cfe552f6324aaec9
+e92ea248909f6f9c9fa71f867b49fc277425433c 9e683ea6e594f14f5a72fc66720ba196776faeed gayeon337 <gayeon337.lee@lge.com> 1782350843 +0900	commit (amend): feat: add theme support to settings model
+9e683ea6e594f14f5a72fc66720ba196776faeed 59987fb2be905019e86d99e94e393b8629d4a35c gayeon337 <gayeon337.lee@lge.com> 1782350843 +0900	rebase (pick): feat: add light theme and settings window styles
+59987fb2be905019e86d99e94e393b8629d4a35c 86872531ee8f9b7946789853240db8970b09dafb gayeon337 <gayeon337.lee@lge.com> 1782350843 +0900	commit (amend): feat: add light theme and settings window styles
+86872531ee8f9b7946789853240db8970b09dafb a6ce12061947433da5cf05d6ad5a5f660cca807e gayeon337 <gayeon337.lee@lge.com> 1782350843 +0900	rebase (pick): feat: add settings window backend commands and permissions
+a6ce12061947433da5cf05d6ad5a5f660cca807e 877ba476e382f57c968dc45f5c6737f74ee87525 gayeon337 <gayeon337.lee@lge.com> 1782350844 +0900	commit (amend): feat: add settings window backend commands and permissions
+877ba476e382f57c968dc45f5c6737f74ee87525 ede88bd91b7d729ff5bb926c932d09ae5ee0283f gayeon337 <gayeon337.lee@lge.com> 1782350844 +0900	rebase (pick): feat: add settings window frontend with routing
+ede88bd91b7d729ff5bb926c932d09ae5ee0283f 04ec8834de0b378d69c5885f49a252a5d325fd85 gayeon337 <gayeon337.lee@lge.com> 1782350844 +0900	commit (amend): feat: add settings window frontend with routing
+04ec8834de0b378d69c5885f49a252a5d325fd85 91fcee9e90901ea67ce7ccb26f053031bcf331a7 gayeon337 <gayeon337.lee@lge.com> 1782350844 +0900	rebase (pick): refactor: remove settings panel from floating menu
+91fcee9e90901ea67ce7ccb26f053031bcf331a7 4493e2637190a1045bc3bf7a1eb44561baf6d032 gayeon337 <gayeon337.lee@lge.com> 1782350844 +0900	commit (amend): refactor: remove settings panel from floating menu
+4493e2637190a1045bc3bf7a1eb44561baf6d032 140160878fe384ef409122ea5fbf696a64aedf12 gayeon337 <gayeon337.lee@lge.com> 1782350844 +0900	rebase (pick): fix: light theme active chip style consistency
+140160878fe384ef409122ea5fbf696a64aedf12 21c0e8e298990a105ceee235b0d2a3bac7ef54f8 gayeon337 <gayeon337.lee@lge.com> 1782350844 +0900	commit (amend): fix: light theme active chip style consistency
+21c0e8e298990a105ceee235b0d2a3bac7ef54f8 21c0e8e298990a105ceee235b0d2a3bac7ef54f8 gayeon337 <gayeon337.lee@lge.com> 1782350844 +0900	rebase (finish): returning to refs/heads/feat/settings
+21c0e8e298990a105ceee235b0d2a3bac7ef54f8 2f433cccdb7697807b91bd77cfe552f6324aaec9 gayeon337 <gayeon337.lee@lge.com> 1782351018 +0900	checkout: moving from feat/settings to develop
+2f433cccdb7697807b91bd77cfe552f6324aaec9 2f433cccdb7697807b91bd77cfe552f6324aaec9 gayeon337 <gayeon337.lee@lge.com> 1782351031 +0900	checkout: moving from develop to feat/settings
+2f433cccdb7697807b91bd77cfe552f6324aaec9 76fd3eaf14ae266de10fc66d6c000235d8dc3bb9 gayeon337 <gayeon337.lee@lge.com> 1782351098 +0900	cherry-pick: feat: add theme support to settings model
+76fd3eaf14ae266de10fc66d6c000235d8dc3bb9 8d535e2dceb398630a331d4dea78a6352d974fe3 gayeon337 <gayeon337.lee@lge.com> 1782351098 +0900	cherry-pick: feat: add light theme and settings window styles
+8d535e2dceb398630a331d4dea78a6352d974fe3 6933a30f96e32a6f0a455aba9d225f0bdb8c14d3 gayeon337 <gayeon337.lee@lge.com> 1782351098 +0900	cherry-pick: feat: add settings window backend commands and permissions
+6933a30f96e32a6f0a455aba9d225f0bdb8c14d3 42ee7457382d51884bedbb5ee87eff21cadadc2c gayeon337 <gayeon337.lee@lge.com> 1782351098 +0900	cherry-pick: feat: add settings window frontend with routing
+42ee7457382d51884bedbb5ee87eff21cadadc2c e8ff043586e9d4b7b1c8812fb43aeae7bb930f92 gayeon337 <gayeon337.lee@lge.com> 1782351098 +0900	cherry-pick: refactor: remove settings panel from floating menu
+e8ff043586e9d4b7b1c8812fb43aeae7bb930f92 377d3acaf84fecfbf47d6c9db5ee2948cac08b3b gayeon337 <gayeon337.lee@lge.com> 1782351098 +0900	cherry-pick: fix: light theme active chip style consistency
+377d3acaf84fecfbf47d6c9db5ee2948cac08b3b 2f433cccdb7697807b91bd77cfe552f6324aaec9 gayeon337 <gayeon337.lee@lge.com> 1782362961 +0900	checkout: moving from feat/settings to develop
+2f433cccdb7697807b91bd77cfe552f6324aaec9 f70399f54cdcaf9841f1c4ad86dbbfec239033ae gayeon337 <gayeon337.lee@lge.com> 1782362971 +0900	pull: Fast-forward
+f70399f54cdcaf9841f1c4ad86dbbfec239033ae 2f433cccdb7697807b91bd77cfe552f6324aaec9 gayeon337 <gayeon337.lee@lge.com> 1782689916 +0900	checkout: moving from develop to main
+2f433cccdb7697807b91bd77cfe552f6324aaec9 4e52f55e36449c4059140d014f76adfb185fbdbe gayeon337 <gayeon337.lee@lge.com> 1782689920 +0900	pull: Fast-forward
+4e52f55e36449c4059140d014f76adfb185fbdbe 4e52f55e36449c4059140d014f76adfb185fbdbe gayeon337 <gayeon337.lee@lge.com> 1782708914 +0900	checkout: moving from main to feat/select-settings
+4e52f55e36449c4059140d014f76adfb185fbdbe 847f87fa57e465b63a11f0a7b9a90dded9f26d84 gayeon337 <gayeon337.lee@lge.com> 1782711127 +0900	commit: wip
+847f87fa57e465b63a11f0a7b9a90dded9f26d84 f70399f54cdcaf9841f1c4ad86dbbfec239033ae gayeon337 <gayeon337.lee@lge.com> 1782711133 +0900	checkout: moving from feat/select-settings to develop
+f70399f54cdcaf9841f1c4ad86dbbfec239033ae 4e52f55e36449c4059140d014f76adfb185fbdbe gayeon337 <gayeon337.lee@lge.com> 1782711136 +0900	rebase (start): checkout main
+4e52f55e36449c4059140d014f76adfb185fbdbe 4e52f55e36449c4059140d014f76adfb185fbdbe gayeon337 <gayeon337.lee@lge.com> 1782711136 +0900	rebase (finish): returning to refs/heads/develop
+4e52f55e36449c4059140d014f76adfb185fbdbe 847f87fa57e465b63a11f0a7b9a90dded9f26d84 gayeon337 <gayeon337.lee@lge.com> 1782711955 +0900	checkout: moving from develop to feat/select-settings
+847f87fa57e465b63a11f0a7b9a90dded9f26d84 4e52f55e36449c4059140d014f76adfb185fbdbe gayeon337 <gayeon337.lee@lge.com> 1782712131 +0900	reset: moving to 4e52f55
+4e52f55e36449c4059140d014f76adfb185fbdbe 4e52f55e36449c4059140d014f76adfb185fbdbe gayeon337 <gayeon337.lee@lge.com> 1782712131 +0900	reset: moving to HEAD
+4e52f55e36449c4059140d014f76adfb185fbdbe 5d9dda750da54e4d25d4866744001f858f1808b9 gayeon337 <gayeon337.lee@lge.com> 1782712135 +0900	rebase (start): checkout origin/develop
+5d9dda750da54e4d25d4866744001f858f1808b9 5d9dda750da54e4d25d4866744001f858f1808b9 gayeon337 <gayeon337.lee@lge.com> 1782712135 +0900	rebase (finish): returning to refs/heads/feat/select-settings
+5d9dda750da54e4d25d4866744001f858f1808b9 f05480ee2dd897f3cbef25ea9ec976ed01ccbb1b gayeon337 <gayeon337.lee@lge.com> 1782712147 +0900	commit: feat: add trigger mode setting and keyboard navigation for presets
+f05480ee2dd897f3cbef25ea9ec976ed01ccbb1b 5d9dda750da54e4d25d4866744001f858f1808b9 gayeon337 <gayeon337.lee@lge.com> 1782713155 +0900	reset: moving to HEAD~1
+5d9dda750da54e4d25d4866744001f858f1808b9 5d9dda750da54e4d25d4866744001f858f1808b9 gayeon337 <gayeon337.lee@lge.com> 1782713155 +0900	reset: moving to HEAD
+5d9dda750da54e4d25d4866744001f858f1808b9 5d9dda750da54e4d25d4866744001f858f1808b9 gayeon337 <gayeon337.lee@lge.com> 1782713193 +0900	reset: moving to HEAD
+5d9dda750da54e4d25d4866744001f858f1808b9 2b4a25c32e68b96030a12f2f2712a24790c2cce4 gayeon337 <gayeon337.lee@lge.com> 1782713244 +0900	commit: feat: add trigger mode setting (manual/auto)
+2b4a25c32e68b96030a12f2f2712a24790c2cce4 7c7a94b26a6397eefff44a43eb2e356409738de4 gayeon337 <gayeon337.lee@lge.com> 1782713252 +0900	commit: feat: add keyboard navigation for presets
+7c7a94b26a6397eefff44a43eb2e356409738de4 37e79fcd5837665907863e8b7f22f3189088cb33 gayeon337 <gayeon337.lee@lge.com> 1782714089 +0900	checkout: moving from feat/select-settings to 2026-06-29
+37e79fcd5837665907863e8b7f22f3189088cb33 4e52f55e36449c4059140d014f76adfb185fbdbe gayeon337 <gayeon337.lee@lge.com> 1782714323 +0900	checkout: moving from 2026-06-29 to develop
+4e52f55e36449c4059140d014f76adfb185fbdbe 5d9dda750da54e4d25d4866744001f858f1808b9 gayeon337 <gayeon337.lee@lge.com> 1782714327 +0900	pull: Fast-forward
+5d9dda750da54e4d25d4866744001f858f1808b9 5d9dda750da54e4d25d4866744001f858f1808b9 gayeon337 <gayeon337.lee@lge.com> 1782714390 +0900	checkout: moving from develop to develop
+5d9dda750da54e4d25d4866744001f858f1808b9 5d9dda750da54e4d25d4866744001f858f1808b9 gayeon337 <gayeon337.lee@lge.com> 1782714393 +0900	checkout: moving from develop to fix/disable-insert-on-error
+5d9dda750da54e4d25d4866744001f858f1808b9 88f508164e3b3c44603f6bb4fa47f464dc80d695 gayeon337 <gayeon337.lee@lge.com> 1782714427 +0900	commit: fix: disable insert/copy when error message is displayed
+88f508164e3b3c44603f6bb4fa47f464dc80d695 45a014392c82cd11cd33d3888275c224646415dc gayeon337 <gayeon337.lee@lge.com> 1782714676 +0900	commit (amend): fix: disable insert/copy when error message is displayed
+45a014392c82cd11cd33d3888275c224646415dc 5d9dda750da54e4d25d4866744001f858f1808b9 gayeon337 <gayeon337.lee@lge.com> 1782716405 +0900	checkout: moving from fix/disable-insert-on-error to develop
+5d9dda750da54e4d25d4866744001f858f1808b9 00d5d058239f41cd870aab201009cdc200b32250 gayeon337 <gayeon337.lee@lge.com> 1782716410 +0900	pull: Fast-forward
+00d5d058239f41cd870aab201009cdc200b32250 37e79fcd5837665907863e8b7f22f3189088cb33 gayeon337 <gayeon337.lee@lge.com> 1782716622 +0900	checkout: moving from develop to 2026-06-29
+37e79fcd5837665907863e8b7f22f3189088cb33 00d5d058239f41cd870aab201009cdc200b32250 gayeon337 <gayeon337.lee@lge.com> 1782716627 +0900	checkout: moving from 2026-06-29 to develop
+00d5d058239f41cd870aab201009cdc200b32250 4e52f55e36449c4059140d014f76adfb185fbdbe gayeon337 <gayeon337.lee@lge.com> 1782717166 +0900	checkout: moving from develop to main
+4e52f55e36449c4059140d014f76adfb185fbdbe 00d5d058239f41cd870aab201009cdc200b32250 gayeon337 <gayeon337.lee@lge.com> 1782717170 +0900	checkout: moving from main to develop
+00d5d058239f41cd870aab201009cdc200b32250 37e79fcd5837665907863e8b7f22f3189088cb33 gayeon337 <gayeon337.lee@lge.com> 1782717178 +0900	checkout: moving from develop to 2026-06-29
+37e79fcd5837665907863e8b7f22f3189088cb33 6c353eb78030f7222d7936c55f1d33e31a321567 gayeon337 <gayeon337.lee@lge.com> 1782717182 +0900	pull: Fast-forward
+6c353eb78030f7222d7936c55f1d33e31a321567 00d5d058239f41cd870aab201009cdc200b32250 gayeon337 <gayeon337.lee@lge.com> 1782717193 +0900	checkout: moving from 2026-06-29 to develop
+00d5d058239f41cd870aab201009cdc200b32250 00d5d058239f41cd870aab201009cdc200b32250 gayeon337 <gayeon337.lee@lge.com> 1782717431 +0900	reset: moving to HEAD
+00d5d058239f41cd870aab201009cdc200b32250 10174d6a9e026fe7e8304e5fa9d7c1a4a086dc47 gayeon337 <gayeon337.lee@lge.com> 1782717606 +0900	commit (amend): fix: disable insert/copy when error message is displayed (#23)
+10174d6a9e026fe7e8304e5fa9d7c1a4a086dc47 7c7a94b26a6397eefff44a43eb2e356409738de4 gayeon337 <gayeon337.lee@lge.com> 1782717618 +0900	checkout: moving from develop to feat/select-settings
+7c7a94b26a6397eefff44a43eb2e356409738de4 cb2ee4de1914a336952f4588aa52d2649bed24b3 gayeon337 <gayeon337.lee@lge.com> 1782717659 +0900	commit (amend): feat: add keyboard navigation for presets
+cb2ee4de1914a336952f4588aa52d2649bed24b3 10174d6a9e026fe7e8304e5fa9d7c1a4a086dc47 gayeon337 <gayeon337.lee@lge.com> 1782718086 +0900	checkout: moving from feat/select-settings to develop
+10174d6a9e026fe7e8304e5fa9d7c1a4a086dc47 00d5d058239f41cd870aab201009cdc200b32250 gayeon337 <gayeon337.lee@lge.com> 1782718131 +0900	pull (start): checkout 00d5d058239f41cd870aab201009cdc200b32250
+00d5d058239f41cd870aab201009cdc200b32250 00d5d058239f41cd870aab201009cdc200b32250 gayeon337 <gayeon337.lee@lge.com> 1782718131 +0900	pull (finish): returning to refs/heads/develop
+00d5d058239f41cd870aab201009cdc200b32250 b76b002e129005a34272cf0f3214e1db7fad9bd8 gayeon337 <gayeon337.lee@lge.com> 1782718145 +0900	merge feat/select-settings: Merge made by the 'ort' strategy.
+b76b002e129005a34272cf0f3214e1db7fad9bd8 e2eafd034e4adf8be254ae0dbfb767dee1faeb51 gayeon337 <gayeon337.lee@lge.com> 1782718277 +0900	commit (amend): fix: focus ring update
+e2eafd034e4adf8be254ae0dbfb767dee1faeb51 72ebaa4aba6dfafcc340dd91069f7f9a874605ae gayeon337 <gayeon337.lee@lge.com> 1782718566 +0900	commit (merge): fix: system prompt i18n support
+72ebaa4aba6dfafcc340dd91069f7f9a874605ae e2eafd034e4adf8be254ae0dbfb767dee1faeb51 gayeon337 <gayeon337.lee@lge.com> 1782718578 +0900	pull --tags origin develop (start): checkout e2eafd034e4adf8be254ae0dbfb767dee1faeb51
+e2eafd034e4adf8be254ae0dbfb767dee1faeb51 3fdcf6d28fe0df6fad1f0771285c3b8cb6408166 gayeon337 <gayeon337.lee@lge.com> 1782718837 +0900	rebase (continue): feat: remove system prompt section from settings UI
+3fdcf6d28fe0df6fad1f0771285c3b8cb6408166 78e57545d80eeea0b12c30edcb9b8825647b5260 gayeon337 <gayeon337.lee@lge.com> 1782718891 +0900	rebase (continue): revert: restore system prompt section in settings UI
+78e57545d80eeea0b12c30edcb9b8825647b5260 ea46b4ba4df7e817f0a964dfe96ff3d66f346fe3 gayeon337 <gayeon337.lee@lge.com> 1782718976 +0900	rebase (continue): feat: update system prompt placeholder text and remove translate button
+ea46b4ba4df7e817f0a964dfe96ff3d66f346fe3 ea46b4ba4df7e817f0a964dfe96ff3d66f346fe3 gayeon337 <gayeon337.lee@lge.com> 1782718976 +0900	rebase (finish): returning to refs/heads/develop
+ea46b4ba4df7e817f0a964dfe96ff3d66f346fe3 86ef3d694a5de287cbe9350740d66f959d440efb gayeon337 <gayeon337.lee@lge.com> 1782720333 +0900	commit: fix: draggable app for windows
+86ef3d694a5de287cbe9350740d66f959d440efb ea46b4ba4df7e817f0a964dfe96ff3d66f346fe3 gayeon337 <gayeon337.lee@lge.com> 1782720347 +0900	reset: moving to HEAD~1
+ea46b4ba4df7e817f0a964dfe96ff3d66f346fe3 ea46b4ba4df7e817f0a964dfe96ff3d66f346fe3 gayeon337 <gayeon337.lee@lge.com> 1782720354 +0900	checkout: moving from develop to fix/window-drag
+ea46b4ba4df7e817f0a964dfe96ff3d66f346fe3 44c4801ac6e2ed7fc01ce6adeb924aa391ec08e9 gayeon337 <gayeon337.lee@lge.com> 1782720364 +0900	commit: fix: draggable app for windows
+44c4801ac6e2ed7fc01ce6adeb924aa391ec08e9 b87d26eafcf395985d556527d71c99e93ede6735 gayeon337 <gayeon337.lee@lge.com> 1782781800 +0900	commit: Add test cases
+b87d26eafcf395985d556527d71c99e93ede6735 44c4801ac6e2ed7fc01ce6adeb924aa391ec08e9 gayeon337 <gayeon337.lee@lge.com> 1782781815 +0900	reset: moving to HEAD~1
+44c4801ac6e2ed7fc01ce6adeb924aa391ec08e9 44c4801ac6e2ed7fc01ce6adeb924aa391ec08e9 gayeon337 <gayeon337.lee@lge.com> 1782781820 +0900	checkout: moving from fix/window-drag to tcs
+44c4801ac6e2ed7fc01ce6adeb924aa391ec08e9 f4624f4e2dc719366e037e19e9417b60a9012614 gayeon337 <gayeon337.lee@lge.com> 1782781825 +0900	commit: Add test cases
+f4624f4e2dc719366e037e19e9417b60a9012614 ea46b4ba4df7e817f0a964dfe96ff3d66f346fe3 gayeon337 <gayeon337.lee@lge.com> 1782781830 +0900	checkout: moving from tcs to develop
+ea46b4ba4df7e817f0a964dfe96ff3d66f346fe3 ee8aeaa70cc4184541bdaa05edcea08b9dfba61f gayeon337 <gayeon337.lee@lge.com> 1782781834 +0900	pull: Fast-forward
+ee8aeaa70cc4184541bdaa05edcea08b9dfba61f f4624f4e2dc719366e037e19e9417b60a9012614 gayeon337 <gayeon337.lee@lge.com> 1782782668 +0900	checkout: moving from develop to tcs
+f4624f4e2dc719366e037e19e9417b60a9012614 ee8aeaa70cc4184541bdaa05edcea08b9dfba61f gayeon337 <gayeon337.lee@lge.com> 1782782730 +0900	rebase (start): checkout develop
+ee8aeaa70cc4184541bdaa05edcea08b9dfba61f 56454b0e1dc56cca294a5a9ecf7fd8bc0478cd04 gayeon337 <gayeon337.lee@lge.com> 1782782730 +0900	rebase (pick): fix: draggable app for windows
+56454b0e1dc56cca294a5a9ecf7fd8bc0478cd04 1a78dd4160e385c2705bf13bc1eeb523d660c829 gayeon337 <gayeon337.lee@lge.com> 1782782730 +0900	rebase (pick): Add test cases
+1a78dd4160e385c2705bf13bc1eeb523d660c829 1a78dd4160e385c2705bf13bc1eeb523d660c829 gayeon337 <gayeon337.lee@lge.com> 1782782730 +0900	rebase (finish): returning to refs/heads/tcs
+1a78dd4160e385c2705bf13bc1eeb523d660c829 f4624f4e2dc719366e037e19e9417b60a9012614 gayeon337 <gayeon337.lee@lge.com> 1782782740 +0900	pull (start): checkout f4624f4e2dc719366e037e19e9417b60a9012614
+f4624f4e2dc719366e037e19e9417b60a9012614 8d1336b3a327fd9c6b04c5308cf6ae0bfb227dbe gayeon337 <gayeon337.lee@lge.com> 1782782740 +0900	pull (pick): mode gitcopilot
+8d1336b3a327fd9c6b04c5308cf6ae0bfb227dbe 8d1336b3a327fd9c6b04c5308cf6ae0bfb227dbe gayeon337 <gayeon337.lee@lge.com> 1782782740 +0900	pull (finish): returning to refs/heads/tcs
+8d1336b3a327fd9c6b04c5308cf6ae0bfb227dbe ee8aeaa70cc4184541bdaa05edcea08b9dfba61f gayeon337 <gayeon337.lee@lge.com> 1782782936 +0900	reset: moving to develop
+ee8aeaa70cc4184541bdaa05edcea08b9dfba61f ec6d3fae23ed4a4761214a4b1fa036715187ea84 gayeon337 <gayeon337.lee@lge.com> 1782782936 +0900	cherry-pick: Add test cases
+ec6d3fae23ed4a4761214a4b1fa036715187ea84 9752c1aef316d253c674bb9f208681a19190235d gayeon337 <gayeon337.lee@lge.com> 1782783193 +0900	commit (amend): Add test cases
+9752c1aef316d253c674bb9f208681a19190235d b32231eeff4e020b6fee32f5871b34134f92c0ff gayeon337 <gayeon337.lee@lge.com> 1782783842 +0900	commit (amend): Add test cases
+b32231eeff4e020b6fee32f5871b34134f92c0ff 8e056b1fd41a8609150a025207a643432dbe1d64 gayeon337 <gayeon337.lee@lge.com> 1782783931 +0900	commit (amend): Add test cases
+8e056b1fd41a8609150a025207a643432dbe1d64 ee8aeaa70cc4184541bdaa05edcea08b9dfba61f gayeon337 <gayeon337.lee@lge.com> 1782783954 +0900	checkout: moving from tcs to develop
+ee8aeaa70cc4184541bdaa05edcea08b9dfba61f 0f27afc3d3de9ec1654d58fb849c80ef02f92534 gayeon337 <gayeon337.lee@lge.com> 1782783959 +0900	pull: Fast-forward
+0f27afc3d3de9ec1654d58fb849c80ef02f92534 97e6bc30dfd3321ab24537425ed89943ac55c6f3 gayeon337 <gayeon337.lee@lge.com> 1782784077 +0900	commit (merge): Merge branch 'tcs' into develop - add test cases
+97e6bc30dfd3321ab24537425ed89943ac55c6f3 6b94e52f7177aa21f145abeb2702ea3b2f458cd0 gayeon337 <gayeon337.lee@lge.com> 1782784940 +0900	checkout: moving from develop to window_UI
+6b94e52f7177aa21f145abeb2702ea3b2f458cd0 6b94e52f7177aa21f145abeb2702ea3b2f458cd0 gayeon337 <gayeon337.lee@lge.com> 1782785904 +0900	reset: moving to HEAD
+6b94e52f7177aa21f145abeb2702ea3b2f458cd0 ae164dd6667356fd1708b040e7ac0188087f4792 gayeon337 <gayeon337.lee@lge.com> 1782785908 +0900	pull (start): checkout ae164dd6667356fd1708b040e7ac0188087f4792
+ae164dd6667356fd1708b040e7ac0188087f4792 ae164dd6667356fd1708b040e7ac0188087f4792 gayeon337 <gayeon337.lee@lge.com> 1782785908 +0900	pull (finish): returning to refs/heads/window_UI
+ae164dd6667356fd1708b040e7ac0188087f4792 ae164dd6667356fd1708b040e7ac0188087f4792 gayeon337 <gayeon337.lee@lge.com> 1782786249 +0900	reset: moving to HEAD
+ae164dd6667356fd1708b040e7ac0188087f4792 dc080a2e2dc802ccf8c30bd840b2d41e019f6e79 gayeon337 <gayeon337.lee@lge.com> 1782786254 +0900	pull (start): checkout dc080a2e2dc802ccf8c30bd840b2d41e019f6e79
+dc080a2e2dc802ccf8c30bd840b2d41e019f6e79 dc080a2e2dc802ccf8c30bd840b2d41e019f6e79 gayeon337 <gayeon337.lee@lge.com> 1782786254 +0900	pull (finish): returning to refs/heads/window_UI
+dc080a2e2dc802ccf8c30bd840b2d41e019f6e79 edd317e14f29c4894a840823ba2e5c8eb3104898 gayeon337 <gayeon337.lee@lge.com> 1782786297 +0900	commit: fix: build wont fail on non window os
+edd317e14f29c4894a840823ba2e5c8eb3104898 97e6bc30dfd3321ab24537425ed89943ac55c6f3 gayeon337 <gayeon337.lee@lge.com> 1782786584 +0900	checkout: moving from window_UI to develop
+97e6bc30dfd3321ab24537425ed89943ac55c6f3 f6ebc4c2a04175f9375ca6574e607103cbf71102 gayeon337 <gayeon337.lee@lge.com> 1782786589 +0900	pull: Fast-forward
+f6ebc4c2a04175f9375ca6574e607103cbf71102 f6ebc4c2a04175f9375ca6574e607103cbf71102 gayeon337 <gayeon337.lee@lge.com> 1782787505 +0900	checkout: moving from develop to fix/click-propagation
+f6ebc4c2a04175f9375ca6574e607103cbf71102 1d80fdddc916e9893304065681f3656ec13839ff gayeon337 <gayeon337.lee@lge.com> 1782787519 +0900	commit: fix: click propagation to pass tcs
+1d80fdddc916e9893304065681f3656ec13839ff f6ebc4c2a04175f9375ca6574e607103cbf71102 gayeon337 <gayeon337.lee@lge.com> 1782787592 +0900	checkout: moving from fix/click-propagation to develop
+f6ebc4c2a04175f9375ca6574e607103cbf71102 1d80fdddc916e9893304065681f3656ec13839ff gayeon337 <gayeon337.lee@lge.com> 1782787643 +0900	checkout: moving from develop to fix/click-propagation
+1d80fdddc916e9893304065681f3656ec13839ff f6ebc4c2a04175f9375ca6574e607103cbf71102 gayeon337 <gayeon337.lee@lge.com> 1782795717 +0900	checkout: moving from fix/click-propagation to develop
+f6ebc4c2a04175f9375ca6574e607103cbf71102 bd52a4aa11136968bda864e1cb327756430c35df gayeon337 <gayeon337.lee@lge.com> 1782795754 +0900	pull: Fast-forward
+bd52a4aa11136968bda864e1cb327756430c35df 4e52f55e36449c4059140d014f76adfb185fbdbe gayeon337 <gayeon337.lee@lge.com> 1782795918 +0900	checkout: moving from develop to main
+4e52f55e36449c4059140d014f76adfb185fbdbe a6db8bb906b619b5600411193ca4c3119cdc1041 gayeon337 <gayeon337.lee@lge.com> 1782795922 +0900	pull: Fast-forward
+a6db8bb906b619b5600411193ca4c3119cdc1041 bd52a4aa11136968bda864e1cb327756430c35df gayeon337 <gayeon337.lee@lge.com> 1782797523 +0900	checkout: moving from main to develop
+bd52a4aa11136968bda864e1cb327756430c35df bd52a4aa11136968bda864e1cb327756430c35df gayeon337 <gayeon337.lee@lge.com> 1782797534 +0900	reset: moving to HEAD
+bd52a4aa11136968bda864e1cb327756430c35df f980e7e07515cb9bca1e4c831ce5f45547ad7264 gayeon337 <gayeon337.lee@lge.com> 1782797538 +0900	pull: Fast-forward
+f980e7e07515cb9bca1e4c831ce5f45547ad7264 a6db8bb906b619b5600411193ca4c3119cdc1041 gayeon337 <gayeon337.lee@lge.com> 1782862544 +0900	checkout: moving from develop to main
+a6db8bb906b619b5600411193ca4c3119cdc1041 76ceb860f17c353f3b958422790d61ac611dd204 gayeon337 <gayeon337.lee@lge.com> 1782862548 +0900	pull: Fast-forward
+76ceb860f17c353f3b958422790d61ac611dd204 76ceb860f17c353f3b958422790d61ac611dd204 gayeon337 <gayeon337.lee@lge.com> 1782890981 +0900	reset: moving to HEAD
+76ceb860f17c353f3b958422790d61ac611dd204 990762811be4746f4a7386535fc19a589db390ba gayeon337 <gayeon337.lee@lge.com> 1782890985 +0900	pull: Fast-forward
