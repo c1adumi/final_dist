@@ -1,1 +1,0 @@
-Test code is written in files under the src directory to facilitate testing of individual files and layers collectively. Please refer to the test-results directory for the corresponding test results.

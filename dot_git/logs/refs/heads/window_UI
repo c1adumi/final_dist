@@ -1,4 +1,0 @@
-0000000000000000000000000000000000000000 6b94e52f7177aa21f145abeb2702ea3b2f458cd0 gayeon337 <gayeon337.lee@lge.com> 1782784940 +0900	branch: Created from refs/remotes/origin/window_UI
-6b94e52f7177aa21f145abeb2702ea3b2f458cd0 ae164dd6667356fd1708b040e7ac0188087f4792 gayeon337 <gayeon337.lee@lge.com> 1782785908 +0900	pull (finish): refs/heads/window_UI onto ae164dd6667356fd1708b040e7ac0188087f4792
-ae164dd6667356fd1708b040e7ac0188087f4792 dc080a2e2dc802ccf8c30bd840b2d41e019f6e79 gayeon337 <gayeon337.lee@lge.com> 1782786254 +0900	pull (finish): refs/heads/window_UI onto dc080a2e2dc802ccf8c30bd840b2d41e019f6e79
-dc080a2e2dc802ccf8c30bd840b2d41e019f6e79 edd317e14f29c4894a840823ba2e5c8eb3104898 gayeon337 <gayeon337.lee@lge.com> 1782786297 +0900	commit: fix: build wont fail on non window os

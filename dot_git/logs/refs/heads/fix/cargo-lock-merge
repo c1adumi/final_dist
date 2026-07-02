@@ -1,2 +1,0 @@
-0000000000000000000000000000000000000000 ca442d7758efa161db17669ece03fe56a4d1a3d1 gayeon337 <gayeon337.lee@lge.com> 1782268597 +0900	branch: Created from origin/develop
-ca442d7758efa161db17669ece03fe56a4d1a3d1 f1ad95294a1d5efcd786f4440a32fe6926541492 gayeon337 <gayeon337.lee@lge.com> 1782268601 +0900	commit: fix: auto-resolve Cargo.lock conflicts on pull/rebase

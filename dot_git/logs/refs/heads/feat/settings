@@ -1,7 +1,0 @@
-0000000000000000000000000000000000000000 2f433cccdb7697807b91bd77cfe552f6324aaec9 gayeon337 <gayeon337.lee@lge.com> 1782351031 +0900	branch: Created from develop
-2f433cccdb7697807b91bd77cfe552f6324aaec9 76fd3eaf14ae266de10fc66d6c000235d8dc3bb9 gayeon337 <gayeon337.lee@lge.com> 1782351098 +0900	cherry-pick: feat: add theme support to settings model
-76fd3eaf14ae266de10fc66d6c000235d8dc3bb9 8d535e2dceb398630a331d4dea78a6352d974fe3 gayeon337 <gayeon337.lee@lge.com> 1782351098 +0900	cherry-pick: feat: add light theme and settings window styles
-8d535e2dceb398630a331d4dea78a6352d974fe3 6933a30f96e32a6f0a455aba9d225f0bdb8c14d3 gayeon337 <gayeon337.lee@lge.com> 1782351098 +0900	cherry-pick: feat: add settings window backend commands and permissions
-6933a30f96e32a6f0a455aba9d225f0bdb8c14d3 42ee7457382d51884bedbb5ee87eff21cadadc2c gayeon337 <gayeon337.lee@lge.com> 1782351098 +0900	cherry-pick: feat: add settings window frontend with routing
-42ee7457382d51884bedbb5ee87eff21cadadc2c e8ff043586e9d4b7b1c8812fb43aeae7bb930f92 gayeon337 <gayeon337.lee@lge.com> 1782351098 +0900	cherry-pick: refactor: remove settings panel from floating menu
-e8ff043586e9d4b7b1c8812fb43aeae7bb930f92 377d3acaf84fecfbf47d6c9db5ee2948cac08b3b gayeon337 <gayeon337.lee@lge.com> 1782351098 +0900	cherry-pick: fix: light theme active chip style consistency

@@ -1,3 +1,0 @@
-0000000000000000000000000000000000000000 5d9dda750da54e4d25d4866744001f858f1808b9 gayeon337 <gayeon337.lee@lge.com> 1782714393 +0900	branch: Created from HEAD
-5d9dda750da54e4d25d4866744001f858f1808b9 88f508164e3b3c44603f6bb4fa47f464dc80d695 gayeon337 <gayeon337.lee@lge.com> 1782714427 +0900	commit: fix: disable insert/copy when error message is displayed
-88f508164e3b3c44603f6bb4fa47f464dc80d695 45a014392c82cd11cd33d3888275c224646415dc gayeon337 <gayeon337.lee@lge.com> 1782714676 +0900	commit (amend): fix: disable insert/copy when error message is displayed

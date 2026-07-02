@@ -1,9 +1,0 @@
-0000000000000000000000000000000000000000 4e52f55e36449c4059140d014f76adfb185fbdbe gayeon337 <gayeon337.lee@lge.com> 1782708909 +0900	branch: Created from main
-4e52f55e36449c4059140d014f76adfb185fbdbe 847f87fa57e465b63a11f0a7b9a90dded9f26d84 gayeon337 <gayeon337.lee@lge.com> 1782711127 +0900	commit: wip
-847f87fa57e465b63a11f0a7b9a90dded9f26d84 4e52f55e36449c4059140d014f76adfb185fbdbe gayeon337 <gayeon337.lee@lge.com> 1782712131 +0900	reset: moving to 4e52f55
-4e52f55e36449c4059140d014f76adfb185fbdbe 5d9dda750da54e4d25d4866744001f858f1808b9 gayeon337 <gayeon337.lee@lge.com> 1782712135 +0900	rebase (finish): refs/heads/feat/select-settings onto 5d9dda750da54e4d25d4866744001f858f1808b9
-5d9dda750da54e4d25d4866744001f858f1808b9 f05480ee2dd897f3cbef25ea9ec976ed01ccbb1b gayeon337 <gayeon337.lee@lge.com> 1782712147 +0900	commit: feat: add trigger mode setting and keyboard navigation for presets
-f05480ee2dd897f3cbef25ea9ec976ed01ccbb1b 5d9dda750da54e4d25d4866744001f858f1808b9 gayeon337 <gayeon337.lee@lge.com> 1782713155 +0900	reset: moving to HEAD~1
-5d9dda750da54e4d25d4866744001f858f1808b9 2b4a25c32e68b96030a12f2f2712a24790c2cce4 gayeon337 <gayeon337.lee@lge.com> 1782713244 +0900	commit: feat: add trigger mode setting (manual/auto)
-2b4a25c32e68b96030a12f2f2712a24790c2cce4 7c7a94b26a6397eefff44a43eb2e356409738de4 gayeon337 <gayeon337.lee@lge.com> 1782713252 +0900	commit: feat: add keyboard navigation for presets
-7c7a94b26a6397eefff44a43eb2e356409738de4 cb2ee4de1914a336952f4588aa52d2649bed24b3 gayeon337 <gayeon337.lee@lge.com> 1782717659 +0900	commit (amend): feat: add keyboard navigation for presets
