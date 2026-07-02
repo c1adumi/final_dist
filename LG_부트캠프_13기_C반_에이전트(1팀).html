@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG 부트캠프 13기 C반 에이전트 평가 리포트 (1팀)</title>
+    <style>
+        :root {
+            --primary: #0f62fe;
+            --success: #198038;
+            --warning: #f1c21b;
+            --danger: #da1e28;
+            --neutral: #6f6f6f;
+            --info: #0043ce;
+            --bg: #f4f4f4;
+            --card: #ffffff;
+            --border: #e0e0e0;
+            --text: #161616;
+            --text-muted: #525252;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'IBM Plex Sans', 'Noto Sans KR', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+            color: #fff;
+            padding: 2.5rem 2rem;
+        }
+
+        .page-header h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: .5rem;
+        }
+
+        .page-header .meta {
+            font-size: .9rem;
+            color: #94a3b8;
+        }
+
+        .page-header .meta span {
+            margin-right: 1.5rem;
+        }
+
+        nav {
+            background: #1e293b;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: .6rem 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            border-bottom: 2px solid var(--primary);
+        }
+
+        nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            font-size: .82rem;
+            font-weight: 500;
+            padding: .3rem .6rem;
+            border-radius: 4px;
+            transition: .2s;
+        }
+
+        nav a:hover {
+            background: #334155;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        section .section-header {
+            background: #f8fafc;
+            border-bottom: 2px solid var(--primary);
+            padding: 1rem 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: .7rem;
+        }
+
+        section .section-header h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        section .section-header .badge {
+            font-size: .72rem;
+            padding: .2rem .6rem;
+            border-radius: 12px;
+            font-weight: 600;
+        }
+
+        .badge-ok {
+            background: #d0f0c0;
+            color: #1a5c1a;
+        }
+
+        .badge-warn {
+            background: #fff3cd;
+            color: #7a5c00;
+        }
+
+        .badge-miss {
+            background: #ffd7d9;
+            color: #7a0000;
+        }
+
+        .badge-info {
+            background: #ddf4ff;
+            color: #003a75;
+        }
+
+        .section-body {
+            padding: 1.5rem;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .summary-card {
+            border-radius: 8px;
+            padding: 1.2rem;
+            border: 1px solid var(--border);
+        }
+
+        .summary-card .label {
+            font-size: .8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: .04em;
+            margin-bottom: .4rem;
+        }
+
+        .summary-card .value {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        .summary-card .sub {
+            font-size: .8rem;
+            color: var(--text-muted);
+        }
+
+        .card-green {
+            border-left: 4px solid var(--success);
+        }
+
+        .card-blue {
+            border-left: 4px solid var(--primary);
+        }
+
+        .card-orange {
+            border-left: 4px solid #f57c00;
+        }
+
+        .card-red {
+            border-left: 4px solid var(--danger);
+        }
+
+        .tbl-wrap {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: .88rem;
+        }
+
+        th {
+            background: #f1f5f9;
+            padding: .65rem .9rem;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-muted);
+            border-bottom: 2px solid var(--border);
+            white-space: nowrap;
+        }
+
+        td {
+            padding: .55rem .9rem;
+            border-bottom: 1px solid var(--border);
+            vertical-align: top;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: #f8fafc;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: .18rem .55rem;
+            border-radius: 12px;
+            font-size: .75rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .pill-ok {
+            background: #d0f0c0;
+            color: #1a5c1a;
+        }
+
+        .pill-partial {
+            background: #fff3cd;
+            color: #7a5c00;
+        }
+
+        .pill-no {
+            background: #ffd7d9;
+            color: #7a0000;
+        }
+
+        .pill-na {
+            background: #ececec;
+            color: #555;
+        }
+
+        .pill-pass {
+            background: #cfe8ff;
+            color: #003a75;
+        }
+
+        .pill-fail {
+            background: #ffd7d9;
+            color: #7a0000;
+        }
+
+        .pill-exist {
+            background: #e8e0ff;
+            color: #4c1d95;
+        }
+
+        .evidence {
+            font-size: .78rem;
+            color: var(--text-muted);
+            margin-top: .25rem;
+        }
+
+        .evidence code {
+            background: #f1f5f9;
+            padding: .05rem .3rem;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: .75rem;
+            color: #1e3a5f;
+        }
+
+        .devops-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: .8rem;
+        }
+
+        .devops-item {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+
+        .devops-item .dnum {
+            font-size: .72rem;
+            color: var(--text-muted);
+            margin-bottom: .3rem;
+            font-weight: 600;
+        }
+
+        .devops-item .dtitle {
+            font-size: .9rem;
+            font-weight: 600;
+            margin-bottom: .4rem;
+        }
+
+        .devops-item .dval {
+            margin-bottom: .4rem;
+        }
+
+        .git-bars {
+            margin: .8rem 0;
+        }
+
+        .git-bar-row {
+            display: flex;
+            align-items: center;
+            gap: .8rem;
+            margin-bottom: .5rem;
+            font-size: .85rem;
+        }
+
+        .git-bar-label {
+            width: 140px;
+            min-width: 100px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .git-bar-track {
+            flex: 1;
+            background: #e2e8f0;
+            border-radius: 4px;
+            height: 18px;
+            overflow: hidden;
+        }
+
+        .git-bar-fill {
+            height: 100%;
+            border-radius: 4px;
+            background: var(--primary);
+        }
+
+        .git-bar-count {
+            width: 40px;
+            text-align: right;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .git-day-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 50px);
+            gap: .5rem;
+            margin: .8rem 0;
+        }
+
+        .git-day {
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: .4rem;
+            text-align: center;
+            font-size: .78rem;
+        }
+
+        .git-day .day-date {
+            color: var(--text-muted);
+            font-size: .7rem;
+        }
+
+        .git-day .day-count {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .nf-section {
+            background: #fafaf8;
+            border: 1px solid #dde;
+            border-radius: 6px;
+            padding: 1rem 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .nf-section h3 {
+            font-size: .95rem;
+            font-weight: 700;
+            margin-bottom: .4rem;
+            color: var(--info);
+        }
+
+        .nf-section .nf-source {
+            font-size: .8rem;
+            color: var(--text-muted);
+            margin-bottom: .3rem;
+            font-style: italic;
+        }
+
+        .nf-section .nf-fact {
+            font-size: .82rem;
+            background: #eef6ff;
+            border-left: 3px solid var(--primary);
+            padding: .4rem .7rem;
+            border-radius: 3px;
+            margin-bottom: .6rem;
+        }
+
+        .nf-section table th {
+            font-size: .8rem;
+        }
+
+        .nf-section table td {
+            font-size: .8rem;
+        }
+
+        .nf-section td input[type=text] {
+            width: 60px;
+            border: 1px solid var(--border);
+            border-radius: 3px;
+            padding: .2rem .4rem;
+            text-align: center;
+            font-size: .8rem;
+        }
+
+        .limit-block {
+            background: #fff7ed;
+            border: 1px solid #f97316;
+            border-radius: 6px;
+            padding: .8rem 1rem;
+            margin-bottom: .7rem;
+        }
+
+        .limit-block .lt {
+            font-weight: 700;
+            color: #9a3412;
+            margin-bottom: .2rem;
+            font-size: .88rem;
+        }
+
+        .limit-block .ld {
+            font-size: .82rem;
+            color: #7c2d12;
+        }
+
+        .artifact-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: .8rem;
+        }
+
+        .artifact-item {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: .8rem 1rem;
+            display: flex;
+            gap: .8rem;
+            align-items: flex-start;
+        }
+
+        .artifact-item .ai {
+            font-size: 1.3rem;
+        }
+
+        .artifact-item .an {
+            font-weight: 600;
+            font-size: .9rem;
+        }
+
+        .artifact-item .as {
+            font-size: .8rem;
+            color: var(--text-muted);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: .8rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 600px) {
+            .summary-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-header">
+        <h1>🤖 프로젝트 자동 평가 리포트</h1>
+        <div class="meta">
+            <span>📅 분석 일시: 2026-07-02</span>
+            <span>🏫 LG 부트캠프 13기 C반 1팀</span>
+            <span>📦 프로젝트: Dadumi (In-Line AI 글쓰기 어시스턴트)</span>
+            <span>🤖 Agent 버전: project_assessment_agent v1.0</span>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#s1">① 요약</a>
+        <a href="#s2">② 산출물 점검</a>
+        <a href="#s3">③ 기능 구현 매트릭스</a>
+        <a href="#s4">④ 테스트 결과</a>
+        <a href="#s5">⑤ DevOps·실행 가능성</a>
+        <a href="#s6">⑥ 시연 확인표</a>
+        <a href="#s7">⑦ Git 협업 지표</a>
+        <a href="#s8">⑧ 강사 평가 폼</a>
+        <a href="#s9">⑨ 확인 불가 / 한계</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- ============================== S1: 요약 ============================== -->
+        <section id="s1">
+            <div class="section-header">
+                <h2>① 요약</h2>
+                <span class="badge badge-info">자동 분석</span>
+            </div>
+            <div class="section-body">
+                <div class="summary-grid">
+                    <div class="summary-card card-green">
+                        <div class="label">기능 요구사항 (30건)</div>
+                        <div class="value">23 / 30</div>
+                        <div class="sub">구현됨 23 · 부분구현 2 · 미구현 1 · 확인불가 2 · 존재확인 2</div>
+                    </div>
+                    <div class="summary-card card-blue">
+                        <div class="label">테스트 결과</div>
+                        <div class="value">155 / 155</div>
+                        <div class="sub">8파일 · 전체 통과 (로컬 실행 + CI 첨부결과 2회 일치)</div>
+                    </div>
+                    <div class="summary-card card-orange">
+                        <div class="label">DevOps 8개 기준</div>
+                        <div class="value">7 / 8</div>
+                        <div class="sub">충족 7 · 미충족 1 (실제 Tauri 기동 확인 불가)</div>
+                    </div>
+                    <div class="summary-card card-blue">
+                        <div class="label">Git 커밋 (총 103건)</div>
+                        <div class="value">4명</div>
+                        <div class="sub">gayeon337 / seongheon / moonjoo / dubudub</div>
+                    </div>
+                </div>
+                <table style="font-size:.85rem;">
+                    <tr>
+                        <th>항목</th>
+                        <th>값</th>
+                    </tr>
+                    <tr>
+                        <td>프로젝트명</td>
+                        <td><strong>Dadumi</strong> – In-Line AI 글쓰기 어시스턴트</td>
+                    </tr>
+                    <tr>
+                        <td>반/팀</td>
+                        <td>LG 부트캠프 13기 C반 1팀</td>
+                    </tr>
+                    <tr>
+                        <td>버전</td>
+                        <td>v1.10.4 (태그 <code>990762811be4746f4a7386535fc19a589db390ba</code>)</td>
+                    </tr>
+                    <tr>
+                        <td>요구사항명세서</td>
+                        <td><code>LG_부트캠프_13기_C반_요구사항명세서(1팀).md</code> (v1.0.1, 최종 수정: 2026-07-01)</td>
+                    </tr>
+                    <tr>
+                        <td>기술 스택</td>
+                        <td>Tauri v2 (Rust + React/TypeScript), Vitest, Vite, Tailwind CSS</td>
+                    </tr>
+                    <tr>
+                        <td>분석 기준일</td>
+                        <td>2026-07-02</td>
+                    </tr>
+                    <tr>
+                        <td>로컬 테스트 실행</td>
+                        <td><code>cd D:\Git\final_dist\src &amp;&amp; npm run test:run</code> → 155 passed (2026-07-02
+                            08:45 로컬)</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <!-- ============================== S2: 산출물 점검 ============================== -->
+        <section id="s2">
+            <div class="section-header">
+                <h2>② 산출물 점검 결과</h2>
+                <span class="badge badge-warn">형식 불일치 주의 (내용 충족)</span>
+            </div>
+            <div class="section-body">
+                <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:1rem;">
+                    ※ <code>에이전트(1팀).html</code>은 Agent가 생성하는 출력물이므로 점검 대상에서 제외합니다.
+                </p>
+                <div class="artifact-list">
+                    <div class="artifact-item" style="border-left:4px solid var(--success)">
+                        <div class="ai">✅</div>
+                        <div>
+                            <div class="an">요구사항 명세서</div>
+                            <div class="as"><code>LG_부트캠프_13기_C반_요구사항명세서(1팀).md</code></div>
+                            <div class="as">v1.0.1 · 기능 요구사항 30건 포함</div>
+                        </div>
+                    </div>
+                    <div class="artifact-item" style="border-left:4px solid var(--success)">
+                        <div class="ai">✅</div>
+                        <div>
+                            <div class="an">결과보고서 (PDF)</div>
+                            <div class="as"><code>LG_부트캠프_13기_C반_결과보고서(1팀).pdf</code></div>
+                            <div class="as">존재 확인</div>
+                        </div>
+                    </div>
+                    <div class="artifact-item" style="border-left:4px solid var(--success)">
+                        <div class="ai">✅</div>
+                        <div>
+                            <div class="an">결과보고서 (PPTX)</div>
+                            <div class="as"><code>LG_부트캠프_13기_C반_결과보고서(1팀).pptx</code></div>
+                            <div class="as">존재 확인</div>
+                        </div>
+                    </div>
+                    <div class="artifact-item" style="border-left:4px solid var(--success)">
+                        <div class="ai">✅</div>
+                        <div>
+                            <div class="an">소스코드</div>
+                            <div class="as"><code>src/</code> 디렉토리 (zip 아닌 폴더로 제출)</div>
+                            <div class="as">src-tauri/, src/, package.json, RUN.md 포함</div>
+                        </div>
+                    </div>
+                    <div class="artifact-item" style="border-left:4px solid var(--success)">
+                        <div class="ai">✅</div>
+                        <div>
+                            <div class="an">시연 영상</div>
+                            <div class="as"><code>LG_부트캠프_13기_C반_시연영상(1팀).mp4</code></div>
+                            <div class="as">존재 확인 (재생 내용 분석 불가)</div>
+                        </div>
+                    </div>
+                    <div class="artifact-item" style="border-left:4px solid var(--success)">
+                        <div class="ai">✅</div>
+                        <div>
+                            <div class="an">포스터 (PDF)</div>
+                            <div class="as"><code>LG_부트캠프_13기_C반_포스터(1팀).pdf</code></div>
+                            <div class="as">존재 확인</div>
+                        </div>
+                    </div>
+                    <div class="artifact-item" style="border-left:4px solid var(--success)">
+                        <div class="ai">✅</div>
+                        <div>
+                            <div class="an">포스터 (PPTX)</div>
+                            <div class="as"><code>LG_부트캠프_13기_C반_포스터(1팀).pptx</code></div>
+                            <div class="as">존재 확인</div>
+                        </div>
+                    </div>
+                    <div class="artifact-item" style="border-left:4px solid var(--success)">
+                        <div class="ai">✅</div>
+                        <div>
+                            <div class="an">테스트 결과 로그</div>
+                            <div class="as"><code>test-results/result.log</code></div>
+                            <div class="as">GitHub Actions CI 로그 첨부 (2026-07-01T06:23:44)</div>
+                        </div>
+                    </div>
+                    <div class="artifact-item" style="border-left:4px solid var(--success)">
+                        <div class="ai">✅</div>
+                        <div>
+                            <div class="an">Git 히스토리</div>
+                            <div class="as"><code>dot_git/</code> (히스토리 포함 제출)</div>
+                            <div class="as">103건 커밋 · 4인 기여</div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="margin-top:1rem;padding:.8rem 1rem;background:#fff7ed;border:1px solid #f97316;border-radius:6px;font-size:.85rem;">
+                    <strong>⚠️ 형식 불일치 주의:</strong><br>
+                    • 가이드 예시 경로(<code>결과파일(X팀).zip</code>)와 달리 소스코드가 <code>src/</code> 디렉토리로 직접 제출되었습니다.
+                    (<code>.zip</code> 아님)<br>
+                    • <code>tests/</code>에 테스트 코드가 없고 테스트 코드는 <code>src/src/</code> 안에 포함되어 있습니다.
+                    (<code>tests/README.md</code>에 명시됨)<br>
+                    • 이 불일치가 자동 분석 정확도에 영향을 줄 수 있음을 리포트 상단에 명시합니다.
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== S3: 기능 구현 매트릭스 ============================== -->
+        <section id="s3">
+            <div class="section-header">
+                <h2>③ 기능 구현 매트릭스</h2>
+                <span class="badge badge-ok">구현됨 23 · 부분구현 2 · 미구현 1 · 확인불가 2 · 존재확인 2</span>
+            </div>
+            <div class="section-body">
+                <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:1rem;">
+                    ⚙️ <strong>근거 기준</strong>: 소스 코드 파일·함수·컴포넌트 존재 여부로 판정.
+                    OS 네이티브 기능(단축키 감지, 텍스트 캡처/붙여넣기, 트레이)은 Rust 소스는 확인되나 실제 실행 환경(Tauri 빌드) 없이는 동작 검증 불가 → 「부분 구현」 처리.
+                </p>
+                <div class="tbl-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>요구사항 요약</th>
+                                <th>판정</th>
+                                <th>테스트</th>
+                                <th>근거 (파일·함수)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>R-01</td>
+                                <td>전역 단축키(Ctrl+Space / Alt+Space)로 어시스턴트 활성화</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-na">해당없음</span></td>
+                                <td>
+                                    <code>src/src-tauri/src/lib.rs</code><br>
+                                    <div class="evidence">근거: <code>tauri_plugin_global_shortcut</code> – Windows:
+                                        <code>Modifiers::CONTROL + Code::Space</code>, 그 외:
+                                        <code>Modifiers::ALT + Code::Space</code> 등록. 250ms 디바운싱 적용
+                                        (<code>LAST_HOTKEY_MS</code>).</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-02</td>
+                                <td>단축키 호출 시 선택 텍스트 자동 캡처</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-na">해당없음</span></td>
+                                <td>
+                                    <code>src/src-tauri/src/lib.rs</code><br>
+                                    <div class="evidence">근거: <code>capture_selected_text_with_retry()</code> – 4회 재시도
+                                        로직, <code>SelectionPayload</code> 구조체,
+                                        <code>window.emit("selection-captured", payload)</code>로 프론트엔드 전달.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-03</td>
+                                <td>플로팅 메뉴가 마우스 커서 주변(±50px) 표시</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-na">해당없음</span></td>
+                                <td>
+                                    <code>src/src-tauri/src/lib.rs</code><br>
+                                    <div class="evidence">근거: <code>win_x = (mouse_x + 32.0) as i32</code>,
+                                        <code>win_y = (mouse_y - 24.0) as i32</code> → ±50px 이내. 실제 픽셀 위치는 Tauri 빌드
+                                        환경에서만 검증 가능.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-04</td>
+                                <td>플로팅 메뉴 반투명 UI (블러 효과)</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-na">해당없음</span></td>
+                                <td>
+                                    <code>src/src-tauri/tauri.conf.json</code><br>
+                                    <div class="evidence">근거: <code>"transparent": true</code>,
+                                        <code>"macOSPrivateApi": true</code>. README – "Tailwind CSS + native blur
+                                        (Acrylic/Vibrancy)".</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-05</td>
+                                <td>프리셋 AI 기능 5종 (문법교정, 글개선, 전문화, 이어쓰기, 번역)</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/components/FloatingMenu.tsx</code>,
+                                    <code>src/src/prompts/index.ts</code><br>
+                                    <div class="evidence">근거:
+                                        <code>PRESET_IDS = ["grammar","improve","professional","continue","translate"]</code>,
+                                        <code>PRESET_INSTRUCTIONS</code> 한/영 각각 정의. FloatingMenu.test.tsx – "renders all
+                                        5 preset buttons" 테스트 통과.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-06</td>
+                                <td>사용자 정의 프롬프트 입력 및 실행</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/components/FloatingMenu.tsx</code><br>
+                                    <div class="evidence">근거: <code>customPrompt</code> state,
+                                        <code>placeholder="Custom instruction..."</code> 입력란. FloatingMenu.test.tsx –
+                                        "renders custom input field" 테스트 통과.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-07</td>
+                                <td>AI 응답 스트리밍 표시</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/components/FloatingMenu.tsx</code>,
+                                    <code>src/src/utils/providers.ts</code><br>
+                                    <div class="evidence">근거: <code>parseProviderResponse()</code>,
+                                        <code>setStreamedText()</code> – ReadableStream 청크 누적 처리. FloatingMenu.test.tsx
+                                        – 스트리밍 상태 관련 테스트 포함.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-08</td>
+                                <td>AI 생성 중 Stop 버튼으로 중단</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/components/FloatingMenu.tsx</code><br>
+                                    <div class="evidence">근거: <code>abortControllerRef.current.abort()</code>, catch
+                                        블록에서 <code>AbortError</code> 제외 처리. FloatingMenu.test.tsx – stop 버튼 관련 테스트 포함.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-09</td>
+                                <td>AI 결과 원래 앱 텍스트 위치에 자동 붙여넣기</td>
+                                <td><span class="pill pill-partial">부분 구현</span></td>
+                                <td><span class="pill pill-pass">테스트 있음 (Mock)</span></td>
+                                <td>
+                                    <code>src/src-tauri/src/lib.rs</code>,
+                                    <code>src/src/components/FloatingMenu.tsx</code><br>
+                                    <div class="evidence">근거: Rust <code>paste_text</code> Tauri command,
+                                        <code>os_integration::paste_text()</code> 3회 재시도 로직 구현. 프론트
+                                        <code>invokeCmd("paste_text")</code> 호출. 실제 OS 수준 붙여넣기 동작은 Tauri 빌드 환경 필요.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-10</td>
+                                <td>AI 결과 클립보드 복사</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/components/FloatingMenu.tsx</code><br>
+                                    <div class="evidence">근거: <code>navigator.clipboard.writeText(streamedText)</code>,
+                                        <code>copySuccess</code> state로 "Copied!" 피드백 표시.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-11</td>
+                                <td>다중 AI 제공사 선택 (OpenAI, Anthropic, Gemini, Bedrock, OpenRouter, Custom)</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/utils/providers.ts</code><br>
+                                    <div class="evidence">근거:
+                                        <code>ProviderID = "openai" | "anthropic" | "gemini" | "bedrock" | "openrouter" | "github-copilot" | "custom"</code>
+                                        7종. <code>ProviderDef</code> 인터페이스 추상화. providers.test.ts – 22건 통과.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-12</td>
+                                <td>제공사별 모델 선택 (드롭다운)</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/components/SettingsWindow.tsx</code><br>
+                                    <div class="evidence">근거: 제공사별 모델 드롭다운 select 구현. SettingsWindow.test.tsx – 모델 선택 관련
+                                        테스트 포함 (34건 통과).</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-13</td>
+                                <td>최신 모델 목록 API 동적 조회 (새로고침)</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/utils/providers.ts</code>,
+                                    <code>src/src/components/SettingsWindow.tsx</code><br>
+                                    <div class="evidence">근거: <code>fetchModels?(config)</code> optional 함수,
+                                        <code>isFetchingModels</code> / <code>dynamicModels</code> state, 새로고침 버튼 UI.
+                                        SettingsWindow.test.tsx – 관련 테스트 포함.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-14</td>
+                                <td>사용자 정의 시스템 프롬프트 설정·저장·적용</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/context/SettingsContext.tsx</code><br>
+                                    <div class="evidence">근거:
+                                        <code>systemPrompts: Record&lt;Language, string&gt;</code>,
+                                        <code>setSystemPrompt()</code> 함수, 한/영 각각 저장. SettingsContext.test.tsx – 15건 통과.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-15</td>
+                                <td>시스템 프롬프트 관련 번역 버튼 한국어·영어 UI 모두에서 존재</td>
+                                <td><span class="pill pill-no">미구현 (소스 기준)</span></td>
+                                <td><span class="pill pill-na">없음</span></td>
+                                <td>
+                                    <code>git log</code> – 커밋 <code>ea46b4ba</code><br>
+                                    <div class="evidence">근거: 커밋 <code>ea46b4ba</code> (2026-06-29, dubudub) "feat:
+                                        update system prompt placeholder text and <strong>remove translate
+                                            button</strong>" – SettingsWindow.tsx에서 번역 버튼 제거 확인. 현재 SettingsWindow.tsx에
+                                        번역 버튼 코드 없음.<br>
+                                        ⚠️ <strong>명세서-소스 불일치</strong>: 요구사항 명세서(v1.0.1)는 "한국어·영어 UI 모두에서 존재한다"로 기재되어 있고
+                                        시연 타임스탬프 <strong>01:24</strong>가 제공됩니다. 그러나 소스 코드 분석 기준으로는 버튼이 제거된 상태입니다. 평가자가
+                                        영상 01:24을 직접 확인하시기 바랍니다.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-16</td>
+                                <td>UI 언어 영어/한국어 전환</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/utils/i18n.ts</code><br>
+                                    <div class="evidence">근거: <code>translations = { en: {...}, ko: {...} }</code>.
+                                        i18n.test.ts – "has matching keys in both languages" 등 10건 통과.
+                                        SettingsWindow.test.tsx – "renders language toggle buttons", "English is
+                                        selected by default" 통과.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-17</td>
+                                <td>다크/라이트 모드 전환</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/utils/settings.ts</code><br>
+                                    <div class="evidence">근거: <code>Theme = "dark" | "light"</code>,
+                                        <code>setTheme()</code>. SettingsWindow.test.tsx – 테마 전환 관련 테스트 포함.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-18</td>
+                                <td>설정 앱 재시작 후 유지</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/utils/settings.ts</code><br>
+                                    <div class="evidence">근거: <code>STORAGE_KEY = "dadumi_settings"</code>,
+                                        <code>localStorage.setItem/getItem()</code> – API 키·모델·프롬프트·언어·테마 전체 저장.
+                                        settings.test.ts – "loads saved settings from localStorage" 등 14건 통과.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-19</td>
+                                <td>플로팅 메뉴 드래그로 이동</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-na">해당없음</span></td>
+                                <td>
+                                    <code>src/src/components/FloatingMenu.tsx</code><br>
+                                    <div class="evidence">근거: <code>handleDragStart()</code> –
+                                        <code>getCurrentWindow().startDragging()</code> 호출.
+                                        <code>data-tauri-drag-region</code> 속성, <code>div.drag-handle</code> UI 요소 (line
+                                        194).</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-20</td>
+                                <td>플로팅 메뉴에서 설정 창 진입</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/components/FloatingMenu.tsx</code>,
+                                    <code>src/src-tauri/src/lib.rs</code><br>
+                                    <div class="evidence">근거: <code>IconGear</code> 컴포넌트, <code>open_settings</code>
+                                        Tauri command 구현. FloatingMenu.test.tsx – 설정 버튼 관련 테스트 포함.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-21</td>
+                                <td>시스템 트레이 상주·백그라운드 실행</td>
+                                <td><span class="pill pill-partial">부분 구현</span></td>
+                                <td><span class="pill pill-na">해당없음</span></td>
+                                <td>
+                                    <code>src/src-tauri/src/lib.rs</code><br>
+                                    <div class="evidence">근거: <code>TrayIconBuilder::new()</code>, Show/Settings/Quit
+                                        트레이 메뉴 구현, 전역 단축키 등록. 실제 백그라운드 실행 동작은 Tauri 빌드 환경 필요.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-22</td>
+                                <td>트레이 아이콘 Quit으로 앱 종료</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-na">해당없음</span></td>
+                                <td>
+                                    <code>src/src-tauri/src/lib.rs</code><br>
+                                    <div class="evidence">근거:
+                                        <code>"quit" =&gt; { app.cleanup_before_exit(); std::process::exit(0); }</code>
+                                        구현.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-23</td>
+                                <td>macOS·Windows·Linux 3플랫폼 동작</td>
+                                <td><span class="pill pill-na">확인 불가</span></td>
+                                <td><span class="pill pill-na">해당없음</span></td>
+                                <td>
+                                    <code>src/src-tauri/src/os_integration/</code><br>
+                                    <div class="evidence">근거: <code>windows.rs</code>, <code>macos.rs</code>,
+                                        <code>linux.rs</code> 각각 존재. CI ubuntu-24.04 테스트 통과. 실제 3플랫폼 네이티브 빌드 검증 불가.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-24</td>
+                                <td>GitHub Actions 태그 push → 자동 빌드·릴리즈</td>
+                                <td><span class="pill pill-na">확인 불가</span></td>
+                                <td><span class="pill pill-na">해당없음</span></td>
+                                <td>
+                                    <code>test-results/result.log</code><br>
+                                    <div class="evidence">근거: CI 로그에서 tag <code>v1.10.4</code> push 시 자동 테스트 실행 확인.
+                                        GitHub Releases 빌드 파일 자동 업로드 여부는 저장소 직접 접근 없이 확인 불가. 시연 타임스탬프
+                                        <strong>02:04</strong> 제공 – 평가자가 영상 확인 필요.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-25</td>
+                                <td>한 줄 설치 스크립트</td>
+                                <td><span class="pill pill-exist">존재 확인</span></td>
+                                <td><span class="pill pill-na">없음</span></td>
+                                <td>
+                                    <code>src/scripts/install.sh</code>, <code>src/scripts/install.ps1</code><br>
+                                    <div class="evidence">근거: 양 파일 존재. GitHub Releases 최신 릴리즈 자동 탐지·다운로드 로직 구현. 실제 릴리즈
+                                        바이너리 설치 동작은 검증 불가. 시연 타임스탬프 <strong>01:32</strong> 제공.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-26</td>
+                                <td>한 줄 삭제 스크립트</td>
+                                <td><span class="pill pill-exist">존재 확인</span></td>
+                                <td><span class="pill pill-na">없음</span></td>
+                                <td>
+                                    <code>src/scripts/uninstall.sh</code>, <code>src/scripts/uninstall.ps1</code><br>
+                                    <div class="evidence">근거: 양 파일 존재. 시연 타임스탬프 <strong>01:32</strong> 제공 – 평가자가 영상 확인
+                                        필요.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-27</td>
+                                <td>API 키 미입력 시 경고 메시지</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/components/FloatingMenu.tsx</code><br>
+                                    <div class="evidence">근거:
+                                        <code>requiresKey &amp;&amp; !activeProviderSettings.config.apiKey</code> 조건 분기,
+                                        <code>setErrorMessage(`Please open settings (⚙️) and enter your ... API Key.`)</code>.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-28</td>
+                                <td>API 요청 실패 시 오류 메시지</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/components/FloatingMenu.tsx</code><br>
+                                    <div class="evidence">근거: catch 블록 – <code>!isAbort</code> 조건으로
+                                        <code>setErrorMessage(`Error: ${message}`)</code>. HTTP 오류·JSON 파싱 오류 모두 분기.
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-29</td>
+                                <td>붙여넣기 실패 시 원인·해결방법 안내</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음 (Mock)</span></td>
+                                <td>
+                                    <code>src/src/components/FloatingMenu.tsx</code><br>
+                                    <div class="evidence">근거: <code>handlePasteBack()</code> catch – Windows: "Ensure
+                                        Dadumi is not running as Administrator...", macOS: "Check Accessibility
+                                        permission..." 플랫폼별 힌트 포함.</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>R-30</td>
+                                <td>Custom OpenAI 호환 엔드포인트 직접 지정</td>
+                                <td><span class="pill pill-ok">구현됨</span></td>
+                                <td><span class="pill pill-pass">테스트 있음</span></td>
+                                <td>
+                                    <code>src/src/utils/providers.ts</code><br>
+                                    <div class="evidence">근거: <code>ProviderID</code>에 <code>"custom"</code> 포함, URL·API
+                                        Key 입력 필드 정의. providers.test.ts – 22건 통과.</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div
+                    style="margin-top:1rem;padding:.7rem 1rem;background:#f0fdf4;border:1px solid #16a34a;border-radius:5px;font-size:.83rem;">
+                    <strong>판정 요약</strong>: 구현됨 23건 / 부분 구현 2건 (R-09, R-21) / 미구현 1건 (R-15 – 소스 기준, 번역 버튼 제거 커밋
+                    ea46b4ba. 영상 01:24 평가자 확인 필요) / 확인 불가 2건 (R-23, R-24) / 존재만 확인 2건 (R-25, R-26)
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== S4: 테스트 결과 ============================== -->
+        <section id="s4">
+            <div class="section-header">
+                <h2>④ 테스트 결과</h2>
+                <span class="badge badge-ok">155/155 통과 (8 파일)</span>
+            </div>
+            <div class="section-body">
+                <div
+                    style="background:#f0fdf4;border:1px solid #16a34a;border-radius:6px;padding:.9rem 1.2rem;margin-bottom:1rem;font-size:.85rem;">
+                    <strong>✅ 직접 실행 결과 (로컬, 2026-07-02)</strong>:
+                    <code>cd D:\Git\final_dist\src &amp;&amp; npm run test:run</code><br>
+                    <code
+                        style="color:#166534">Test Files: 8 passed (8) | Tests: 155 passed (155) | Duration: 4.07s</code><br><br>
+                    <strong>✅ CI 첨부 결과 (GitHub Actions, 2026-07-01T06:23:44)</strong>: 동일 결과 확인<br>
+                    <code
+                        style="color:#166534">repo: c1adumi/dadumi, tag: v1.10.4 (990762811be4746f4a7386535fc19a589db390ba), ubuntu-24.04, node v24.17.0</code><br>
+                    <code
+                        style="color:#166534">Test Files: 8 passed (8) | Tests: 155 passed (155) | Duration: 4.00s</code>
+                </div>
+                <div class="tbl-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>테스트 파일</th>
+                                <th>건수</th>
+                                <th>결과</th>
+                                <th>관련 요구사항</th>
+                                <th>근거</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>src/App.test.tsx</code></td>
+                                <td>26</td>
+                                <td><span class="pill pill-pass">통과</span></td>
+                                <td>R-03, R-06, R-19 (simulator)</td>
+                                <td>브라우저 시뮬레이터 모드, app selector, 단축키 힌트 UI 테스트</td>
+                            </tr>
+                            <tr>
+                                <td><code>src/components/__tests__/FloatingMenu.test.tsx</code></td>
+                                <td>20</td>
+                                <td><span class="pill pill-pass">통과</span></td>
+                                <td>R-05, R-06, R-07, R-08, R-09, R-10, R-20, R-27, R-28, R-29</td>
+                                <td>프리셋 버튼, 커스텀 입력, 스트리밍, Stop, 복사, 붙여넣기, API 오류 처리 테스트</td>
+                            </tr>
+                            <tr>
+                                <td><code>src/components/__tests__/SettingsWindow.test.tsx</code></td>
+                                <td>34</td>
+                                <td><span class="pill pill-pass">통과</span></td>
+                                <td>R-11, R-12, R-13, R-14, R-16, R-17, R-30</td>
+                                <td>제공사 선택, 모델 드롭다운, 언어·테마 전환, 시스템 프롬프트, custom 제공사 테스트</td>
+                            </tr>
+                            <tr>
+                                <td><code>src/context/__tests__/SettingsContext.test.tsx</code></td>
+                                <td>15</td>
+                                <td><span class="pill pill-pass">통과</span></td>
+                                <td>R-11, R-14, R-16, R-17, R-18</td>
+                                <td>설정 컨텍스트 상태 관리, 제공사/모델/프롬프트/언어/테마 저장·불러오기</td>
+                            </tr>
+                            <tr>
+                                <td><code>src/utils/__tests__/i18n.test.ts</code></td>
+                                <td>10</td>
+                                <td><span class="pill pill-pass">통과</span></td>
+                                <td>R-16</td>
+                                <td>한/영 번역 키 구조, t() 함수, 프리셋 키 일치 검증</td>
+                            </tr>
+                            <tr>
+                                <td><code>src/utils/__tests__/providers.test.ts</code></td>
+                                <td>22</td>
+                                <td><span class="pill pill-pass">통과</span></td>
+                                <td>R-11, R-12, R-13, R-30</td>
+                                <td>제공사 정의 구조, buildRequest, fetchModels, custom 엔드포인트 테스트</td>
+                            </tr>
+                            <tr>
+                                <td><code>src/utils/__tests__/settings.test.ts</code></td>
+                                <td>14</td>
+                                <td><span class="pill pill-pass">통과</span></td>
+                                <td>R-18</td>
+                                <td>loadSettings, saveSettings, localStorage 저장·복원, 마이그레이션</td>
+                            </tr>
+                            <tr>
+                                <td><code>src/utils/__tests__/tauriBridge.test.ts</code></td>
+                                <td>14</td>
+                                <td><span class="pill pill-pass">통과</span></td>
+                                <td>R-01, R-02, R-09 (Mock)</td>
+                                <td>isTauri() 판별, invokeCmd mock, listenEvent mock, triggerMockEvent</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div
+                    style="margin-top:1rem;padding:.7rem 1rem;background:#fff7ed;border:1px solid #f97316;border-radius:5px;font-size:.83rem;">
+                    <strong>⚠️ 주의:</strong> 모든 테스트는 <strong>브라우저(jsdom) 환경에서 React 컴포넌트 단위 테스트</strong>입니다.
+                    Rust 백엔드 로직 (OS 통합, 단축키, 붙여넣기) 및 Tauri IPC는 mock 처리됩니다.
+                    실제 네이티브 동작 검증은 Tauri 빌드 환경이 필요합니다. (<code>cargo test</code> 결과 미첨부)<br>
+                    <strong>act() 경고:</strong> React 상태 업데이트를 act()로 감싸지 않은 경고가 다수 출력되었으나, 테스트 통과 여부와 무관한 warning입니다.
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== S5: DevOps ============================== -->
+        <section id="s5">
+            <div class="section-header">
+                <h2>⑤ DevOps·실행 가능성 (8개 기준)</h2>
+                <span class="badge badge-ok">충족 7 · 미충족 1</span>
+            </div>
+            <div class="section-body">
+                <div class="devops-grid">
+                    <div class="devops-item" style="border-left:4px solid var(--success)">
+                        <div class="dnum">기준 1</div>
+                        <div class="dtitle">라이브러리 목록 명시</div>
+                        <div class="dval"><span class="pill pill-ok">충족</span></div>
+                        <div class="evidence">근거: <code>src/package.json</code> – React 19, Tauri API, Vitest 등 전체 의존성
+                            목록 포함. <code>src/src-tauri/Cargo.toml</code> – Rust 의존성 포함.</div>
+                    </div>
+                    <div class="devops-item" style="border-left:4px solid var(--success)">
+                        <div class="dnum">기준 2</div>
+                        <div class="dtitle">라이브러리 버전 고정</div>
+                        <div class="dval"><span class="pill pill-ok">충족</span></div>
+                        <div class="evidence">근거: <code>src/package.json</code> – 모든 패키지 버전 명시 (예:
+                            <code>"vitest": "^3.2.4"</code>). <code>src/package-lock.json</code> 존재 – CI npm ci로 재현 가능.
+                        </div>
+                    </div>
+                    <div class="devops-item" style="border-left:4px solid var(--success)">
+                        <div class="dnum">기준 3</div>
+                        <div class="dtitle">빌드·설치 방법 문서화</div>
+                        <div class="dval"><span class="pill pill-ok">충족</span></div>
+                        <div class="evidence">근거: <code>RUN.md</code> – "First-Time Setup: npm install", "Build
+                            Production Binary: npm run tauri build". Prerequisites (Node.js + npm, Rust toolchain,
+                            Platform SDK) 명시.</div>
+                    </div>
+                    <div class="devops-item" style="border-left:4px solid var(--success)">
+                        <div class="dnum">기준 4</div>
+                        <div class="dtitle">실행·기동 방법 문서화</div>
+                        <div class="dval"><span class="pill pill-ok">충족</span></div>
+                        <div class="evidence">근거: <code>RUN.md</code> – "Run Development Server: npm run tauri dev". 동작
+                            설명(Vite dev server + Rust compile + Tauri window) 3단계 포함.</div>
+                    </div>
+                    <div class="devops-item" style="border-left:4px solid var(--success)">
+                        <div class="dnum">기준 5</div>
+                        <div class="dtitle">환경 변수·설정 파일 문서화</div>
+                        <div class="dval"><span class="pill pill-ok">충족</span></div>
+                        <div class="evidence">근거: 요구사항 명세서 비고 섹션 – "별도의 <code>.env</code> 파일은 필요하지 않습니다. API 키를 포함한 모든
+                            설정은 앱 내 설정 창(Settings Window)에서 직접 입력 및 관리되도록 설계되었으며, 환경 변수 파일은 의도적으로 사용하지 않습니다." 명시됨.</div>
+                    </div>
+                    <div class="devops-item" style="border-left:4px solid var(--success)">
+                        <div class="dnum">기준 6</div>
+                        <div class="dtitle">외부 서비스·자원 안내</div>
+                        <div class="dval"><span class="pill pill-ok">충족</span></div>
+                        <div class="evidence">근거: <code>README.md</code> – Gemini API(streaming) 명시.
+                            <code>providers.ts</code>에서 OpenAI·Anthropic·Gemini·AWS Bedrock·OpenRouter·GitHub
+                            Copilot·Custom 7종 안내.</div>
+                    </div>
+                    <div class="devops-item" style="border-left:4px solid var(--success)">
+                        <div class="dnum">기준 7</div>
+                        <div class="dtitle">빌드·설치가 문서대로 성공</div>
+                        <div class="dval"><span class="pill pill-ok">충족 (프론트엔드 한정)</span></div>
+                        <div class="evidence">근거: <code>npm install</code> (D:\Git\final_dist\src) 성공 – "added 224
+                            packages" (로컬 2026-07-02). CI 로그에서도 <code>npm ci</code> 성공 확인 (2026-07-01T06:23:43). Rust
+                            빌드는 툴체인 미설치로 검증 불가.</div>
+                    </div>
+                    <div class="devops-item" style="border-left:4px solid var(--danger)">
+                        <div class="dnum">기준 8</div>
+                        <div class="dtitle">애플리케이션 실행·기동</div>
+                        <div class="dval"><span class="pill pill-no">확인 불가</span></div>
+                        <div class="evidence">근거: <code>npm run tauri dev</code> 실행 시 Rust 툴체인 필요. 현 평가 환경에 Rust 미설치로
+                            Tauri 앱 기동 불가. 프론트엔드 단독(<code>npm run dev</code>)은 구동 가능하나 네이티브 기능 비활성.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== S6: 시연 확인표 ============================== -->
+        <section id="s6">
+            <div class="section-header">
+                <h2>⑥ 시연 확인표 (평가자 기입 필요)</h2>
+                <span class="badge badge-info">타임스탬프 있음 23건 · 없음(N/A) 7건</span>
+            </div>
+            <div class="section-body">
+                <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:1rem;">
+                    ▶ <strong>실제 동작 여부(결과란)</strong>는 평가자가 <code>LG_부트캠프_13기_C반_시연영상(1팀).mp4</code>를 시청 후 직접 기입하세요.<br>
+                    타임스탬프가 없고 N/A로 표기된 항목은 「영상 시연 대상 아님」으로 처리합니다.<br>
+                    ⚠️ <strong>R-15 주의</strong>: 소스 코드 기준 번역 버튼 미구현이나, 명세서에 타임스탬프 01:24가 기재됨 – 영상 직접 확인 요망.
+                </p>
+                <div class="tbl-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>요구사항 ID</th>
+                                <th>확인 항목</th>
+                                <th>제공된 타임스탬프</th>
+                                <th>실제 동작 여부 (평가자 기입)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>R-01</td>
+                                <td>임의 앱에서 단축키 입력 시 플로팅 메뉴 노출</td>
+                                <td>00:11, 00:26</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-02</td>
+                                <td>선택 텍스트가 플로팅 메뉴에 AI 처리 입력으로 전달</td>
+                                <td>00:11</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-03</td>
+                                <td>메뉴가 마우스 위치 기준 ±50px 이내에 위치</td>
+                                <td>00:11, 00:26</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-04</td>
+                                <td>배경이 반투명하게 비치는 블러 효과 적용</td>
+                                <td>00:11, 00:26</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-05</td>
+                                <td>프리셋 버튼 클릭 → AI 응답 트리거</td>
+                                <td>00:13</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-06</td>
+                                <td>텍스트 입력란('직접 입력...')과 실행 버튼 UI 노출</td>
+                                <td>00:11 (UI 노출)</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-07</td>
+                                <td>결과 영역에 AI 응답 텍스트가 스트리밍 표시</td>
+                                <td>00:15</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr style="background:#fafafa">
+                                <td>R-08</td>
+                                <td>생성 중 Stop 버튼 클릭 → 스트리밍 중단</td>
+                                <td colspan="2"><em>N/A (영상 미시연)</em> → 영상 시연 대상 아님</td>
+                            </tr>
+                            <tr>
+                                <td>R-09</td>
+                                <td>붙여넣기 시 선택 텍스트가 AI 결과물로 교체</td>
+                                <td>00:17</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-10</td>
+                                <td>'복사' 버튼 UI 노출 확인</td>
+                                <td>00:15 (UI 노출)</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-11</td>
+                                <td>설정 메뉴에서 제공사 변경·API 키 관리 가능</td>
+                                <td>00:50~00:59</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-12</td>
+                                <td>드롭다운으로 모델 선택 가능</td>
+                                <td>01:00~01:07</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr style="background:#fafafa">
+                                <td>R-13</td>
+                                <td>새로고침 버튼 클릭 시 최신 모델 목록 갱신</td>
+                                <td colspan="2"><em>N/A (영상 미시연)</em></td>
+                            </tr>
+                            <tr>
+                                <td>R-14</td>
+                                <td>시스템 프롬프트 수정·저장·적용</td>
+                                <td>01:05~01:08</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr style="background:#fff3cd">
+                                <td>R-15</td>
+                                <td>번역 버튼이 한국어·영어 UI 모두에서 존재</td>
+                                <td><strong>01:24</strong> ⚠️ (소스상 제거됨, 평가자 영상 직접 확인 요망)</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-16</td>
+                                <td>언어 전환 시 UI 텍스트 변경</td>
+                                <td>00:36~00:37</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-17</td>
+                                <td>테마 전환 시 색상 테마 변경</td>
+                                <td>00:38~00:41</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-18</td>
+                                <td>앱 재시작 후 설정값 동일 유지</td>
+                                <td><strong>01:22</strong></td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr style="background:#fafafa">
+                                <td>R-19</td>
+                                <td>드래그 핸들로 메뉴 이동</td>
+                                <td colspan="2"><em>N/A (영상 미시연)</em></td>
+                            </tr>
+                            <tr>
+                                <td>R-20</td>
+                                <td>플로팅 메뉴에서 설정 창 진입</td>
+                                <td>00:11 (UI), 00:34 (진입)</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-21</td>
+                                <td>백그라운드 실행 + 단축키 반응 (간접 확인)</td>
+                                <td>00:11, 00:26</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-22</td>
+                                <td>트레이 아이콘 → Quit 시 앱 종료</td>
+                                <td><strong>01:16</strong></td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr style="background:#fafafa">
+                                <td>R-23</td>
+                                <td>3 플랫폼에서 핵심 기능 동작</td>
+                                <td colspan="2"><em>N/A (영상 미시연)</em></td>
+                            </tr>
+                            <tr>
+                                <td>R-24</td>
+                                <td>태그 push → GitHub Releases 자동 빌드</td>
+                                <td><strong>02:04</strong></td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-25</td>
+                                <td>curl/PowerShell 한 줄 설치</td>
+                                <td><strong>01:32</strong></td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr>
+                                <td>R-26</td>
+                                <td>삭제 스크립트 실행 후 앱·데이터 제거</td>
+                                <td><strong>01:32</strong></td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                            <tr style="background:#fafafa">
+                                <td>R-27</td>
+                                <td>API 키 미입력 시 안내 메시지 표시</td>
+                                <td colspan="2"><em>N/A (영상 미시연)</em></td>
+                            </tr>
+                            <tr style="background:#fafafa">
+                                <td>R-28</td>
+                                <td>API 요청 실패 시 오류 메시지 표시</td>
+                                <td colspan="2"><em>N/A (영상 미시연)</em></td>
+                            </tr>
+                            <tr style="background:#fafafa">
+                                <td>R-29</td>
+                                <td>붙여넣기 실패 시 원인·해결방법 안내</td>
+                                <td colspan="2"><em>N/A (영상 미시연)</em></td>
+                            </tr>
+                            <tr>
+                                <td>R-30</td>
+                                <td>Custom 엔드포인트 UI 노출 확인</td>
+                                <td>00:57 (UI 노출)</td>
+                                <td>[ ] 확인됨 &nbsp; [ ] 미확인</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== S7: Git 협업 지표 ============================== -->
+        <section id="s7">
+            <div class="section-header">
+                <h2>⑦ Git 협업 지표</h2>
+                <span class="badge badge-info">dot_git/ (히스토리 포함 제출)</span>
+            </div>
+            <div class="section-body">
+                <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:1rem;">
+                    근거: <code>D:\Git\final_dist\dot_git\</code> (제출된 Git 히스토리)<br>
+                    커맨드: <code>git --git-dir=dot_git log ...</code> (2026-07-02 실행)
+                </p>
+
+                <h3 style="font-size:.95rem;font-weight:700;margin-bottom:.7rem;">📊 기여 분산도 (커밋 수 기준)</h3>
+                <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:.6rem;">
+                    총 103건의 커밋. 이메일 기준 동일 인물의 중복 계정을 병합하면 실질적으로 4명이 기여함.
+                </p>
+                <div class="git-bars">
+                    <div class="git-bar-row">
+                        <div class="git-bar-label">seongheon</div>
+                        <div class="git-bar-track">
+                            <div class="git-bar-fill" style="width:46%"></div>
+                        </div>
+                        <div class="git-bar-count">~47</div>
+                    </div>
+                    <div class="git-bar-row">
+                        <div class="git-bar-label">gayeon337</div>
+                        <div class="git-bar-track">
+                            <div class="git-bar-fill" style="width:34%"></div>
+                        </div>
+                        <div class="git-bar-count">~35</div>
+                    </div>
+                    <div class="git-bar-row">
+                        <div class="git-bar-label">moonjoo</div>
+                        <div class="git-bar-track">
+                            <div class="git-bar-fill" style="width:13%"></div>
+                        </div>
+                        <div class="git-bar-count">~13</div>
+                    </div>
+                    <div class="git-bar-row">
+                        <div class="git-bar-label">dubudub</div>
+                        <div class="git-bar-track">
+                            <div class="git-bar-fill" style="width:8%"></div>
+                        </div>
+                        <div class="git-bar-count">~8</div>
+                    </div>
+                </div>
+                <p style="font-size:.8rem;color:var(--text-muted);margin-bottom:1.2rem;">
+                    * seongheon: <code>seongheon@seongheonui-MacBookPro.local</code> (42건) +
+                    <code>117247727+HASEONGHEON@users.noreply.github.com</code> (5건) 병합<br>
+                    * gayeon337: <code>gayeon337.lee@lge.com</code> (34건) + <code>gayeonl0007@gmail.com</code> (1건)
+                    병합<br>
+                    * moonjoo: <code>moonjoo.kim@lge.com</code> (8건) + <code>moonjoo.lge@gmail.com</code> (5건) 병합<br>
+                    * dubudub: <code>ga20171001@gmail.com</code> (5건) +
+                    <code>57347183+dubudub@users.noreply.github.com</code> (3건) 병합
+                </p>
+
+                <h3 style="font-size:.95rem;font-weight:700;margin-bottom:.7rem;">📅 커밋 지속성 (일별 커밋 수)</h3>
+                <div class="git-day-grid">
+                    <div class="git-day">
+                        <div class="day-date">06-22</div>
+                        <div class="day-count">1</div>
+                    </div>
+                    <div class="git-day">
+                        <div class="day-date">06-23</div>
+                        <div class="day-count">13</div>
+                    </div>
+                    <div class="git-day">
+                        <div class="day-date">06-24</div>
+                        <div class="day-count">21</div>
+                    </div>
+                    <div class="git-day">
+                        <div class="day-date">06-25</div>
+                        <div class="day-count">15</div>
+                    </div>
+                    <div class="git-day">
+                        <div class="day-date">06-26</div>
+                        <div class="day-count">10</div>
+                    </div>
+                    <div class="git-day" style="background:#fef3c7">
+                        <div class="day-date">06-27</div>
+                        <div class="day-count" style="color:#9a3412">0</div>
+                    </div>
+                    <div class="git-day" style="background:#fef3c7">
+                        <div class="day-date">06-28</div>
+                        <div class="day-count" style="color:#9a3412">0</div>
+                    </div>
+                    <div class="git-day">
+                        <div class="day-date">06-29</div>
+                        <div class="day-count">12</div>
+                    </div>
+                    <div class="git-day">
+                        <div class="day-date">06-30</div>
+                        <div class="day-count">23</div>
+                    </div>
+                    <div class="git-day">
+                        <div class="day-date">07-01</div>
+                        <div class="day-count">8</div>
+                    </div>
+                </div>
+                <p style="font-size:.82rem;color:var(--text-muted);margin-top:.5rem;margin-bottom:1.2rem;">
+                    활동 기간: 2026-06-22 ~ 2026-07-01 (10일). 주말(06-27~28) 활동 없음. 마감일(06-30)에 23건으로 집중 현상 있음.
+                </p>
+
+                <h3 style="font-size:.95rem;font-weight:700;margin-bottom:.7rem;">🔀 협업 상호작용</h3>
+                <div class="tbl-wrap">
+                    <table style="font-size:.85rem;">
+                        <tr>
+                            <th>신호</th>
+                            <th>관측값</th>
+                        </tr>
+                        <tr>
+                            <td>PR 번호 포함 커밋</td>
+                            <td>25건 (예: <code>a67f4ab Add docs (#31)</code>, <code>855ed5b Test Cases (#27)</code>,
+                                <code>ad18ecb Feat/select settings (#22)</code> 등). 최소 31개 PR 진행.</td>
+                        </tr>
+                        <tr>
+                            <td>브랜치 전략</td>
+                            <td>feature/fix 브랜치 기반 PR 흐름 확인 (커밋 메시지 패턴: <code>Feat/</code>, <code>Fix/</code>). Merge 커밋
+                                1건 확인.</td>
+                        </tr>
+                        <tr>
+                            <td>팀원 전원 참여</td>
+                            <td>4명 모두 커밋 기록 있음. seongheon(47건) / gayeon337(35건)에 집중, moonjoo(13건) / dubudub(8건)은 상대적으로
+                                적음.</td>
+                        </tr>
+                    </table>
+                </div>
+                <div
+                    style="margin-top:1rem;padding:.8rem 1rem;background:#eff6ff;border:1px solid #3b82f6;border-radius:5px;font-size:.83rem;">
+                    <strong>🤖 Agent 요약 의견 (근거 기반):</strong><br>
+                    4명 모두 커밋 기록이 있으며, PR 번호 기반으로 최소 31건의 PR이 진행됐습니다. feature/fix 브랜치 전략과 PR 흐름이 확인됩니다.
+                    활동 기간 10일 중 8일이 활성이며, 마감일(06-30)에 23건의 집중이 있습니다. 기여도는 seongheon·gayeon337에 상대적으로 집중되어 있습니다.
+                    <strong>최종 판단(협업 양호/미흡)은 평가자에게 위임합니다.</strong>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== S8: 강사 평가 폼 ============================== -->
+        <section id="s8">
+            <div class="section-header">
+                <h2>⑧ 비기능 요구사항 강사 평가 폼</h2>
+                <span class="badge badge-warn">평가자 기입 필요</span>
+            </div>
+            <div class="section-body">
+                <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:1rem;">
+                    아래 비기능 요소는 Agent가 요구사항 명세서에서 추출한 항목입니다.
+                    <strong>점수 및 코멘트는 강사(평가자)가 직접 기입</strong>합니다.
+                </p>
+
+                <div class="nf-section">
+                    <h3>1. 크로스 플랫폼 호환성 (호환성)</h3>
+                    <div class="nf-source">출처 요구사항: "macOS, Windows, Linux 세 플랫폼에서 모두 동작한다" (R-23)</div>
+                    <div class="nf-fact">Agent 참고 사실: <code>src/src-tauri/src/os_integration/</code>에
+                        <code>windows.rs</code>, <code>macos.rs</code>, <code>linux.rs</code> 각각 존재. CI ubuntu-24.04에서
+                        프론트엔드 테스트 통과. 실제 3플랫폼 빌드 결과물 확인 불가.</div>
+                    <table>
+                        <tr>
+                            <th>세부 평가 기준</th>
+                            <th>점수(1-5)</th>
+                            <th>코멘트</th>
+                        </tr>
+                        <tr>
+                            <td>세 플랫폼에서 핵심 기능(R-01~R-09)이 실제 동작하는가</td>
+                            <td><input type="text" placeholder="[ ]"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="nf-section">
+                    <h3>2. 응답 속도 / 사용자 체감 성능 (성능)</h3>
+                    <div class="nf-source">출처 요구사항: AI 응답 스트리밍(R-07), 플로팅 메뉴 즉시 표시(R-03), 단축키 즉시 활성화(R-01)</div>
+                    <div class="nf-fact">Agent 참고 사실: ReadableStream 스트리밍 구현 확인 (<code>FloatingMenu.tsx</code>). 시연 영상
+                        00:13~00:15 사이 응답 시작 확인 가능. 250ms 디바운싱 적용. 성능 측정 로그 미첨부.</div>
+                    <table>
+                        <tr>
+                            <th>세부 평가 기준</th>
+                            <th>점수(1-5)</th>
+                            <th>코멘트</th>
+                        </tr>
+                        <tr>
+                            <td>실사용 시나리오에서 단축키→메뉴 표시 지연이 적정한가</td>
+                            <td><input type="text" placeholder="[ ]"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>AI 응답 스트리밍이 체감상 자연스럽게 표시되는가</td>
+                            <td><input type="text" placeholder="[ ]"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="nf-section">
+                    <h3>3. 안정성 / 오류 처리 (신뢰성)</h3>
+                    <div class="nf-source">출처 요구사항: API 키 미입력 경고(R-27), API 실패 오류 표시(R-28), 붙여넣기 실패 안내(R-29)</div>
+                    <div class="nf-fact">Agent 참고 사실: <code>FloatingMenu.tsx</code>에서 API 키 미설정, API 오류, AbortError 각각
+                        분기 처리. 붙여넣기 실패 시 플랫폼별 권한 안내 힌트 포함. 비정상 종료 방지 catch 블록 구현. 실제 오류 시 UI 표시는 시연 영상에 없음.</div>
+                    <table>
+                        <tr>
+                            <th>세부 평가 기준</th>
+                            <th>점수(1-5)</th>
+                            <th>코멘트</th>
+                        </tr>
+                        <tr>
+                            <td>오류 발생 시 앱이 비정상 종료 없이 안내 메시지를 표시하는가</td>
+                            <td><input type="text" placeholder="[ ]"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="nf-section">
+                    <h3>4. 사용성 (UI/UX)</h3>
+                    <div class="nf-source">출처 요구사항: 반투명 UI(R-04), 드래그 이동(R-19), 다크/라이트 모드(R-17), 언어 전환(R-16), 키보드 내비게이션
+                    </div>
+                    <div class="nf-fact">Agent 참고 사실: 다크/라이트 테마, 한/영 언어 전환, 키보드 내비게이션(커밋 <code>cb2ee4d</code>,
+                        <code>7c7a94b</code> "add keyboard navigation for presets") 구현. 드래그
+                        핸들(<code>handleDragStart</code>, <code>data-tauri-drag-region</code>) 구현. 시연 영상 00:36~00:41
+                        언어·테마 전환 확인 가능.</div>
+                    <table>
+                        <tr>
+                            <th>세부 평가 기준</th>
+                            <th>점수(1-5)</th>
+                            <th>코멘트</th>
+                        </tr>
+                        <tr>
+                            <td>플로팅 메뉴 UI가 직관적이고 사용하기 편한가</td>
+                            <td><input type="text" placeholder="[ ]"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>다크/라이트 테마 전환이 일관성 있게 적용되는가</td>
+                            <td><input type="text" placeholder="[ ]"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="nf-section">
+                    <h3>5. 보안 (API 키 관리)</h3>
+                    <div class="nf-source">출처 요구사항: API 키 설정 및 관리(R-11), 설정 영속화(R-18)</div>
+                    <div class="nf-fact">Agent 참고 사실: API 키는 <code>localStorage("dadumi_settings")</code>에 저장됨
+                        (<code>settings.ts</code> – <code>STORAGE_KEY = "dadumi_settings"</code>). 브라우저 localStorage 기반
+                        평문 저장. Tauri OS 수준 보안 저장소(keychain 등) 사용 여부는 소스에서 확인 불가.</div>
+                    <table>
+                        <tr>
+                            <th>세부 평가 기준</th>
+                            <th>점수(1-5)</th>
+                            <th>코멘트</th>
+                        </tr>
+                        <tr>
+                            <td>API 키 저장 방식이 보안상 적절한가</td>
+                            <td><input type="text" placeholder="[ ]"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="nf-section">
+                    <h3>6. 유지보수성 (코드 구조)</h3>
+                    <div class="nf-source">출처 요구사항: 다중 제공사 지원(R-11), 모델 목록 확장(R-12, R-13)</div>
+                    <div class="nf-fact">Agent 참고 사실: <code>providers.ts</code>에 <code>ProviderDef</code> 인터페이스로 제공사 추상화
+                        (7종). 프론트엔드 단위 테스트 155건 통과. Rust 백엔드 테스트 미첨부.</div>
+                    <table>
+                        <tr>
+                            <th>세부 평가 기준</th>
+                            <th>점수(1-5)</th>
+                            <th>코멘트</th>
+                        </tr>
+                        <tr>
+                            <td>새 AI 제공사·모델을 추가하기 쉬운 구조인가</td>
+                            <td><input type="text" placeholder="[ ]"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="nf-section">
+                    <h3>7. CI/CD 자동화 수준 (DevOps)</h3>
+                    <div class="nf-source">출처 요구사항: GitHub Actions 자동 빌드·릴리즈(R-24)</div>
+                    <div class="nf-fact">Agent 참고 사실: CI 로그에서 tag <code>v1.10.4</code> push 시 자동 테스트 실행 확인.
+                        <code>npm ci → npm run test:run</code> 성공 확인. 3플랫폼 빌드 자동화는 영상 02:04 또는 GitHub Releases 직접 확인 필요.
+                    </div>
+                    <table>
+                        <tr>
+                            <th>세부 평가 기준</th>
+                            <th>점수(1-5)</th>
+                            <th>코멘트</th>
+                        </tr>
+                        <tr>
+                            <td>CI/CD 파이프라인이 완성도 있게 구성되어 있는가</td>
+                            <td><input type="text" placeholder="[ ]"></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================== S9: 확인 불가 / 한계 ============================== -->
+        <section id="s9">
+            <div class="section-header">
+                <h2>⑨ 확인 불가 / 한계 항목</h2>
+                <span class="badge badge-miss">자동 검증 불가 사유</span>
+            </div>
+            <div class="section-body">
+
+                <div class="limit-block">
+                    <div class="lt">🔴 Tauri/Rust 빌드 환경 없음 (R-01, R-02, R-09, R-21, R-22, R-23)</div>
+                    <div class="ld">현 평가 환경에 Rust 툴체인이 설치되지 않아 <code>npm run tauri dev</code> 또는
+                        <code>cargo build</code>를 실행할 수 없습니다. OS 수준 단축키 감지, 텍스트 캡처, 자동 붙여넣기, 트레이 아이콘 등 Rust 백엔드 기능의 실제
+                        동작 검증이 불가합니다. 소스 코드 존재는 확인되었으나 실행 결과는 Tauri 빌드 환경에서 검증해야 합니다.</div>
+                </div>
+
+                <div class="limit-block">
+                    <div class="lt">🔴 R-15 명세서-소스 불일치 (번역 버튼)</div>
+                    <div class="ld">소스 코드에서 커밋 <code>ea46b4ba</code> (2026-06-29)에서 "remove translate button"으로 해당 기능이
+                        제거되었습니다. 요구사항 명세서(v1.0.1)는 "한국어·영어 UI 모두에서 존재한다"로 기재되어 있고 시연 타임스탬프 <strong>01:24</strong>가
+                        제공됩니다. 소스 코드 기준으로는 미구현으로 판정합니다. 영상 01:24을 평가자가 직접 확인하여 최종 판정하시기 바랍니다.</div>
+                </div>
+
+                <div class="limit-block">
+                    <div class="lt">🔴 GitHub Actions 빌드·릴리즈 단계 미확인 (R-24)</div>
+                    <div class="ld">CI 로그에서 tag push 시 테스트 자동 실행까지 확인됩니다. GitHub Releases에 3플랫폼 빌드 파일이 자동 업로드되는지는 실제
+                        저장소(<code>c1adumi/dadumi</code>) 직접 접근 없이 확인 불가합니다. 시연 영상 02:04를 평가자가 확인하시기 바랍니다.</div>
+                </div>
+
+                <div class="limit-block">
+                    <div class="lt">🟡 Rust 백엔드 단위 테스트 없음</div>
+                    <div class="ld"><code>cargo test</code> 결과가 제출물에 포함되지 않았습니다. 프론트엔드 테스트(155건)는 jsdom 환경에서 Tauri IPC를
+                        mock 처리하여 수행됩니다. Rust 측 OS 통합 로직에 대한 단위 테스트 결과를 확인할 수 없습니다.</div>
+                </div>
+
+                <div class="limit-block">
+                    <div class="lt">🟡 DevOps 기준 8 – 실제 Tauri 앱 기동 검증 불가</div>
+                    <div class="ld">Rust 툴체인 미설치로 <code>npm run tauri dev</code>를 통한 전체 앱 기동을 검증할 수 없습니다. 프론트엔드
+                        단독(<code>npm run dev</code>)은 구동 가능하나 네이티브 기능이 비활성화됩니다.</div>
+                </div>
+
+                <div class="limit-block">
+                    <div class="lt">🟡 PDF/PPTX/MP4 파일 내용 분석 불가</div>
+                    <div class="ld">결과보고서·포스터·시연영상 파일의 내용은 Agent가 직접 분석하지 않습니다. 파일 존재 여부만 확인됩니다. 시연 영상 실제 동작 확인은 평가자
+                        담당입니다.</div>
+                </div>
+
+                <div class="limit-block">
+                    <div class="lt">🟡 R-25·R-26 설치·삭제 스크립트 동작 미검증</div>
+                    <div class="ld"><code>install.sh</code>, <code>install.ps1</code>, <code>uninstall.sh</code>,
+                        <code>uninstall.ps1</code> 파일은 존재하며 GitHub Releases에서 최신 릴리즈를 자동 탐지하도록 구현되어 있습니다. 시연 타임스탬프
+                        01:32가 제공됩니다. 실제 릴리즈 바이너리 존재 여부를 확인하지 않아 스크립트 실행 결과를 검증할 수 없습니다.</div>
+                </div>
+
+                <div class="limit-block">
+                    <div class="lt">🟡 act() 경고 (테스트 품질)</div>
+                    <div class="ld">테스트 실행 시 React 상태 업데이트를 act()로 감싸지 않은 경고가 다수 출력됩니다. 테스트 통과 여부와 무관하며, 테스트 코드 품질 개선
+                        여지가 있습니다.</div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        🤖 이 리포트는 <strong>project_assessment_agent v1.0</strong>에 의해 자동 생성되었습니다. &nbsp;|&nbsp; 분석일: 2026-07-02
+        &nbsp;|&nbsp; LG 부트캠프 13기 C반 1팀 (Dadumi)<br>
+        모든 자동 판정에는 근거(파일 경로·커밋 해시·테스트 로그·타임스탬프)가 첨부되어 있습니다. 주관적 판단은 평가자에게 위임합니다.
+    </footer>
+
+</body>
+
+</html>
